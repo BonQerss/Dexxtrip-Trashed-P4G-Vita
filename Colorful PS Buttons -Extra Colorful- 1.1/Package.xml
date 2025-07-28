@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Colorful PS Prompts -Extra Colorful-</name>
+  <id>kris!.coloredpsprompts+vita</id>
+  <author>kris!</author>
+  <version>1.1</version>
+  <link>https://gamebanana.com/wips/65512</link>
+  <description>Overhauls the prompts to be colored, including their outlines, while also fixing some atlus fuckups</description>
+  <skippedVersion>all</skippedVersion>
+</Metadata>

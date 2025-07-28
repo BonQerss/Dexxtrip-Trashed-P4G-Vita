@@ -1,0 +1,15 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "file": "facility\\cmbroot\\ps_model.bin",
+      "offset": 6080,
+      "data": "FB FF 42 FF 00 00 00 00 33 33 B3 3F 00 00 00 00 FF 00 04 00 FF DC DC DC FF 50 28 28 00 00 00 00"
+    },
+	{
+      "file": "facility\\cmbroot\\ps_model.bin",
+      "offset": 14352,
+      "data": "FB FF 56 FF 00 00 00 00 33 33 B3 3F 00 00 00 00 FF 00 04 00 FF FF E6 F0 FF FF FF FF C8 00 F6 FF"
+    }
+  ]
+}	

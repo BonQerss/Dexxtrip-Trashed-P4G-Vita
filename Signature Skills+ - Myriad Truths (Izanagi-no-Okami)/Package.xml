@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Signature Skills+ - Myriad Truths (Izanagi-no-Okami)</name>
+  <id>rudiger__gb.signatureskills-myriadtruths(izanagi-no-okami)</id>
+  <author>rudiger__gb</author>
+  <version>1.0</version>
+  <link>https://gamebanana.com/mods/454111</link>
+  <description>Allows Izanagi-no-Okami to learn the signature skill "Myriad Truths" at level 91 (innate) in place of "Megidolaon".
+
+Deals heavy Almighty damage to all foes x3.
+
+Power: 180
+Accuracy: 95
+Cost: 52 SP</description>
+</Metadata>

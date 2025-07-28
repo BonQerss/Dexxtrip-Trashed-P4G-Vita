@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Persona Growths, Index: 220",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15400,
+      "data": "0A 0A 0A 0A 0A 00 00 01 B0 01 00 01 35 00 00 01 8C 00 03 01 1B 02 06 01 30 02 09 01 1E 02 0C 01 DB 01 0F 01 C6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    }
+  ]
+}

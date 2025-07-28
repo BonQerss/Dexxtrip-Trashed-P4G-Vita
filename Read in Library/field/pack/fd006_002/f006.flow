@@ -1,0 +1,253 @@
+import("f006.bf");
+import("library.msg");
+
+// TODO change initial help message to mention that you can read as well as study
+
+void read_book()
+{
+    if (EVT_FUNCTION_002F(0, 2, 0) == 0)
+    {
+        OPEN_MSG_WIN();
+        MSG(CHECK_SOFA);
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if (EVT_FUNCTION_002F(0, 3, 0) == 0 && EVT_FUNCTION_002F(0, 1, 0) == 0)
+    {
+        OPEN_MSG_WIN();
+        MSG(CHECK_SOFA_ALLREAD_BOOK);
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if (EVT_FUNCTION_002F(0, 1, 0) == 0)
+    {
+        OPEN_MSG_WIN();
+        MSG(CHECK_SOFA_NOREAD_BOOK);
+        CLOSE_MSG_WIN();
+        return;
+    }
+
+    BOOK_READ();
+
+    if (GET_CNT(88) != 0)
+    {
+        FADE(1, 10);
+        FADE_SYNC();
+        CALL_EVENT(860, 35, 0);
+
+        // if (GET_TIME_OF_DAY() != 5)
+        // {
+        //     BIT_ON(0 + 0x0400 + 0x0800 + 931);
+        // }
+        // else
+        // {
+        //     BIT_ON(0 + 0x0400 + 0x0800 + 990);
+        // }
+
+        if (GET_TIME_OF_DAY() == 5)
+        {
+            // If there is another book to read go back inside and open the bookshelf
+            if (BIT_CHK(123456789) == 1)
+            {
+                read_book();
+            }
+            else
+            {
+                TV_STUDIO();
+            }
+        }
+        else
+        {
+            // If there is another book to read go back inside and open the bookshelf
+            if (BIT_CHK(123456789) == 1)
+            {
+                read_book();
+            }
+            else
+            {
+                // BIT_ON(0 + 0x0400 + 1761);
+                TV_STUDIO();
+            }
+            return;
+        }
+        // If another book must be read when the user tries to close the bookshelf just open it again
+    }
+    else if (BIT_CHK(123456789) == 1)
+    {
+        read_book();
+    }
+}
+
+void tosyositu_temae_hook()
+{
+    int localVariable54 = GET_MONTH();
+    int localVariable55 = GET_DAY_OF_MONTH();
+    int localVariable56 = GET_TIME_OF_DAY();
+    int localVariable50 = 0;
+
+    if (BIT_CHK(0 + 0x0400 + 514) == 1)
+    {
+        commu_gojitu();
+        return;
+    }
+
+    if (localVariable54 == 4 && localVariable55 == 0x10)
+    {
+        OPEN_MSG_WIN();
+        MSG(TOSYOSITU_STOP);
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if (BIT_CHK(0 + 0x0400 + 527) == 1)
+    {
+        OPEN_MSG_WIN();
+        MSG(TOSYOSITU_NONE);
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else
+    {
+        OPEN_MSG_WIN();
+
+        if (BIT_CHK(0 + 0x0400 + 1666) == 0)
+        {
+            BIT_ON(0 + 0x0400 + 1666);
+            MSG(LIBRARY_FIRST_TIME);
+            CLOSE_MSG_WIN();
+
+            if (BIT_CHK(0 + 0x0400 + 1682) == 0)
+            {
+                BIT_ON(0 + 0x0400 + 1682);
+                HELP_MSG(200);
+            }
+
+            OPEN_MSG_WIN();
+            MSG(TOSYOSITU2);
+        }
+        else
+        {
+            MSG(TOSYOSITU);
+        }
+
+        SEL_CHK_PAD(14, 2);
+        localVariable50 = SEL(LIBRARY_SEL);
+
+        // Read a book
+        if (localVariable50 == 0)
+        {
+            CLOSE_MSG_WIN();
+            read_book();
+        }
+        // Study
+        else if (localVariable50 == 1)
+        {
+
+            if (GET_TIME_OF_DAY() != 5)
+            {
+                BIT_ON(0 + 0x0400 + 0x0800 + 899);
+            }
+
+            MSG(TOSYOSITU_HAJIME);
+            CLOSE_MSG_WIN();
+            PLAY_SOUNDEFFECT(701);
+            FLD_FUNCTION_0008(10247, 1, 0, 0, 1);
+            FADE(1, 10);
+            FADE_SYNC();
+            CALL_EVENT(860, 23, 0);
+            TV_STUDIO();
+            return;
+        }
+        else
+        {
+            CLOSE_MSG_WIN();
+            return;
+        }
+    }
+}
+
+void tosyositu_oku_hook()
+{
+    int localVariable67 = GET_MONTH();
+    int localVariable68 = GET_DAY_OF_MONTH();
+    int localVariable69 = GET_TIME_OF_DAY();
+    int localVariable63 = 0;
+
+    if (BIT_CHK(0 + 0x0400 + 514) == 1)
+    {
+        commu_gojitu();
+        return;
+    }
+
+    if (localVariable67 == 4 && localVariable68 == 0x10)
+    {
+        OPEN_MSG_WIN();
+        MSG(TOSYOSITU_STOP);
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if (BIT_CHK(0 + 0x0400 + 527) == 1)
+    {
+        OPEN_MSG_WIN();
+        MSG(TOSYOSITU_NONE);
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else
+    {
+        OPEN_MSG_WIN();
+
+        if (BIT_CHK(0 + 0x0400 + 1666) == 0)
+        {
+            BIT_ON(0 + 0x0400 + 1666);
+            MSG(LIBRARY_FIRST_TIME);
+            CLOSE_MSG_WIN();
+
+            if (BIT_CHK(0 + 0x0400 + 1682) == 0)
+            {
+                BIT_ON(0 + 0x0400 + 1682);
+                HELP_MSG(200);
+            }
+
+            OPEN_MSG_WIN();
+            MSG(TOSYOSITU2);
+        }
+        else
+        {
+            MSG(TOSYOSITU);
+        }
+
+        SEL_CHK_PAD(14, 2);
+        localVariable63 = SEL(LIBRARY_SEL);
+
+        // Read a book
+        if (localVariable63 == 0)
+        {
+            CLOSE_MSG_WIN();
+            read_book();
+        }
+        // Study
+        else if (localVariable63 == 1)
+        {
+
+            if (GET_TIME_OF_DAY() != 5)
+            {
+                BIT_ON(0 + 0x0400 + 0x0800 + 899);
+            }
+
+            MSG(TOSYOSITU_HAJIME);
+            CLOSE_MSG_WIN();
+            PLAY_SOUNDEFFECT(701);
+            FLD_FUNCTION_0008(10248, 1, 0, 0, 1);
+            FADE(1, 10);
+            FADE_SYNC();
+            CALL_EVENT(860, 23, 0);
+            TV_STUDIO();
+            return;
+        }
+        else
+        {
+            CLOSE_MSG_WIN();
+            return;
+        }
+    }
+}

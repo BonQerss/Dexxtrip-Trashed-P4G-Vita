@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: ItemData, Index: 37",
+      "tbl": "ITEMTBL",
+      "section": 0,
+      "offset": 2518,
+      "data": "01 00 09 00 00 00 01 A7 05 00 00 00 05 00 00 00 00 00 01 00 00 00 86 01 50 00 01 00 07 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 00 00 00 00 00 00 BD 00 00 00 01 00 00 00 20 00 00 00 78 69"
+    },
+    {
+      "comment": "Segment: ItemNames, Index: 37",
+      "tbl": "ITEMTBL",
+      "section": 0,
+      "offset": 175000,
+      "data": "4C 61 65 76 61 74 65 69 6E 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    }
+  ]
+}

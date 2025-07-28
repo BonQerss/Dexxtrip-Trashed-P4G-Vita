@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Inherit Signature Skills</name>
+  <id>jaythetaco.signatureskillinheritance</id>
+  <author>JayTheTaco</author>
+  <version>1.1</version>
+  <link>https://gamebanana.com/mods/296909</link>
+  <description>This mod makes signature, nontransferable skills such as Hassou Tobi and Morning star inheritable.</description>
+  <skippedVersion>all</skippedVersion>
+</Metadata>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Amagidyne over Burning Petals</name>
+  <id>meovvcatwxnder.amagidyneoverburningpetals</id>
+  <author>MeovvCAT, wxnder</author>
+  <version>1.1</version>
+  <link />
+  <description>idek lmao
+
+replaces Yukiko's ultimate skill name (Burning Petals) with "Amagidyne"
+
+requested by Word, update for fixing all other skill names breaking + tblpatches by meovvcat</description>
+  <skippedVersion>all</skippedVersion>
+</Metadata>

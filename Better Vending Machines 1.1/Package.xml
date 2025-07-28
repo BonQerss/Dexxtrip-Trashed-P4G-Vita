@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Better Vending Machines</name>
+  <id>meovvcat.bettervendingmachines</id>
+  <author>MeovvCAT</author>
+  <version>1.1</version>
+  <link />
+  <description>A standalone portion of P4GEX.
+
+Makes Orange Smash and TaP Soda stock in Shopping District South separate and increased to 9 per week.
+
+Removes the RNG component from the machine in District North, but limits the stock to 15 (Total) to compensate.
+
+Adds a "Buy Everything" option to both machines which empties out the remaining available stock.</description>
+  <skippedVersion>all</skippedVersion>
+</Metadata>

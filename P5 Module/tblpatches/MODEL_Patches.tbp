@@ -1,0 +1,180 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 10",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 880,
+      "data": "11 00 00 00 82 00 00 00 91 00 2A 00 00 00 00 00 5A 00 00 00 00 00 5A 00 78 00 0A 00 64 00 FF FF C8 00 08 00 42 00 64 00 00 00 64 00 08 00 0A 00 64 00 00 00 C8 00 08 00 42 00 64 00 00 00 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 D2 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 26",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 2288,
+      "data": "00 00 00 00 3C 00 00 00 78 00 23 00 00 00 00 00 6E 00 00 00 00 00 6E 00 6E 00 22 00 64 00 FF FF 3C 00 08 00 28 00 64 00 00 00 64 00 08 00 22 00 64 00 00 00 3C 00 08 00 28 00 64 00 00 00 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 31",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 2728,
+      "data": "00 00 FB FF 82 00 00 00 8C 00 1E 00 00 00 00 00 5A 00 00 00 00 00 5A 00 87 00 16 00 64 00 FF FF 3C 00 08 00 2E 00 64 00 00 00 64 00 08 00 16 00 64 00 00 00 3C 00 08 00 2E 00 64 00 00 00 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 D2 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 32",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 2816,
+      "data": "00 00 00 00 64 00 00 00 50 00 19 00 00 00 00 00 5A 00 00 00 00 00 5A 00 78 00 17 00 64 00 FF FF 64 00 08 00 27 00 64 00 00 00 32 00 08 00 17 00 64 00 00 00 64 00 08 00 27 00 64 00 00 00 32 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 39",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 3432,
+      "data": "00 00 00 00 6E 00 0A 00 DC 00 46 00 00 00 00 00 8C 00 00 00 00 00 8C 00 6E 00 20 00 64 00 FF FF 96 00 08 00 27 00 64 00 00 00 78 00 08 00 20 00 64 00 00 00 96 00 08 00 27 00 64 00 00 00 78 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 E6 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 43",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 3784,
+      "data": "00 00 05 00 A5 00 00 00 46 00 2D 00 00 00 F6 FF 5A 00 00 00 00 00 5A 00 82 00 26 00 64 00 FF FF 50 00 08 00 20 00 64 00 00 00 3C 00 08 00 26 00 64 00 00 00 50 00 08 00 20 00 64 00 00 00 3C 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 E6 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 88",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 7744,
+      "data": "00 00 00 00 BE 00 0F 00 F0 00 37 00 00 00 00 00 8C 00 00 00 00 00 8C 00 7D 00 14 00 64 00 FF FF 6E 00 08 00 28 00 64 00 00 00 6E 00 08 00 14 00 64 00 00 00 6E 00 08 00 28 00 64 00 00 00 6E 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 96",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 8448,
+      "data": "00 00 00 00 BE 00 00 00 04 01 41 00 00 00 00 00 82 00 00 00 00 00 82 00 64 00 40 00 64 00 FF FF AA 00 08 00 36 00 64 00 00 00 96 00 08 00 40 00 64 00 00 00 AA 00 08 00 36 00 64 00 00 00 96 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 131",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 11528,
+      "data": "00 00 00 00 22 01 00 00 04 01 41 00 00 00 EC FF 82 00 00 00 EC FF 96 00 46 00 16 00 64 00 FF FF 64 00 08 00 32 00 64 00 00 00 64 00 08 00 16 00 64 00 00 00 64 00 08 00 32 00 64 00 00 00 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 D2 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 136",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 11968,
+      "data": "00 00 08 00 55 00 28 00 A8 00 37 00 00 00 00 00 5A 00 00 00 00 00 5A 00 78 00 17 00 64 00 FF FF 82 00 08 00 2D 00 64 00 00 00 64 00 08 00 17 00 64 00 00 00 82 00 08 00 2D 00 64 00 00 00 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 D7 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 137",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 12056,
+      "data": "00 00 F6 FF 32 00 28 00 8C 00 28 00 00 00 00 00 82 00 00 00 00 00 78 00 5F 00 1B 00 64 00 FF FF 50 00 08 00 1E 00 64 00 00 00 78 00 08 00 1B 00 64 00 00 00 50 00 08 00 1E 00 64 00 00 00 78 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 146",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 12848,
+      "data": "02 00 00 00 D7 00 00 00 FA 00 5F 00 00 00 00 00 96 00 00 00 00 00 96 00 4B 00 18 00 64 00 FF FF 78 00 08 00 3A 00 64 00 00 00 C8 00 08 00 18 00 64 00 00 00 78 00 08 00 3A 00 64 00 00 00 C8 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 150",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 13200,
+      "data": "00 00 00 00 05 00 F6 FF 6E 00 3C 00 00 00 00 00 96 00 00 00 00 00 96 00 5A 00 1C 00 64 00 FF FF 8C 00 08 00 27 00 64 00 00 00 64 00 08 00 1C 00 64 00 00 00 8C 00 08 00 27 00 64 00 00 00 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 159",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 13992,
+      "data": "00 00 00 00 4B 00 00 00 96 00 5A 00 00 00 00 00 FA 00 00 00 00 00 DC 00 5A 00 14 00 64 00 FF FF D2 00 08 00 2D 00 64 00 00 00 64 00 08 00 14 00 64 00 00 00 D2 00 08 00 2D 00 64 00 00 00 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 160",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 14080,
+      "data": "00 00 00 00 49 00 0A 00 92 00 28 00 00 00 00 00 5A 00 00 00 00 00 5A 00 87 00 1E 00 64 00 FF FF 64 00 08 00 17 00 64 00 00 00 64 00 08 00 1E 00 64 00 00 00 64 00 08 00 17 00 64 00 00 00 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 D7 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 161",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 14168,
+      "data": "00 00 00 00 32 00 F6 FF 64 00 28 00 00 00 00 00 82 00 00 00 00 00 78 00 73 00 20 00 64 00 FF FF 8C 00 08 00 22 00 64 00 00 00 8C 00 08 00 20 00 64 00 00 00 8C 00 08 00 22 00 64 00 00 00 8C 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 D2 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 172",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 15136,
+      "data": "00 00 00 00 6E 00 00 00 91 00 23 00 00 00 0A 00 50 00 00 00 0A 00 64 00 73 00 1E 00 64 00 FF FF 46 00 08 00 1E 00 64 00 00 00 5A 00 08 00 1E 00 64 00 00 00 46 00 08 00 20 00 64 00 00 00 5A 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 D2 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 186",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 16368,
+      "data": "02 00 00 00 D7 00 00 00 FA 00 5F 00 00 00 00 00 96 00 00 00 00 00 96 00 78 00 23 00 64 00 FF FF 78 00 08 00 23 00 64 00 00 00 C8 00 08 00 23 00 64 00 00 00 78 00 08 00 23 00 64 00 00 00 C8 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 188",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 16544,
+      "data": "00 00 0A 00 69 00 00 00 D2 00 3C 00 00 00 00 00 DC 00 00 00 00 00 82 00 64 00 1A 00 64 00 FF FF 8C 00 08 00 2C 00 64 00 00 00 64 00 08 00 1A 00 64 00 00 00 8C 00 08 00 2C 00 64 00 00 00 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 222",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 19536,
+      "data": "00 00 D8 FF B9 00 32 00 FA 00 5A 00 00 00 00 00 D2 00 00 00 00 00 BE 00 50 00 19 00 64 00 FF FF 08 02 08 00 28 00 64 00 00 00 DC 00 08 00 19 00 64 00 00 00 08 02 08 00 28 00 64 00 00 00 DC 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 F0 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 227",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 19976,
+      "data": "00 00 F6 FF 28 00 00 00 50 00 37 00 00 00 00 00 78 00 00 00 00 00 78 00 5F 00 15 00 64 00 FF FF 64 00 08 00 20 00 64 00 00 00 64 00 08 00 15 00 64 00 00 00 64 00 08 00 20 00 64 00 00 00 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 C8 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 244",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 21472,
+      "data": "11 00 00 00 22 01 E2 FF DC 00 78 00 00 00 19 00 DC 00 00 00 19 00 A0 00 4B 00 14 00 64 00 FF FF C8 00 08 00 1E 00 64 00 00 00 C8 00 08 00 14 00 64 00 00 00 C8 00 08 00 1E 00 64 00 00 00 C8 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 246",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 21648,
+      "data": "00 00 00 00 6E 00 00 00 91 00 23 00 00 00 00 00 50 00 00 00 00 00 64 00 64 00 1B 00 64 00 FF FF 78 00 08 00 35 00 64 00 00 00 5A 00 08 00 1B 00 64 00 00 00 78 00 08 00 35 00 64 00 00 00 5A 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 D2 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 251",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 22088,
+      "data": "00 00 00 00 BE 00 00 00 7C 01 4B 00 00 00 00 00 96 00 00 00 00 00 6E 00 82 00 18 00 64 00 FF FF 96 00 08 00 21 00 64 00 00 00 96 00 08 00 18 00 64 00 00 00 96 00 08 00 21 00 64 00 00 00 96 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 252",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 22176,
+      "data": "00 00 00 00 7D 00 05 00 FA 00 37 00 00 00 00 00 3C 00 00 00 00 00 8C 00 82 00 1B 00 64 00 FF FF 54 01 08 00 21 00 64 00 00 00 B4 00 08 00 1B 00 64 00 00 00 54 01 08 00 21 00 64 00 00 00 B4 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    }
+  ]
+}

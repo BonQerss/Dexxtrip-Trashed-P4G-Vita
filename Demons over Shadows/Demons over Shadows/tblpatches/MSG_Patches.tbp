@@ -1,0 +1,1804 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Enemy Names, Index: 2",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 42,
+      "data": "4C 69 6C 69 6D 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 3",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 63,
+      "data": "42 6C 61 63 6B 20 46 72 6F 73 74 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 5",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 105,
+      "data": "43 75 20 53 69 74 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 6",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 126,
+      "data": "4F 62 65 72 6F 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 7",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 147,
+      "data": "41 7A 75 6D 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 8",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 168,
+      "data": "46 75 75 2D 4B 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 9",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 189,
+      "data": "56 61 6C 6B 79 72 69 65 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 10",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 210,
+      "data": "41 72 65 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 11",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 231,
+      "data": "47 61 72 75 64 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 12",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 252,
+      "data": "4E 79 78 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 13",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 273,
+      "data": "4E 65 6B 6F 6D 61 74 61 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 14",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 294,
+      "data": "50 72 69 6E 63 69 70 61 6C 69 74 79 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 15",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 315,
+      "data": "43 6C 6F 74 68 6F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 16",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 336,
+      "data": "59 48 56 48 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 17",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 357,
+      "data": "4A 61 63 6B 20 46 72 6F 73 74 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 18",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 378,
+      "data": "43 65 72 6E 75 6E 6E 6F 73 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 19",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 399,
+      "data": "52 61 6E 67 64 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 20",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 420,
+      "data": "53 75 72 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 22",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 462,
+      "data": "47 75 72 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 23",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 483,
+      "data": "4A 61 63 6B 20 54 68 65 20 52 69 70 70 65 72 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 25",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 525,
+      "data": "4C 65 61 6E 61 6E 20 53 69 64 68 65 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 26",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 546,
+      "data": "43 68 69 72 6F 6E 6E 75 70 75 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 27",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 567,
+      "data": "5A 61 6F 75 2D 47 6F 6E 67 65 6E 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 28",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 588,
+      "data": "48 61 73 74 75 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 29",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 609,
+      "data": "44 6F 6D 69 6E 69 6F 6E 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 30",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 630,
+      "data": "41 74 72 6F 70 6F 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 31",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 651,
+      "data": "59 75 72 6C 75 6E 67 75 72 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 32",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 672,
+      "data": "41 62 61 64 64 6F 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 33",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 693,
+      "data": "43 68 61 67 72 69 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 34",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 714,
+      "data": "41 70 69 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 35",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 735,
+      "data": "4B 75 6D 62 68 61 6E 64 61 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 36",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 756,
+      "data": "43 79 62 65 6C 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 37",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 777,
+      "data": "4E 6F 72 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 38",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 798,
+      "data": "41 67 61 74 68 69 6F 6E 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 39",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 819,
+      "data": "54 69 74 61 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 40",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 840,
+      "data": "4E 69 64 68 6F 67 67 72 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 41",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 861,
+      "data": "53 65 72 61 70 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 43",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 903,
+      "data": "55 6E 69 63 6F 72 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 44",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 924,
+      "data": "53 75 7A 61 6B 75 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 46",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 966,
+      "data": "48 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 47",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 987,
+      "data": "47 61 72 75 64 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 48",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1008,
+      "data": "53 63 61 74 68 61 63 68 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 49",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1029,
+      "data": "42 6C 61 63 6B 20 52 69 64 65 72 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 50",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1050,
+      "data": "53 68 69 69 73 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 51",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1071,
+      "data": "48 61 6E 75 6D 61 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 52",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1092,
+      "data": "44 61 69 73 6F 75 6A 6F 75 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 53",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1113,
+      "data": "41 6E 67 72 61 20 4D 61 69 6E 79 75 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 54",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1134,
+      "data": "47 72 69 66 66 69 74 68 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 55",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1155,
+      "data": "42 69 73 68 61 6D 6F 6E 74 65 6E 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 56",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1176,
+      "data": "47 6F 67 6D 61 67 6F 67 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 57",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1197,
+      "data": "49 73 68 74 61 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 58",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1218,
+      "data": "53 6C 69 6D 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 59",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1239,
+      "data": "45 66 72 65 65 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 60",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1260,
+      "data": "5A 68 6F 6E 67 20 4B 75 69 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 61",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1281,
+      "data": "53 65 74 61 6E 74 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 63",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1323,
+      "data": "47 75 63 75 6D 61 74 7A 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 66",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1386,
+      "data": "41 62 72 61 78 61 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 67",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1407,
+      "data": "46 6F 6D 6F 72 69 61 6E 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 68",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1428,
+      "data": "4B 61 6E 62 61 72 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 69",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1449,
+      "data": "42 61 61 6C 20 5A 65 62 75 6C 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 70",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1470,
+      "data": "53 69 6C 6B 79 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 71",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1491,
+      "data": "42 65 72 69 74 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 72",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1512,
+      "data": "4E 61 72 63 69 73 73 75 73 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 73",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1533,
+      "data": "48 75 61 6E 67 20 44 69 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 74",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1554,
+      "data": "52 61 6D 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 75",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1575,
+      "data": "43 68 69 20 59 6F 75 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 76",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1596,
+      "data": "4D 61 73 74 65 72 20 54 68 65 72 69 6F 6E 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 77",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1617,
+      "data": "46 75 74 73 75 6E 75 73 68 69 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 78",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1638,
+      "data": "41 74 74 69 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 79",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1659,
+      "data": "46 6F 72 6E 65 75 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 80",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1680,
+      "data": "49 70 70 6F 6E 2D 44 61 74 61 72 61 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 81",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1701,
+      "data": "43 75 20 43 68 75 6C 6C 61 69 6E 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 82",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1722,
+      "data": "4D 65 74 61 74 72 6F 6E 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 84",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1764,
+      "data": "49 6E 63 75 62 75 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 85",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1785,
+      "data": "4E 69 67 69 20 4D 69 74 61 6D 61 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 87",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1827,
+      "data": "53 61 6E 64 6D 61 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 88",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1848,
+      "data": "53 61 72 61 73 76 61 74 69 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 89",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1869,
+      "data": "44 61 6B 69 6E 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 90",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1890,
+      "data": "4D 61 72 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 91",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1911,
+      "data": "46 6C 61 75 72 6F 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 92",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1932,
+      "data": "54 72 69 67 6C 61 76 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 93",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1953,
+      "data": "5A 6F 75 63 68 6F 75 74 65 6E 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 94",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1974,
+      "data": "4F 6B 75 6E 69 6E 75 73 68 69 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 95",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 1995,
+      "data": "42 61 61 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 96",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2016,
+      "data": "50 61 7A 75 7A 75 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 97",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2037,
+      "data": "41 6E 75 62 69 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 98",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2058,
+      "data": "54 7A 69 74 7A 69 6D 69 74 6C 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 99",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2079,
+      "data": "41 6C 69 63 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 100",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2100,
+      "data": "4F 6D 6F 69 6B 61 6E 65 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 101",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2121,
+      "data": "4E 6F 7A 75 63 68 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 102",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2142,
+      "data": "41 72 61 68 61 62 61 6B 69 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 103",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2163,
+      "data": "4B 61 6C 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 105",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2205,
+      "data": "4E 79 61 72 6C 61 74 68 6F 74 65 70 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 106",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2226,
+      "data": "53 61 6B 69 20 4D 69 74 61 6D 61 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 108",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2268,
+      "data": "48 61 6F 20 50 6F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 109",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2289,
+      "data": "43 68 69 6D 65 72 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 110",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2310,
+      "data": "48 6F 72 75 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 111",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2331,
+      "data": "43 61 6D 61 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 112",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2352,
+      "data": "59 6F 6D 6F 74 73 75 20 49 6B 75 73 61 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 113",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2373,
+      "data": "53 75 69 2D 4B 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 114",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2394,
+      "data": "47 61 62 72 69 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 115",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2415,
+      "data": "56 61 69 72 6F 63 61 6E 61 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 116",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2436,
+      "data": "4E 65 62 69 72 6F 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 117",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2457,
+      "data": "59 61 6D 61 74 61 20 4E 6F 20 4F 72 6F 63 68 69 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 118",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2478,
+      "data": "50 75 72 73 6B 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 119",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2499,
+      "data": "4B 6F 75 6D 6F 6B 75 74 65 6E 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 120",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2520,
+      "data": "53 72 61 6F 73 68 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 121",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2541,
+      "data": "4D 69 63 68 61 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 122",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2562,
+      "data": "41 74 61 76 61 6B 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 123",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2583,
+      "data": "4C 61 63 68 65 73 69 73 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 124",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2604,
+      "data": "53 69 65 67 66 72 69 65 64 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 125",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2625,
+      "data": "59 6F 73 68 69 74 73 75 6E 65 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 127",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2667,
+      "data": "4B 69 6B 75 72 69 2D 48 69 6D 65 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 128",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2688,
+      "data": "4B 75 73 69 20 4D 69 74 61 6D 61 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 130",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2730,
+      "data": "4D 69 74 68 72 61 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 131",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2751,
+      "data": "42 65 72 73 65 72 6B 65 72 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 132",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2772,
+      "data": "4B 69 6E 6D 61 6D 6F 6E 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 133",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2793,
+      "data": "42 61 72 6F 6E 67 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 134",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2814,
+      "data": "41 6E 61 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 135",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2835,
+      "data": "4A 69 6B 6F 6B 75 74 65 6E 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 136",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2856,
+      "data": "4B 61 6E 74 65 69 20 53 65 69 6B 75 6E 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 137",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2877,
+      "data": "52 65 64 20 52 69 64 65 72 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 138",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2898,
+      "data": "4D 61 72 69 63 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 139",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2919,
+      "data": "4C 65 67 69 6F 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 140",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2940,
+      "data": "4E 65 72 67 61 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 141",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2961,
+      "data": "4F 72 63 75 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 142",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 2982,
+      "data": "4D 6F 6C 6F 63 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 143",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3003,
+      "data": "54 72 75 6D 70 65 74 65 72 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 144",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3024,
+      "data": "4B 75 73 68 69 6E 61 64 61 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 145",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3045,
+      "data": "4C 69 6C 69 74 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 146",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3066,
+      "data": "4B 72 65 73 6E 69 6B 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 147",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3087,
+      "data": "41 73 75 72 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 149",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3129,
+      "data": "4B 75 72 61 6D 61 20 54 65 6E 67 75 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 150",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3150,
+      "data": "41 72 69 20 4D 69 74 61 6D 61 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 152",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3192,
+      "data": "55 72 74 68 6F 6E 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 153",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3213,
+      "data": "54 68 61 72 6D 61 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 154",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3234,
+      "data": "4C 75 76 61 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 155",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3255,
+      "data": "55 72 69 7A 65 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 156",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3276,
+      "data": "41 6E 7A 75 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 157",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3297,
+      "data": "4B 69 6E 2D 4B 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 158",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3318,
+      "data": "47 61 6E 65 73 68 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 159",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3339,
+      "data": "4A 61 74 61 79 75 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 160",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3360,
+      "data": "49 7A 61 6E 61 6D 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 161",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3381,
+      "data": "54 75 72 64 61 6B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 162",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3402,
+      "data": "42 6F 64 79 63 6F 6E 69 61 6E 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 163",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3423,
+      "data": "41 6E 6D 75 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 164",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3444,
+      "data": "48 61 6E 69 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 165",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3465,
+      "data": "48 65 6C 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 166",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3486,
+      "data": "41 6D 65 2D 4E 6F 2D 55 7A 75 6D 65 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 167",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3507,
+      "data": "42 65 72 73 65 72 6B 65 72 20 47 75 74 73 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 168",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3528,
+      "data": "53 65 74 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 169",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3549,
+      "data": "42 79 61 72 6B 79 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 174",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3654,
+      "data": "59 6F 6D 6F 74 73 75 2D 53 68 69 6B 6F 6D 65 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 175",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3675,
+      "data": "41 6E 64 72 61 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 176",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3696,
+      "data": "4F 6E 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 177",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3717,
+      "data": "53 61 6D 61 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 178",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3738,
+      "data": "53 75 63 63 75 62 75 73 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 179",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3759,
+      "data": "59 61 6B 73 69 6E 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 180",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3780,
+      "data": "4D 61 73 61 6B 61 64 6F 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 181",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3801,
+      "data": "4B 75 64 6C 61 6B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 182",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3822,
+      "data": "4F 64 69 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 183",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3843,
+      "data": "50 6F 77 65 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 184",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3864,
+      "data": "41 6C 72 61 75 6E 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 185",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3885,
+      "data": "4D 61 73 74 65 6D 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 186",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3906,
+      "data": "56 69 73 68 6E 75 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 187",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3927,
+      "data": "54 68 6F 74 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 188",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3948,
+      "data": "54 61 6F 77 75 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 189",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3969,
+      "data": "41 73 68 65 72 61 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 190",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 3990,
+      "data": "58 69 20 57 61 6E 67 6D 75 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 195",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4095,
+      "data": "41 70 73 61 72 61 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 196",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4116,
+      "data": "50 79 72 6F 20 4A 61 63 6B 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 197",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4137,
+      "data": "47 65 6E 62 75 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 198",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4158,
+      "data": "53 68 69 6B 69 2D 4F 75 6A 69 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 199",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4179,
+      "data": "49 78 74 61 62 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 200",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4200,
+      "data": "55 72 69 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 201",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4221,
+      "data": "56 61 73 75 6B 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 202",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4242,
+      "data": "41 62 61 64 64 6F 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 203",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4263,
+      "data": "53 6B 61 64 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 204",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4284,
+      "data": "4C 69 6C 69 74 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 205",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4305,
+      "data": "4D 6F 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 206",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4326,
+      "data": "4D 69 74 72 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 207",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4347,
+      "data": "54 69 74 61 6E 69 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 208",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4368,
+      "data": "4F 72 74 68 72 75 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 209",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4389,
+      "data": "41 6D 61 74 65 72 61 73 75 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 210",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4410,
+      "data": "57 68 69 74 65 20 52 69 64 65 72 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 215",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4515,
+      "data": "50 61 72 76 61 74 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 216",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4536,
+      "data": "59 6D 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 217",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4557,
+      "data": "42 79 61 6B 6B 6F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 218",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4578,
+      "data": "50 61 6C 65 20 52 69 64 65 72 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 219",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4599,
+      "data": "41 6E 67 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 220",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4620,
+      "data": "4C 61 69 6C 61 68 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 221",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4641,
+      "data": "43 75 20 43 68 75 6C 6C 61 69 6E 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 222",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4662,
+      "data": "46 61 66 6E 69 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 223",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4683,
+      "data": "41 72 74 65 6D 69 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 224",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4704,
+      "data": "53 68 69 76 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 225",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4725,
+      "data": "4D 61 73 61 6B 61 64 6F 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 226",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4746,
+      "data": "44 65 6D 69 75 72 67 65 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 227",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4767,
+      "data": "53 75 70 61 72 6E 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 228",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4788,
+      "data": "41 7A 72 61 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 229",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4809,
+      "data": "4D 65 67 61 6E 61 64 61 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 230",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4830,
+      "data": "52 61 70 68 61 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 235",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4935,
+      "data": "4D 6F 74 68 65 72 20 48 61 72 6C 6F 74 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 236",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4956,
+      "data": "5A 65 75 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 237",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4977,
+      "data": "47 69 72 69 6D 65 68 6B 61 6C 61 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 238",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 4998,
+      "data": "54 69 61 6D 61 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 239",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5019,
+      "data": "42 65 65 6C 7A 65 62 75 62 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 240",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5040,
+      "data": "48 72 61 65 73 76 6C 67 65 72 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 241",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5061,
+      "data": "50 65 72 73 65 70 68 6F 6E 65 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 242",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5082,
+      "data": "54 68 6F 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 243",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5103,
+      "data": "53 68 69 76 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 244",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5124,
+      "data": "4B 69 6E 67 20 46 72 6F 73 74 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 245",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5145,
+      "data": "4D 6F 74 68 6D 61 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 246",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5166,
+      "data": "4C 61 6B 73 68 6D 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 247",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5187,
+      "data": "53 6C 65 69 70 6E 69 72 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 248",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5208,
+      "data": "4D 61 79 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 249",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5229,
+      "data": "4C 75 63 69 66 75 67 65 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 250",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5250,
+      "data": "49 73 69 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 251",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5271,
+      "data": "43 65 72 62 65 72 75 73 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 252",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5292,
+      "data": "54 68 6F 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 253",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 5313,
+      "data": "4D 61 68 61 6D 61 79 75 72 69 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 304",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6384,
+      "data": "41 72 63 68 61 6E 67 65 6C 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 305",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6405,
+      "data": "48 65 63 61 74 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 306",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6426,
+      "data": "4B 61 6D 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 307",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6447,
+      "data": "4F 6E 67 79 6F 2D 4B 69 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 308",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6468,
+      "data": "4D 61 68 61 6B 61 6C 61 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 309",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6489,
+      "data": "48 61 6C 6C 65 6C 20 46 6C 61 75 72 6F 73 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 310",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6510,
+      "data": "45 6C 69 67 6F 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 311",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6531,
+      "data": "48 6F 72 6B 6F 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 312",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6552,
+      "data": "4D 61 74 61 64 6F 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 313",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6573,
+      "data": "43 68 65 72 6E 6F 62 6F 67 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 314",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6594,
+      "data": "4B 61 72 74 69 6B 65 79 61 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 315",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6615,
+      "data": "48 61 6C 6C 65 6C 20 4F 73 65 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 316",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6636,
+      "data": "45 72 6C 6B 6F 6E 69 67 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 317",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6657,
+      "data": "4B 6F 68 72 79 75 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 318",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6678,
+      "data": "59 48 56 48 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 319",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 6699,
+      "data": "53 61 74 61 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 336",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7056,
+      "data": "44 65 6D 6F 6E 65 65 2D 48 6F 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 337",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7077,
+      "data": "56 6F 75 69 76 72 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 338",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7098,
+      "data": "42 65 6C 69 61 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 339",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7119,
+      "data": "4D 65 6C 63 68 69 7A 65 64 65 6B 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 340",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7140,
+      "data": "4D 65 70 68 69 73 74 6F 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 341",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7161,
+      "data": "51 75 65 74 7A 61 6C 63 6F 61 74 6C 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 342",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7182,
+      "data": "4B 6F 67 61 20 53 61 62 75 72 6F 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 343",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7203,
+      "data": "47 65 6D 6F 72 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 344",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7224,
+      "data": "48 65 6C 6C 20 42 69 6B 65 72 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 345",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7245,
+      "data": "41 6E 61 6E 74 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 346",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7266,
+      "data": "46 72 6F 73 74 20 41 63 65 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 347",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7287,
+      "data": "48 65 74 61 63 6F 6E 63 68 69 65 72 65 73 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 348",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7308,
+      "data": "4C 6F 6B 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 349",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7329,
+      "data": "4C 61 6B 73 68 6D 69 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 350",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7350,
+      "data": "41 6C 69 63 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 351",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7371,
+      "data": "4F 75 79 61 6D 61 74 73 75 6D 69 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 352",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7392,
+      "data": "51 75 65 65 6E 20 4D 61 62 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 353",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7413,
+      "data": "4D 75 72 6D 75 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 354",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7434,
+      "data": "43 61 74 6F 62 6C 65 70 61 73 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 355",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7455,
+      "data": "4D 61 63 61 62 72 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Enemy Names, Index: 356",
+      "tbl": "MSG",
+      "section": 2,
+      "offset": 7476,
+      "data": "53 61 6E 64 61 6C 70 68 6F 6E 00 00 00 00 00 00 00 00 00 00 00"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Signature Skills+ - Door of Hades (Thanatos)</name>
+  <id>rudiger__gb.signatureskills-doorofhades(thanatos)</id>
+  <author>rudiger__gb</author>
+  <version>1.0</version>
+  <link>https://gamebanana.com/mods/454111</link>
+  <description>Requires and must be placed ABOVE the "Compendium Restoration Pack" in Aemulus Package Manager!
+
+Allows Thanatos to learn the signature skill "Door of Hades" at level 76.
+
+Deals heavy Almighty damage to all foes with medium chance of instant kill.
+
+Power: 160
+Accuracy: 90
+Effect chance: 60
+Cost: 32 SP</description>
+</Metadata>

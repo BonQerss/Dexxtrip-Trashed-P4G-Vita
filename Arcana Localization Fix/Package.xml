@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Arcana Localization Fix</name>
+  <id>arcanalocalizationfix</id>
+  <author>Dexxtrip</author>
+  <version>1.0</version>
+  <link>https://gamebanana.com/mods/421842</link>
+  <description>Corrects the mistranslated "Hunger" Arcana to "Lust" (欲望).
+
+If you are also using Texture Fixes Pack+ or Command Menu Fix, make sure this package has higher priority!</description>
+  <skippedVersion>1.01</skippedVersion>
+</Metadata>

@@ -1,0 +1,16 @@
+import("f020.bf");
+
+void velvet_room_hook()
+{
+    PLAY_SOUNDEFFECT( 700 );
+    WAIT( 5 );
+    FLD_FUNCTION_0008( 10243, 1, 0, 0, 1 );
+    WAIT( 5 );
+    FADE( FadeType.Smooth, 10 );
+    SET_FADE_COLOUR( 0, 0, 0 );
+    FADE_SYNC();
+    FLD_FUNCTION_0024();
+    VELVET_ROOM();
+    BIT_OFF( 1743 );
+    CALL_DUNGEON( 1, 1 );
+}

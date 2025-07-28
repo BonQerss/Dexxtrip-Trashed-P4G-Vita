@@ -1,0 +1,878 @@
+
+// 
+// FlowScript decompiled using Atlus Script Tools by TGE (2017-2021)
+// In the unfortunate case of any bugs, please report them back to me.
+// 
+
+// 2785, 2788, 4003
+
+// 
+// Imports
+// 
+
+import( "e860_035a.bf.msg" );
+
+// 
+// Procedure declarations
+// 
+
+// Procedure Index: 0
+void ``860_034A_DOKUSYO_1``()
+{
+    int var2;
+    OPEN_MSG_WIN();
+    var2 = GET_CNT( 88 );
+    EVT_FUNCTION_002E( var2 );
+    
+    if ( GET_CNT( 87 ) == 0 )
+    {
+        MSG( CHECK_SOFA_5 );
+    }
+    else 
+    {
+        MSG( CHECK_SOFA_6 );
+    }
+
+    
+    if ( var2 == 1 )
+    {
+        MSG( BOOK_01 );
+    }
+    else if ( var2 == 2 )
+    {
+        MSG( BOOK_02 );
+    }
+    else if ( var2 == 3 )
+    {
+        MSG( BOOK_03 );
+    }
+    else if ( var2 == 4 )
+    {
+        MSG( BOOK_04 );
+    }
+    else if ( var2 == 5 )
+    {
+        MSG( BOOK_05 );
+    }
+    else if ( var2 == 6 )
+    {
+        MSG( BOOK_06 );
+    }
+    else if ( var2 == 7 )
+    {
+        MSG( BOOK_07 );
+    }
+    else if ( var2 == 8 )
+    {
+        MSG( BOOK_08 );
+    }
+    else if ( var2 == 9 )
+    {
+        MSG( BOOK_09 );
+    }
+    else if ( var2 == 10 )
+    {
+        MSG( BOOK_10 );
+    }
+    else if ( var2 == 11 )
+    {
+        MSG( BOOK_11 );
+    }
+    else if ( var2 == 12 )
+    {
+        MSG( BOOK_12 );
+    }
+    else if ( var2 == 13 )
+    {
+        MSG( BOOK_13 );
+    }
+    else if ( var2 == 14 )
+    {
+        MSG( BOOK_14 );
+    }
+    else if ( var2 == 15 )
+    {
+        MSG( BOOK_15 );
+    }
+    else if ( var2 == 0x10 )
+    {
+        MSG( BOOK_16 );
+    }
+    else if ( var2 == 17 )
+    {
+        MSG( BOOK_17 );
+    }
+    else if ( var2 == 18 )
+    {
+        MSG( BOOK_18 );
+    }
+    else if ( var2 == 19 )
+    {
+        MSG( BOOK_19 );
+    }
+    else if ( var2 == 20 )
+    {
+        MSG( BOOK_20 );
+    }
+    else if ( var2 == 21 )
+    {
+        MSG( BOOK_21 );
+    }
+    else if ( var2 == 22 )
+    {
+        MSG( BOOK_22 );
+    }
+    else if ( var2 == 23 )
+    {
+        MSG( BOOK_23 );
+    }
+    else if ( var2 == 24 )
+    {
+        MSG( BOOK_24 );
+    }
+    else if ( var2 == 25 )
+    {
+        MSG( BOOK_25 );
+    }
+    else if ( var2 == 26 )
+    {
+        MSG( BOOK_30 );
+    }
+    else if ( var2 == 27 )
+    {
+        MSG( BOOK_31 );
+    }
+    else if ( var2 == 28 )
+    {
+        MSG( BOOK_32 );
+    }
+    else if ( var2 == 29 )
+    {
+        MSG( BOOK_33 );
+    }
+    else if ( var2 == 30 )
+    {
+        MSG( BOOK_34 );
+    }
+    else if ( var2 == 31 )
+    {
+        MSG( BOOK_35 );
+    }
+    else if ( var2 == 0x20 )
+    {
+        MSG( BOOK_36 );
+    }
+
+    CLOSE_MSG_WIN();
+    
+    if ( ( ( GET_WEATHER() == 1 ) || ( GET_WEATHER() == 7 ) ) || ( GET_WEATHER() == 3 ) )
+    {
+        BIT_ON( 2508 );
+    }
+    else 
+    {
+        BIT_OFF( 2508 );
+    }
+
+}
+
+
+// Procedure Index: 1
+void ``860_034A__PARAUP1``()
+{
+    int var4;
+    var4 = GET_CNT( 88 );
+    GET_SOCIAL_STATS( EVT_FUNCTION_0030( var4, 1 ), EVT_FUNCTION_0030( var4, 4 ) );
+}
+
+
+// Procedure Index: 2
+void ``860_034A_PARAUP2``()
+{
+    int var5;
+    var5 = GET_CNT( 88 );
+    GET_SOCIAL_STATS( EVT_FUNCTION_0030( var5, 2 ), EVT_FUNCTION_0030( var5, 5 ) );
+}
+
+
+// Procedure Index: 3
+void ``860_034A_PARAUP1_RAIN``()
+{
+    int var6;
+    var6 = GET_CNT( 88 );
+    OPEN_MSG_WIN();
+    
+    if ( GET_WEATHER() == 7 )
+    {
+        MSG( KAMINARI_BONUS );
+    }
+    else if ( GET_WEATHER() == 3 )
+    {
+        MSG( YUKI_BONUS );
+    }
+    else 
+    {
+        MSG( RAIN_BONUS );
+    }
+
+    CLOSE_MSG_WIN();
+    NS_PLAY_EXPRESSION( 0, Expression.GreenNote );
+    GET_SOCIAL_STATS( EVT_FUNCTION_0030( var6, 1 ), 5 );
+}
+
+
+// Procedure Index: 4
+void ``860_034A_DOKUSYO_2``()
+{
+    int localVariable9 = GET_CNT(88);
+    EVT_FUNCTION_002E(localVariable9);
+
+    if (BIT_CHK(0 + 0x0400 + 1483) == 1 && BIT_CHK(0 + 0x0400 + 919) == 1)
+    {
+        SET_MSG_VAR(10, 0x0400 + 119, 5);
+        OPEN_MSG_WIN();
+        MSG(BOOK_READ28_BONUS);
+        CLOSE_MSG_WIN();
+        NS_PLAY_EXPRESSION(0, 6);
+        GET_SOCIAL_STATS(EVT_FUNCTION_0030(localVariable9, 1), EVT_FUNCTION_0030(localVariable9, 3));
+    }
+
+    OPEN_MSG_WIN();
+    int localVariable10 = 0;
+    int localVariable11 = 0;
+
+    // Makes both 1 if hyperspeed reading is read and there isn't only one page to be read
+    if (BIT_CHK(0 + 0x0400 + 927) == 1 && BIT_CHK(123456789) == 0)
+    {
+        localVariable10 = 1;
+        localVariable11 = 1;
+        SET_MSG_VAR(10, 0x0400 + 127, 5);
+    }
+    else
+    {
+        localVariable10 = 1;
+    }
+
+    int localVariable7 = 0;
+
+    // Reads one page and returns how many are left to read
+    if (EVT_FUNCTION_002D(localVariable9, localVariable10) != 0)
+    {
+        // No more books will be able to be read so set the bit off
+        BIT_OFF(123456789);
+
+        // If you have hyperspeed reading say so and try reading another bit to see if that finishes the book
+        if (localVariable11 == 1)
+        {
+            MSG(BOOK_READ36_BONUS);
+            if (EVT_FUNCTION_002D(localVariable9, localVariable11) != 0)
+            {
+                MSG(CHECK_SOFA_9);
+                CLOSE_MSG_WIN();
+                return;
+            }
+            else
+            {
+                // Copy of the stuff that happens when a book is finished below (I know it's gross and could be done much nicer but too bad)
+                MSG(CHECK_SOFA_10);
+
+                if (EVT_FUNCTION_0030(localVariable9, 4) > 0)
+                {
+                    CLOSE_MSG_WIN();
+                    NS_PLAY_EXPRESSION(0, 6);
+                    GET_SOCIAL_STATS(EVT_FUNCTION_0030(localVariable9, 1), EVT_FUNCTION_0030(localVariable9, 4));
+                    OPEN_MSG_WIN();
+                }
+
+                if (EVT_FUNCTION_0030(localVariable9, 5) > 0)
+                {
+                    NS_PLAY_EXPRESSION(0, 6);
+                    GET_SOCIAL_STATS(EVT_FUNCTION_0030(localVariable9, 2), EVT_FUNCTION_0030(localVariable9, 5));
+                }
+
+                if (localVariable9 == 21)
+                {
+                    MSG(BOOK_21_END);
+                }
+                else if (localVariable9 == 22)
+                {
+                    MSG(BOOK_22_END);
+                }
+                else if (localVariable9 == 23)
+                {
+                    MSG(BOOK_23_END);
+                }
+                else if (localVariable9 == 24)
+                {
+                    MSG(BOOK_24_END);
+                }
+                else if (localVariable9 == 25)
+                {
+                    MSG(BOOK_25_END);
+                }
+                else if (localVariable9 == 26)
+                {
+                    MSG(BOOK_30_END);
+                }
+                else if (localVariable9 == 27)
+                {
+                    MSG(BOOK_31_END);
+                }
+                else if (localVariable9 == 28)
+                {
+                    MSG(BOOK_32_END_000);
+                    CLOSE_MSG_WIN();
+                    BIT_ON(0 + 0x0400 + 1659);
+                    FUNCTION_008C(61, 22);
+                    OPEN_MSG_WIN();
+                    MSG(BOOK_32_END_010);
+                }
+                else if (localVariable9 == 29)
+                {
+                    MSG(BOOK_33_END);
+                }
+                else if (localVariable9 == 30)
+                {
+                    MSG(BOOK_34_END);
+                }
+                else if (localVariable9 == 31)
+                {
+                    MSG(BOOK_35_END_000);
+
+                    if (CHECK_TIME_SPAN(1, 1, 2, 29) == 1)
+                    {
+                        MSG(BOOK_35_END_010_WINTER);
+                    }
+                    else
+                    {
+                        CLOSE_MSG_WIN();
+                        HELP_MSG(69);
+                        OPEN_MSG_WIN();
+                        MSG(BOOK_35_END_010);
+                    }
+                }
+                else if (localVariable9 == 0x20)
+                {
+                    MSG(BOOK_36_END_000);
+                    CLOSE_MSG_WIN();
+                    HELP_MSG(74);
+                    OPEN_MSG_WIN();
+                    MSG(BOOK_36_END_010);
+                }
+
+                localVariable7 = EVT_FUNCTION_0030(localVariable9, 3);
+
+                if (EVT_FUNCTION_002F(localVariable7, 3, 0) == 0 && EVT_FUNCTION_002F(localVariable7, 1, 0) == 0)
+                {
+
+                    if (localVariable7 == 1)
+                    {
+                        MSG(CHECK_SOFA_11);
+                    }
+                    else if (localVariable7 == 2)
+                    {
+                        MSG(CHECK_SOFA_12);
+                    }
+                    else if (localVariable7 == 3)
+                    {
+                        MSG(CHECK_SOFA_13);
+                    }
+                    else if (localVariable7 == 4)
+                    {
+                        MSG(CHECK_SOFA_14);
+                    }
+                    else if (localVariable7 == 5)
+                    {
+                        MSG(CHECK_SOFA_15);
+                    }
+
+                    if (EVT_FUNCTION_002F(0, 3, 0) == 0 && EVT_FUNCTION_002F(0, 1, 0) == 0)
+                    {
+                        MSG(ALL_BOOK_READ);
+                        int localVariable8 = GET_ITEM(0x0200 + 246);
+                        SET_ITEM(0x0200 + 246, localVariable8 + 1);
+                        FUNCTION_0096(29, 0);
+                    }
+                }
+
+                CLOSE_MSG_WIN();
+                SET_CNT(87, 0);
+                SET_CNT(88, 0);
+                return;
+            }
+        }
+        else
+        {
+            MSG(CHECK_SOFA_9);
+            CLOSE_MSG_WIN();
+            return;
+        }
+    }
+    else
+    // Comes here if the book is finished with a page to spare
+    {
+        MSG(CHECK_SOFA_10);
+
+        if (EVT_FUNCTION_0030(localVariable9, 4) > 0)
+        {
+            CLOSE_MSG_WIN();
+            NS_PLAY_EXPRESSION(0, 6);
+            GET_SOCIAL_STATS(EVT_FUNCTION_0030(localVariable9, 1), EVT_FUNCTION_0030(localVariable9, 4));
+            OPEN_MSG_WIN();
+        }
+
+        if (EVT_FUNCTION_0030(localVariable9, 5) > 0)
+        {
+            NS_PLAY_EXPRESSION(0, 6);
+            GET_SOCIAL_STATS(EVT_FUNCTION_0030(localVariable9, 2), EVT_FUNCTION_0030(localVariable9, 5));
+        }
+
+        if (localVariable9 == 21)
+        {
+            MSG(BOOK_21_END);
+        }
+        else if (localVariable9 == 22)
+        {
+            MSG(BOOK_22_END);
+        }
+        else if (localVariable9 == 23)
+        {
+            MSG(BOOK_23_END);
+        }
+        else if (localVariable9 == 24)
+        {
+            MSG(BOOK_24_END);
+        }
+        else if (localVariable9 == 25)
+        {
+            MSG(BOOK_25_END);
+        }
+        else if (localVariable9 == 26)
+        {
+            MSG(BOOK_30_END);
+        }
+        else if (localVariable9 == 27)
+        {
+            MSG(BOOK_31_END);
+        }
+        else if (localVariable9 == 28)
+        {
+            MSG(BOOK_32_END_000);
+            CLOSE_MSG_WIN();
+            BIT_ON(0 + 0x0400 + 1659);
+            FUNCTION_008C(61, 22);
+            OPEN_MSG_WIN();
+            MSG(BOOK_32_END_010);
+        }
+        else if (localVariable9 == 29)
+        {
+            MSG(BOOK_33_END);
+        }
+        else if (localVariable9 == 30)
+        {
+            MSG(BOOK_34_END);
+        }
+        else if (localVariable9 == 31)
+        {
+            MSG(BOOK_35_END_000);
+
+            if (CHECK_TIME_SPAN(1, 1, 2, 29) == 1)
+            {
+                MSG(BOOK_35_END_010_WINTER);
+            }
+            else
+            {
+                CLOSE_MSG_WIN();
+                HELP_MSG(69);
+                OPEN_MSG_WIN();
+                MSG(BOOK_35_END_010);
+            }
+        }
+        else if (localVariable9 == 0x20)
+        {
+            MSG(BOOK_36_END_000);
+            CLOSE_MSG_WIN();
+            HELP_MSG(74);
+            OPEN_MSG_WIN();
+            MSG(BOOK_36_END_010);
+        }
+
+        localVariable7 = EVT_FUNCTION_0030(localVariable9, 3);
+
+        if (EVT_FUNCTION_002F(localVariable7, 3, 0) == 0 && EVT_FUNCTION_002F(localVariable7, 1, 0) == 0)
+        {
+
+            if (localVariable7 == 1)
+            {
+                MSG(CHECK_SOFA_11);
+            }
+            else if (localVariable7 == 2)
+            {
+                MSG(CHECK_SOFA_12);
+            }
+            else if (localVariable7 == 3)
+            {
+                MSG(CHECK_SOFA_13);
+            }
+            else if (localVariable7 == 4)
+            {
+                MSG(CHECK_SOFA_14);
+            }
+            else if (localVariable7 == 5)
+            {
+                MSG(CHECK_SOFA_15);
+            }
+
+            if (EVT_FUNCTION_002F(0, 3, 0) == 0 && EVT_FUNCTION_002F(0, 1, 0) == 0)
+            {
+                // No more books to read so turn the bit off
+                BIT_OFF(123456789);
+                MSG(ALL_BOOK_READ);
+                int localVariable8 = GET_ITEM(0x0200 + 246);
+                SET_ITEM(0x0200 + 246, localVariable8 + 1);
+                FUNCTION_0096(29, 0);
+            }
+        }
+
+        // Check if another book can be read and set the bit respectively
+        if (localVariable11 == 1)
+        {
+            // If you would read more but there are no more books to read
+            if (EVT_FUNCTION_002F(0, 1, 0) == 0)
+            {
+                BIT_OFF(123456789);
+                MSG(CANT_READ_MORE);
+            }
+            else
+            {
+                BIT_ON(123456789);
+                MSG(READ_MORE);
+            }
+        }
+        else
+        {
+            BIT_OFF(123456789);
+        }
+
+        CLOSE_MSG_WIN();
+        SET_CNT(87, 0);
+        SET_CNT(88, 0);
+        return;
+    }
+}
+
+// Procedure Index: 5
+void ``860_034A_DOKUSYO``()
+{
+    int var14;
+    int var13;
+    int var16;
+    int var17;
+    OPEN_MSG_WIN();
+    var14 = GET_CNT( 88 );
+    EVT_FUNCTION_002E( var14 );
+    
+    if ( GET_CNT( 87 ) == 0 )
+    {
+        MSG( CHECK_SOFA_5 );
+    }
+    else 
+    {
+        MSG( CHECK_SOFA_6 );
+    }
+
+    var13 = SEL( CHECK_READ_Q );
+    
+    if ( var13 == 1 )
+    {
+        BIT_OFF( 2509 );
+        MSG( CHECK_SOFA_7 );
+        
+        if ( var14 == 1 )
+        {
+            MSG( BOOK_01 );
+        }
+        else if ( var14 == 2 )
+        {
+            MSG( BOOK_02 );
+        }
+        else if ( var14 == 3 )
+        {
+            MSG( BOOK_03 );
+        }
+        else if ( var14 == 4 )
+        {
+            MSG( BOOK_04 );
+        }
+        else if ( var14 == 5 )
+        {
+            MSG( BOOK_05 );
+        }
+        else if ( var14 == 6 )
+        {
+            MSG( BOOK_06 );
+        }
+        else if ( var14 == 7 )
+        {
+            MSG( BOOK_07 );
+        }
+        else if ( var14 == 8 )
+        {
+            MSG( BOOK_08 );
+        }
+        else if ( var14 == 9 )
+        {
+            MSG( BOOK_09 );
+        }
+        else if ( var14 == 10 )
+        {
+            MSG( BOOK_10 );
+        }
+        else if ( var14 == 11 )
+        {
+            MSG( BOOK_11 );
+        }
+        else if ( var14 == 12 )
+        {
+            MSG( BOOK_12 );
+        }
+        else if ( var14 == 13 )
+        {
+            MSG( BOOK_13 );
+        }
+        else if ( var14 == 14 )
+        {
+            MSG( BOOK_14 );
+        }
+        else if ( var14 == 15 )
+        {
+            MSG( BOOK_15 );
+        }
+        else if ( var14 == 0x10 )
+        {
+            MSG( BOOK_16 );
+        }
+        else if ( var14 == 17 )
+        {
+            MSG( BOOK_17 );
+        }
+        else if ( var14 == 18 )
+        {
+            MSG( BOOK_18 );
+        }
+        else if ( var14 == 19 )
+        {
+            MSG( BOOK_19 );
+        }
+        else if ( var14 == 20 )
+        {
+            MSG( BOOK_20 );
+        }
+
+        CLOSE_MSG_WIN();
+        GET_SOCIAL_STATS( EVT_FUNCTION_0030( var14, 1 ), EVT_FUNCTION_0030( var14, 4 ) );
+        
+        if ( var14 >= 11 )
+        {
+            BIT_ON( 2510 );
+            GET_SOCIAL_STATS( EVT_FUNCTION_0030( var14, 2 ), EVT_FUNCTION_0030( var14, 5 ) );
+        }
+
+        
+        if ( EVT_FUNCTION_002D( var14, 1 ) != 0 )
+        {
+            OPEN_MSG_WIN();
+            MSG( CHECK_SOFA_9 );
+            CLOSE_MSG_WIN();
+            return;
+        }
+        else 
+        {
+            OPEN_MSG_WIN();
+            MSG( CHECK_SOFA_10 );
+            var16 = EVT_FUNCTION_0030( var14, 3 );
+            
+            if ( ( EVT_FUNCTION_002F( var16, 3, 0 ) == 0 ) && ( EVT_FUNCTION_002F( var16, 1, 0 ) == 0 ) )
+            {
+                
+                if ( var16 == 1 )
+                {
+                    MSG( CHECK_SOFA_11 );
+                }
+                else if ( var16 == 2 )
+                {
+                    MSG( CHECK_SOFA_12 );
+                }
+                else if ( var16 == 3 )
+                {
+                    MSG( CHECK_SOFA_13 );
+                }
+                else if ( var16 == 4 )
+                {
+                    MSG( CHECK_SOFA_14 );
+                }
+
+                
+                if ( ( EVT_FUNCTION_002F( 0, 3, 0 ) == 0 ) && ( EVT_FUNCTION_002F( 0, 1, 0 ) == 0 ) )
+                {
+                    MSG( ALL_BOOK_READ );
+                }
+
+            }
+
+            CLOSE_MSG_WIN();
+            SET_CNT( 87, 0 );
+            SET_CNT( 88, 0 );
+            return;
+        }
+
+    }
+    else 
+    {
+        BIT_ON( 2509 );
+        MSG( CHECK_SOFA_8 );
+        
+        if ( var14 == 1 )
+        {
+            MSG( BOOK_01 );
+        }
+        else if ( var14 == 2 )
+        {
+            MSG( BOOK_02 );
+        }
+        else if ( var14 == 3 )
+        {
+            MSG( BOOK_03 );
+        }
+        else if ( var14 == 4 )
+        {
+            MSG( BOOK_04 );
+        }
+        else if ( var14 == 5 )
+        {
+            MSG( BOOK_05 );
+        }
+        else if ( var14 == 6 )
+        {
+            MSG( BOOK_06 );
+        }
+        else if ( var14 == 7 )
+        {
+            MSG( BOOK_07 );
+        }
+        else if ( var14 == 8 )
+        {
+            MSG( BOOK_08 );
+        }
+        else if ( var14 == 9 )
+        {
+            MSG( BOOK_09 );
+        }
+        else if ( var14 == 10 )
+        {
+            MSG( BOOK_10 );
+        }
+        else if ( var14 == 11 )
+        {
+            MSG( BOOK_11 );
+        }
+        else if ( var14 == 12 )
+        {
+            MSG( BOOK_12 );
+        }
+        else if ( var14 == 13 )
+        {
+            MSG( BOOK_13 );
+        }
+        else if ( var14 == 14 )
+        {
+            MSG( BOOK_14 );
+        }
+        else if ( var14 == 15 )
+        {
+            MSG( BOOK_15 );
+        }
+        else if ( var14 == 0x10 )
+        {
+            MSG( BOOK_16 );
+        }
+        else if ( var14 == 17 )
+        {
+            MSG( BOOK_17 );
+        }
+        else if ( var14 == 18 )
+        {
+            MSG( BOOK_18 );
+        }
+        else if ( var14 == 19 )
+        {
+            MSG( BOOK_19 );
+        }
+        else if ( var14 == 20 )
+        {
+            MSG( BOOK_20 );
+        }
+
+        CLOSE_MSG_WIN();
+        GET_SOCIAL_STATS( EVT_FUNCTION_0030( var14, 1 ), EVT_FUNCTION_0030( var14, 4 ) );
+        
+        if ( var14 >= 11 )
+        {
+            GET_SOCIAL_STATS( EVT_FUNCTION_0030( var14, 2 ), EVT_FUNCTION_0030( var14, 5 ) );
+        }
+
+        
+        if ( EVT_FUNCTION_002D( var14, 2 ) != 0 )
+        {
+            OPEN_MSG_WIN();
+            MSG( CHECK_SOFA_9 );
+            CLOSE_MSG_WIN();
+            return;
+        }
+        else 
+        {
+            OPEN_MSG_WIN();
+            MSG( CHECK_SOFA_10 );
+            var16 = EVT_FUNCTION_0030( var14, 3 );
+            
+            if ( ( EVT_FUNCTION_002F( var16, 3, 0 ) == 0 ) && ( EVT_FUNCTION_002F( var16, 1, 0 ) == 0 ) )
+            {
+                
+                if ( var16 == 1 )
+                {
+                    MSG( CHECK_SOFA_11 );
+                }
+                else if ( var16 == 2 )
+                {
+                    MSG( CHECK_SOFA_12 );
+                }
+                else if ( var16 == 3 )
+                {
+                    MSG( CHECK_SOFA_13 );
+                }
+                else if ( var16 == 4 )
+                {
+                    MSG( CHECK_SOFA_14 );
+                }
+
+                
+                if ( ( EVT_FUNCTION_002F( 0, 3, 0 ) == 0 ) && ( EVT_FUNCTION_002F( 0, 1, 0 ) == 0 ) )
+                {
+                    MSG( ALL_BOOK_READ );
+                    var17 = GET_ITEM( ( 0x0200 + 246 ) );
+                    SET_ITEM( ( 0x0200 + 246 ), ( var17 + 1 ) );
+                }
+
+            }
+
+            CLOSE_MSG_WIN();
+            SET_CNT( 87, 0 );
+            SET_CNT( 88, 0 );
+            BIT_OFF( 2510 );
+            return;
+        }
+
+    }
+
+}
+

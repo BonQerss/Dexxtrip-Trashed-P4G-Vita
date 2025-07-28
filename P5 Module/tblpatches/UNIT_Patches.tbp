@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Persona Affinities, Index: 10",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 320,
+      "data": "00 10 00 10 00 10 00 10 00 10 00 10 00 01 00 01 00 01 00 01 00 01 00 01 00 01 00 01 00 01 00 01"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 31",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 992,
+      "data": "14 00 14 00 14 00 00 01 00 08 14 00 0A 00 0A 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+	{
+      "comment": "Segment: Persona Affinities, Index: 32",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 1024,
+      "data": "14 00 00 10 00 10 00 08 14 00 14 00 00 10 0A 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 39",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 1248,
+      "data": "00 10 00 08 00 01 00 01 14 00 14 00 00 10 0A 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 43",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 1376,
+      "data": "00 01 14 00 14 00 14 00 14 00 14 00 00 01 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+	{
+      "comment": "Segment: Persona Affinities, Index: 88",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 2816,
+      "data": "00 10 00 01 00 01 00 08 14 00 14 00 00 01 0A 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+	{
+      "comment": "Segment: Persona Affinities, Index: 136",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 4352,
+      "data": "14 00 00 10 00 10 00 10 00 10 14 00 00 01 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 137",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 4384,
+      "data": "14 00 00 08 14 00 00 10 00 02 14 00 0A 00 00 10 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 146",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 4672,
+      "data": "14 00 14 00 14 00 00 08 00 10 14 00 0A 00 0A 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+	{
+      "comment": "Segment: Persona Affinities, Index: 150",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 4800,
+      "data": "00 10 14 00 14 00 00 04 00 08 14 00 00 01 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 10"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 160",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 5120,
+      "data": "14 00 14 00 14 00 00 10 00 10 14 00 00 02 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 161",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 5152,
+      "data": "00 01 14 00 14 00 14 00 14 00 14 00 00 02 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 186",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 5952,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 00 01 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 188",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 6016,
+      "data": "14 00 00 08 00 01 14 00 00 10 14 00 0A 00 0A 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 222",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 7104,
+      "data": "00 10 00 10 00 10 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 227",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 7264,
+      "data": "14 00 14 00 00 02 00 02 14 00 14 00 00 08 00 02 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 246",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 7872,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 00 01 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 251",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 8032,
+      "data": "00 01 14 00 14 00 14 00 00 08 14 00 00 01 0A 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 252",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 8064,
+      "data": "14 00 00 08 14 00 14 00 14 00 14 00 0A 00 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Signature Skills+ - Shining Arrows (Kaguya)</name>
+  <id>rudiger__gb.signatureskills-shiningarrows(kaguya)</id>
+  <author>rudiger__gb</author>
+  <version>1.0</version>
+  <link>https://gamebanana.com/mods/454111</link>
+  <description>Allows Kaguya to learn the signature skill "Shining Arrows" at level 85.
+
+Light: deals light damage to all foes 4x to 8x.
+
+Cost: 22 SP
+Accuracy: 90
+Base Damage: 15</description>
+</Metadata>

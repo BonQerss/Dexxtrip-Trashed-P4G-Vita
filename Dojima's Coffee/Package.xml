@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Dojima's Coffee</name>
+  <id>tekka.dojimascoffee</id>
+  <author>Tekka</author>
+  <version>1.4</version>
+  <link>https://gamebanana.com/gamefiles/13493</link>
+  <description>This mod backports the QoL mechanic in P5 that let's you remove your exhaustion after having a back massage from Kawakami.
+
+Since there's no maids in P4, I instead chose to use Dojima's social link to utilize this feature.  It makes sense since he gives you a coffee mug and coffee wakes you up.
+
+This feature will only be unlocked after obtaining the Coffee Mug key item after reaching the max social link level with Dojima.  Interact with the kitchen after returning from the TV World in order to use.  Special days that normally don't allow you to do stuff at night are prohibited from using coffee.</description>
+</Metadata>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Custom Sub Menu (Vita)</name>
+  <id>tekka.customsubmenuvita</id>
+  <author>AnimatedSwine37, ShrineFox, Sierra, Rudiger, Tekka, Tupelov</author>
+  <version>1.25</version>
+  <link>https://github.com/Amicitia/P4G-Vita-Custom-Sub-Menu</link>
+  <description>Sub Menu with configurable extensions.
+
+Features:
+- Mobile Calendar by ShrineFox and Tekka (Open Calendar from quick travel menu
+- QuickTravelPlus by ShrineFox and Tekka (Adds more options in Quick Travel menu)
+- VRGameOverSkip by Tekka (Skips velvet room scene after game over)
+- DungeonOptions by Tekka (Fast travel to any dungeon floor after deadline, use goho-ms and manage party)
+- FindAFriend by AnimatedSwine37 (Teleport to wherever an available s. link is)
+- SaveAnywhere by Tupelov (Save in all fields and dungeon floors)
+- Reap-balanced Encounters by Tekka (Guaranteed reaper encounter every 22 chests)
+- Dungeon Text Fixes by Rudiger (Corrects a couple of minor annoyances with notification text in dungeons)
+- Default Direct Commands by Tekka (Sets all party member tactics to Direct Commands automatically)</description>
+</Metadata>

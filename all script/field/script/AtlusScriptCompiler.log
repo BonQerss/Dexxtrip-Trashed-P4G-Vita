@@ -1,0 +1,20 @@
+2/12/2023 12:13:17 AM  Trace: Arguments: C:\Users\drewk\Downloads\AemulusPackageManagerv6.4.0\AemulusPackageManagerv6.4.0\Packages\Persona 4 Golden (Vita)\Treasure Box Random Money or Item (2)\field\script\dungeon.bf
+2/12/2023 12:13:17 AM  Info: Output file path is set to C:\Users\drewk\Downloads\AemulusPackageManagerv6.4.0\AemulusPackageManagerv6.4.0\Packages\Persona 4 Golden (Vita)\Treasure Box Random Money or Item (2)\field\script\dungeon.bf.flow
+2/12/2023 12:13:17 AM  Info: Loading binary FlowScript file...
+2/12/2023 12:13:17 AM  Info: Decompiling FlowScript...
+2/12/2023 12:13:17 AM  Info: FlowScript output path set to C:\Users\drewk\Downloads\AemulusPackageManagerv6.4.0\AemulusPackageManagerv6.4.0\Packages\Persona 4 Golden (Vita)\Treasure Box Random Money or Item (2)\field\script\dungeon.bf.flow
+2/12/2023 12:13:17 AM  Info: MessageScript output path set to C:\Users\drewk\Downloads\AemulusPackageManagerv6.4.0\AemulusPackageManagerv6.4.0\Packages\Persona 4 Golden (Vita)\Treasure Box Random Money or Item (2)\field\script\dungeon.bf.msg
+2/12/2023 12:13:17 AM  Info: Writing decompiled MessageScript to file
+2/12/2023 12:13:17 AM  Info: Start decompiling FlowScript
+2/12/2023 12:13:17 AM  Info: Start evaluating FlowScript
+2/12/2023 12:13:17 AM  Info: Registering functions
+2/12/2023 12:13:17 AM  Error: Unhandled exception thrown
+2/12/2023 12:13:17 AM  Error: Exception info:
+2/12/2023 12:13:17 AM  Error: Object reference not set to an instance of an object.
+2/12/2023 12:13:17 AM  Error: Stacktrace:
+2/12/2023 12:13:17 AM  Error:    at AtlusScriptLibrary.FlowScriptLanguage.Decompiler.Evaluator.TryRegisterUsedFunctions() in C:\projects\atlusscripttools\Source\AtlusScriptLibrary\FlowScriptLanguage\Decompiler\Evaluator.cs:line 340
+   at AtlusScriptLibrary.FlowScriptLanguage.Decompiler.Evaluator.TryEvaluateScript(FlowScript flowScript, EvaluationResult& result) in C:\projects\atlusscripttools\Source\AtlusScriptLibrary\FlowScriptLanguage\Decompiler\Evaluator.cs:line 86
+   at AtlusScriptLibrary.FlowScriptLanguage.Decompiler.FlowScriptDecompiler.TryEvaluateScript(FlowScript flowScript, EvaluationResult& evaluationResult) in C:\projects\atlusscripttools\Source\AtlusScriptLibrary\FlowScriptLanguage\Decompiler\FlowScriptDecompiler.cs:line 158
+   at AtlusScriptLibrary.FlowScriptLanguage.Decompiler.FlowScriptDecompiler.TryDecompileScript(FlowScript flowScript, CompilationUnit& compilationUnit) in C:\projects\atlusscripttools\Source\AtlusScriptLibrary\FlowScriptLanguage\Decompiler\FlowScriptDecompiler.cs:line 136
+   at AtlusScriptLibrary.FlowScriptLanguage.Decompiler.FlowScriptDecompiler.TryDecompile(FlowScript flowScript, CompilationUnit& compilationUnit) in C:\projects\atlusscripttools\Source\AtlusScriptLibrary\FlowScriptLanguage\Decompiler\FlowScriptDecompiler.cs:line 75
+   at AtlusScriptLibrary.FlowScriptLanguage.Decompiler.FlowScriptDecompiler.TryDecompile(FlowScript flowScript, String filepath) in C:\projects\atlusscripttools\Source\AtlusScriptLibrary\FlowScriptLanguage\Decompiler\FlowScriptDecompiler.cs:line 10

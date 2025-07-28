@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Cooking Cheat Sheet</name>
+  <id>gellyfish.cookingcheatsheet</id>
+  <author>Gellyfish</author>
+  <version>1.1</version>
+  <link>https://gamebanana.com/guis/36254</link>
+  <description>Puts an asterisk on the correct choice when cooking. This new version has an asterisk instead of an arrow.</description>
+</Metadata>

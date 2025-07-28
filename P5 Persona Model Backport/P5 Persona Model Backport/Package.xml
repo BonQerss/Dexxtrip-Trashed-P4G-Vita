@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>P5 Persona Model Backport</name>
+  <id>p5personamodelbackport</id>
+  <author>Dexxtrip</author>
+  <version>01.00</version>
+  <link />
+  <description>Backport Persona 5 models to Persona 4 Golden on the Vita</description>
+  <skippedVersion>all</skippedVersion>
+</Metadata>

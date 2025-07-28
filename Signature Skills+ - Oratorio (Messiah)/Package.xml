@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Signature Skills+ - Oratorio (Messiah)</name>
+  <id>rudiger__gb.signatureskills-oratorio(messiah)</id>
+  <author>rudiger__gb</author>
+  <version>1.0</version>
+  <link>https://gamebanana.com/mods/454111</link>
+  <description>Requires and must be placed ABOVE the "Compendium Restoration Pack" in Aemulus Package Manager!
+
+Allows Messiah to learn the signature skill "Oratorio" at level 81 (innate).
+
+Fully restore party's HP and negate all debuffs. (Mediarahan + Dekunda).
+
+Cost: 38 SP</description>
+</Metadata>

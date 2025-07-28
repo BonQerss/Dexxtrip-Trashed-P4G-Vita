@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Elements, Index: 435",
+      "tbl": "SKILL",
+      "section": 0,
+      "offset": 870,
+      "data": "05 00"
+    },
+    {
+      "comment": "Segment: Skills, Index: 435",
+      "tbl": "SKILL",
+      "section": 1,
+      "offset": 19140,
+      "data": "00 00 00 00 02 02 02 00 34 00 00 00 01 02 00 00 00 00 5F 03 03 01 B4 00 00 00 00 00 00 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    }
+  ]
+}

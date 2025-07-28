@@ -1,0 +1,192 @@
+import("f008.bf");
+import("f008.msg");
+
+void jihan_hook()
+{
+    int var104;
+    int var102;
+    int var101;
+    int var98;
+    int var99;
+    int var100;
+    int neoId;
+    int maidId;
+    int natuId;
+    int neoInv;
+    int maidInv;
+    int natuInv;
+    int drainCost2;
+    int limiter;
+    int purchasedStocks;
+
+        var104 = -1;
+        var102 = GET_CNT( 107 );
+        limiter = var102;
+        OPEN_MSG_WIN();
+
+        if ( var102 == 15 )
+        {
+            PLAY_SOUNDEFFECT( 133 );
+            MSG( JIHAN_URIKIRE_RE );
+        }
+        else
+        {
+            var101 = ADD_YEN( 0 );
+            SET_MSG_VAR( 20, var101, 0 );
+            MSG( JIHAN_LOT );
+            SEL_CHK_PAD( 14, 4 );
+            var98 = SEL( SEL_JIHAN_HOOK );
+
+            if ( var98 == 0 )
+            {
+                var99 = ( 768 + 85 );
+            }
+            else if ( var98 == 1 )
+            {
+                var99 = ( 768 + 86 );
+            }
+            else if ( var98 == 2 )
+            {
+                var99 = ( 768 + 87 );
+            }
+            else if ( var98 == 3 )
+            {
+              neoId = ( 768 + 85 );
+              maidId = ( 768 + 86 );
+              natuId = ( 768 + 87 );
+              neoInv = GET_ITEM( neoId );
+              maidInv = GET_ITEM( maidId );
+              natuInv = GET_ITEM( natuId );
+              drainCost2 = ( ( 15 - var102 ) * 120 );
+
+              if ( var101 < drainCost2 )
+              {
+                  MSG( JIHAN_NO );
+                  var99 = -1;
+              }
+              else if ( neoInv > 95 || maidInv > 95 || natuInv > 95 )
+              {
+                  MSG( MOTENAI2 );
+              }
+              ADD_YEN( - drainCost2 );
+              if ( var102 <= 10 )
+              {
+                var100 = ( 0 );
+                var100 = ( neoInv + 5 );
+                purchasedStocks = 5;
+              }
+              else
+              {
+                var100 = ( 0 );
+                var100 = ( neoInv + ( 15 - var102 ) );
+                purchasedStocks = ( 15 - var102 );
+              }
+              SET_ITEM( neoId, var100 );
+              limiter = ( limiter + purchasedStocks );
+              var102 = limiter;
+              CLOSE_MSG_WIN();
+              PLAY_SOUNDEFFECT( 721 );
+              WAIT( 60 );
+              OPEN_MSG_WIN();
+              SET_MSG_VAR( 0, neoId, 1 );
+              MSG( JIHAN_GET_JUICE );
+              if ( var102 <= 10 )
+              {
+                var100 = ( 0 );
+                var100 = ( maidInv + 5 );
+              }
+              else
+              {
+                var100 = ( 0 );
+                var100 = ( maidInv + ( 15 - var102 ) );
+              }
+              if ( var100 > 0 )
+              {
+                SET_ITEM( maidId, var100 );
+                limiter = ( limiter + purchasedStocks );
+                var102 = limiter;
+                CLOSE_MSG_WIN();
+                PLAY_SOUNDEFFECT( 721 );
+                WAIT( 60 );
+                OPEN_MSG_WIN();
+                SET_MSG_VAR( 0, maidId, 1 );
+                MSG( JIHAN_GET_JUICE );
+                if ( var102 <= 10 )
+                {
+                  var100 = ( 0 );
+                  var100 = ( natuInv + 5 );
+                }
+                else
+                {
+                  var100 = ( 0 );
+                  var100 = ( natuInv + ( 15 - var102 ) );
+                }
+                if ( var100 > 0 )
+                {
+                  SET_ITEM( natuId, var100 );
+                  limiter = ( limiter + purchasedStocks );
+                  var102 = limiter;
+                  CLOSE_MSG_WIN();
+                  PLAY_SOUNDEFFECT( 721 );
+                  WAIT( 60 );
+                  OPEN_MSG_WIN();
+                  SET_MSG_VAR( 0, natuId, 1 );
+                  MSG( JIHAN_GET_JUICE );
+                  CLOSE_MSG_WIN();
+                }
+              }
+
+              var99 = -1;
+              var102 = ( 15 );
+              SET_CNT( 107, var102 );
+            }
+            else
+            {
+                var99 = -1;
+            }
+
+
+            if ( var99 != -1 )
+            {
+                var100 = GET_ITEM( var99 );
+
+                if ( var101 < 120 )
+                {
+                    MSG( JIHAN_NO );
+                }
+                else if ( var100 == 99 )
+                {
+                    MSG( MOTENAI );
+                }
+                else
+                {
+                    ADD_YEN( -120 );
+                    var102 = ( var102 + 1 );
+                    SET_CNT( 107, var102 );
+                    var100 = ( var100 + 1 );
+                    SET_ITEM( var99, var100 );
+                    CLOSE_MSG_WIN();
+                    PLAY_SOUNDEFFECT( 721 );
+                    WAIT( 60 );
+                    OPEN_MSG_WIN();
+                    SET_MSG_VAR( 0, var99, 1 );
+                    MSG( JIHAN_GET_JUICE );
+                    CLOSE_MSG_WIN();
+
+                }
+
+            }
+
+
+            if ( var102 == 15 )
+            {
+                CLOSE_MSG_WIN();
+                PLAY_SOUNDEFFECT( 133 );
+                OPEN_MSG_WIN();
+                MSG( JIHAN_URIKIRE );
+            }
+
+        }
+
+    CLOSE_MSG_WIN();
+}

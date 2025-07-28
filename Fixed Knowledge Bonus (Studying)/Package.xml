@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Fixed Knowledge Bonus (Studying)</name>
+  <id>fixedknowledgebonus(studying)</id>
+  <author>rudiger__gb</author>
+  <version>1.0.1</version>
+  <link>https://gamebanana.com/gamefiles/12674</link>
+  <description>This mod removes the random element of studying so you're guaranteed to receive the "dictionary entries..." message and bonus point every time.
+
+It DOES NOT affect the point you receive for having read "Expert Study Methods". You still need to read that book to get that particular bonus point.
+
+Enjoy this mod? Let me know! https://ko-fi.com/rudiger</description>
+</Metadata>

@@ -1,0 +1,180 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Persona Names, Index: 10",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 210,
+      "data": "44 65 6D 69 66 69 65 6E 64 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 26",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 546,
+      "data": "44 61 65 6D 6F 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 31",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 651,
+      "data": "43 61 70 74 61 69 6E 20 4B 69 64 64 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 32",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 672,
+      "data": "43 68 69 72 6F 6E 6E 75 70 75 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 39",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 819,
+      "data": "41 72 74 65 6D 69 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 43",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 903,
+      "data": "53 6B 75 6C 6C 20 4B 6E 69 67 68 74 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 88",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 1848,
+      "data": "46 69 6F 6E 6E 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 96",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 2016,
+      "data": "41 72 69 61 64 6E 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 131",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 2751,
+      "data": "54 73 75 6B 69 79 6F 6D 69 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 136",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 2856,
+      "data": "43 6C 65 6F 70 61 74 72 61 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 137",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 2877,
+      "data": "4E 75 77 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 146",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 3066,
+      "data": "5A 6F 72 72 6F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 150",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 3150,
+      "data": "5A 65 75 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 159",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 3339,
+      "data": "42 61 61 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 160",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 3360,
+      "data": "41 62 64 69 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 161",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 3381,
+      "data": "47 72 69 66 66 69 74 68 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 172",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 3612,
+      "data": "4F 72 70 68 65 75 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 186",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 3906,
+      "data": "42 61 79 6F 6E 65 74 74 61 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 188",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 3948,
+      "data": "53 75 73 61 6E 6F 2D 6F 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 222",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 4662,
+      "data": "44 65 6D 6F 6E 65 65 2D 48 6F 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 227",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 4767,
+      "data": "41 6E 67 72 61 20 4D 61 69 6E 79 75 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 244",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 5124,
+      "data": "4B 6F 67 61 20 53 61 62 75 72 6F 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 246",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 5166,
+      "data": "52 6F 62 69 6E 20 48 6F 6F 64 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 251",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 5271,
+      "data": "4B 72 65 73 6E 69 6B 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 252",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 5292,
+      "data": "4B 75 64 6C 61 6B 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    }
+  ]
+}

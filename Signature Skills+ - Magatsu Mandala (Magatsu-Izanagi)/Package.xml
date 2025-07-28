@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Signature Skills+ - Magatsu Mandala (Magatsu-Izanagi)</name>
+  <id>rudiger__gb.signatureskills-magatsumandala(magatsu-izanagi)</id>
+  <author>rudiger__gb</author>
+  <version>1.0</version>
+  <link>https://gamebanana.com/mods/454111</link>
+  <description>Allows Magatsu-Izanagi to learn the signature skill "Magatsu Mandala" at level 89.
+
+Dark: deals heavy damage to all foes with a chance of Panic/Fear/Enervation. 
+
+Power: 160
+Accuracy: 90
+Effect chance: 50
+Cost: 30 SP</description>
+</Metadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Social Link Cheat Sheet</name>
+  <id>tekka.sociallinkcheatsheet</id>
+  <author>Tekka</author>
+  <version>1.1.1</version>
+  <link>https://gamebanana.com/gamefiles/12651</link>
+  <description>Are you one of those people who look up guides to determine the best choices for your social links?  This mod aims to let you see those best choices without having to look away from the game.
+
+This mod displays the results of the choices that matter for each social link.  It provides it in +x/y format where x is the points you get without a persona of a matching arcana and y is the points you get with a persona of a matching arcana.  If there's no "+x/y" next to the choice it means it gives you 0 points no matter what.  I also included "(Love)." "(Broken)," and "(Reverse)" on the choices that bring you to those specific routes.</description>
+</Metadata>

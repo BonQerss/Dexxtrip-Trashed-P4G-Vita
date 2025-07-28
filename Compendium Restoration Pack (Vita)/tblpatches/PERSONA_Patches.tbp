@@ -1,0 +1,299 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Persona Stats, Index: 43",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 602,
+      "data": "00 00 07 06 03 07 05 05 05 00 08 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 52",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 728,
+      "data": "00 00 11 3C 2C 21 26 28 1F 00 02 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 180",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 2520,
+      "data": "82 00 11 58 38 39 36 35 33 00 01 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 181",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 2534,
+      "data": "00 00 0C 46 30 26 28 2D 2D 00 01 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 216",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3024,
+      "data": "00 00 0D 32 2A 1A 20 1B 1D 00 01 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 217",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3038,
+      "data": "00 00 0D 0A 08 06 06 09 06 00 02 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 218",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3052,
+      "data": "00 00 0F 16 12 0B 10 0F 0D 00 01 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 219",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3066,
+      "data": "00 00 0A 2B 20 19 1E 19 16 00 01 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 220",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3080,
+      "data": "82 00 15 51 32 32 32 32 32 00 0C 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 221",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3094,
+      "data": "00 00 0A 11 0B 0C 0B 0C 0B 00 04 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 222",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3108,
+      "data": "00 00 12 27 1D 1A 1D 11 20 00 05 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 223",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3122,
+      "data": "82 00 01 1A 11 11 11 11 11 00 02 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 226",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3164,
+      "data": "00 00 13 43 28 2D 2A 28 2A 00 0A 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 227",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3178,
+      "data": "00 00 0B 17 0A 14 0A 10 14 00 05 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 228",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3192,
+      "data": "00 00 02 10 0C 09 0B 0E 07 00 0A 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 250",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3500,
+      "data": "82 00 01 5A 3E 3E 3E 3E 3E 00 0C 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 251",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3514,
+      "data": "00 00 08 1E 1A 0E 1A 0B 14 00 01 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 252",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3528,
+      "data": "00 00 0A 26 1B 17 1A 1C 11 00 01 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 253",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3542,
+      "data": "82 00 0E 40 2A 30 28 25 1E 00 07 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 254",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3556,
+      "data": "00 00 0D 30 20 1D 28 18 1A 00 01 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Stats, Index: 255",
+      "tbl": "PERSONA",
+      "section": 0,
+      "offset": 3570,
+      "data": "00 00 0C 1F 16 13 18 12 11 00 04 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 43",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 3010,
+      "data": "0A 0F 0A 0A 14 00 00 01 0E 00 00 01 C0 00 02 01 D5 00 05 01 5C 00 07 01 48 00 0A 01 CE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 52",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 3640,
+      "data": "14 0A 0F 0A 0A 00 00 01 06 00 00 01 C2 00 02 01 AF 00 05 01 08 02 07 01 87 00 09 01 E5 00 0C 01 2B 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 180",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 12600,
+      "data": "14 0A 0F 0A 0A 00 00 01 8F 00 00 01 1E 02 00 01 DA 01 01 01 8E 00 03 01 DB 01 04 01 4F 02 05 01 2B 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 181",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 12670,
+      "data": "14 0A 0F 0A 0A 00 00 01 83 00 00 01 03 00 00 01 5F 00 01 01 22 02 03 01 06 00 04 01 84 00 07 01 1C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 216",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15120,
+      "data": "0A 0F 14 0A 0A 00 00 01 A2 00 00 01 1A 02 00 01 DA 00 01 01 EA 00 03 01 84 00 06 01 FD 01 07 01 94 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 217",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15190,
+      "data": "0A 0F 14 0A 0A 00 00 01 5A 00 00 01 95 00 00 01 27 00 02 01 37 02 03 01 53 00 04 01 C3 00 05 01 DA 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 218",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15260,
+      "data": "14 0A 0F 0A 0A 00 00 01 7A 00 00 01 23 02 00 01 D7 00 01 01 7D 00 03 01 16 02 05 01 90 00 06 01 D5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 219",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15330,
+      "data": "14 0A 0F 0A 0A 00 00 01 93 00 00 01 AE 00 00 01 E0 00 03 01 17 02 05 01 EA 00 05 01 EA 00 06 01 19 02 09 01 84 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 220",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15400,
+      "data": "0A 14 0F 0A 0A 00 00 01 35 00 00 01 8C 00 03 01 1B 02 06 01 30 02 09 01 1E 02 0C 01 DB 01 0F 01 C6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 221",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15470,
+      "data": "0A 0F 0A 14 0A 00 00 01 7C 00 00 01 DE 00 02 01 5E 00 04 01 2A 00 07 01 16 02 09 01 91 00 0C 01 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 222",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15540,
+      "data": "14 0F 0A 0A 0F 00 00 01 12 00 00 01 5C 00 02 01 0F 00 05 01 DF 00 0A 01 43 02 0D 01 FE 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 223",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15610,
+      "data": "0A 0A 0A 0A 0A 00 00 01 7A 00 00 01 D3 00 00 01 02 00 03 01 05 00 06 01 DF 00 08 01 07 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 226",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15820,
+      "data": "0F 0F 0A 0A 0A 00 00 01 E4 00 00 01 29 00 00 01 94 00 01 01 E8 01 02 01 1A 02 04 01 5D 00 06 01 64 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 227",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15890,
+      "data": "0A 14 0A 0A 0F 00 00 01 11 00 00 01 D3 00 02 01 1F 02 03 01 58 00 04 01 2A 00 06 01 0F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 228",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 15960,
+      "data": "0A 14 0A 0F 0A 00 00 01 01 00 00 01 11 00 00 01 A1 00 02 01 55 00 04 01 9D 00 06 01 C9 00 09 01 F2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 250",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 17500,
+      "data": "0A 0A 0A 0A 0A 00 00 01 44 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 251",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 17570,
+      "data": "14 0A 0F 0A 0A 00 00 01 7D 00 00 01 FC 01 00 01 EA 00 01 01 22 02 03 01 16 02 05 01 F6 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 252",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 17640,
+      "data": "0A 0F 0A 14 0A 00 00 01 90 00 00 01 5F 00 00 01 DA 00 03 01 81 00 05 01 3D 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 253",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 17710,
+      "data": "0F 14 0A 0A 0A 0A 00 01 57 00 00 01 89 00 00 01 34 00 01 01 06 00 03 01 E3 00 05 01 4B 00 07 01 92 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 254",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 17780,
+      "data": "0A 0F 14 0A 0A 00 00 01 93 00 00 01 F9 01 03 01 84 00 06 01 C2 00 09 01 FD 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Growths, Index: 255",
+      "tbl": "PERSONA",
+      "section": 1,
+      "offset": 17850,
+      "data": "14 0A 0F 0A 0A 00 00 01 24 02 00 01 7D 00 00 01 28 00 02 01 26 02 03 01 47 02 05 01 A2 00 08 01 22 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    }
+  ]
+}

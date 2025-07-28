@@ -1,0 +1,170 @@
+import("f008.bf");
+import("f008.msg");
+
+void jihan2_hook()
+{
+    int orangeStock;
+    int tapStock;
+    int var108;
+    int var105;
+    int var106;
+    int varOrange;
+    int varTap;
+    int drainCost;
+
+    orangeStock = GET_CNT( 108 );
+    tapStock = GET_CNT( 111 );
+    if ( orangeStock == 0 ) //Artifially restocks TaP Soda based on Orange Smash stock without making use of the scheduler (hacky fix for custom sub menu compat)
+    {
+      SET_CNT( 108, 1 );
+      SET_CNT( 111, 1 );
+    }
+
+    orangeStock = GET_CNT( 108 ); //More restock jank
+    tapStock = GET_CNT( 111 );
+
+    if ( orangeStock >= 10 && tapStock >= 10 )
+    {
+        PLAY_SOUNDEFFECT( 133 );
+        OPEN_MSG_WIN();
+        MSG( JIHAN_URIKIRE_RE );
+    }
+    else
+    {
+      OPEN_MSG_WIN();
+      var108 = ADD_YEN( 0 );
+      SET_MSG_VAR( 20, var108, 0 );
+      MSG( JIHAN );
+      SEL_CHK_PAD( 14, 3 );
+      var105 = SEL( SEL_JIHAN2_HOOK );
+
+      if ( var105 == 0 )
+      {
+          if ( orangeStock == 10 )
+          {
+            var106 = -1;
+            PLAY_SOUNDEFFECT( 133 );
+            MSG( STOCKLESS );
+          }
+          else
+          {
+            var106 = ( 768 + 88 );
+            varOrange = GET_ITEM( var106 );
+
+            if ( ( var108 < 120 ) )
+            {
+                MSG( JIHAN_NO );
+            }
+            else if ( varOrange == 99 )
+            {
+                  MSG( MOTENAI );
+            }
+            else
+            {
+                ADD_YEN( -120 );
+                orangeStock = ( orangeStock + 1 );
+                SET_CNT( 108, orangeStock );
+                varOrange = ( varOrange + 1 );
+                SET_ITEM( var106, varOrange );
+                CLOSE_MSG_WIN();
+                PLAY_SOUNDEFFECT( 721 );
+                WAIT( 60 );
+                OPEN_MSG_WIN();
+                SET_MSG_VAR( 0, var106, 1 );
+                MSG( JIHAN_GET_JUICE );
+          }
+      }
+    }
+      else if ( var105 == 1 )
+      {
+        if ( tapStock == 10 )
+        {
+          var106 = -1;
+          PLAY_SOUNDEFFECT( 133 );
+          MSG( STOCKLESS );
+        }
+        else
+        {
+          var106 = ( 768 + 80 );
+          varTap = GET_ITEM( var106 );
+
+          if ( ( var108 < 120 ) )
+          {
+              MSG( JIHAN_NO );
+          }
+          else if ( varTap == 99 )
+          {
+                MSG( MOTENAI );
+          }
+          else
+          {
+              ADD_YEN( -120 );
+              tapStock = ( tapStock + 1 );
+              SET_CNT( 111, tapStock );
+              varTap = ( varTap + 1 );
+              SET_ITEM( var106, varTap );
+              CLOSE_MSG_WIN();
+              PLAY_SOUNDEFFECT( 721 );
+              WAIT( 60 );
+              OPEN_MSG_WIN();
+              SET_MSG_VAR( 0, var106, 1 );
+              MSG( JIHAN_GET_JUICE );
+        }
+      }
+    }
+      else if ( var105 == 2 )
+      {
+          var106 = -1;
+          varOrange = GET_ITEM( 768 + 88 );
+          varTap = GET_ITEM( 768 + 80 );
+          drainCost = ( ( 10 - orangeStock ) * 120 ) + ( ( 10 - tapStock ) * 120 );
+
+          if ( ( var108 < drainCost ) )
+          {
+              MSG( JIHAN_NO );
+          }
+          else if ( varOrange > ( 99 - ( 10 - orangeStock ) ) || varTap > ( 99 - ( 10 - tapStock ) ) )
+          {
+                MSG( MOTENAI2 );
+          }
+          else
+          {
+              ADD_YEN( - drainCost );
+              CLOSE_MSG_WIN();
+              if ( orangeStock < 10 )
+              {
+                PLAY_SOUNDEFFECT( 721 );
+                WAIT( 60 );
+                OPEN_MSG_WIN();
+                var106 = ( 768 + 88 );
+                SET_MSG_VAR( 0, var106, 1 );
+                MSG( JIHAN_GET_JUICE );
+                varOrange = ( varOrange + ( 10 - orangeStock ) );
+                SET_ITEM( var106, varOrange );
+                orangeStock = 10;
+                SET_CNT( 108, orangeStock );
+                CLOSE_MSG_WIN();
+              }
+              if ( tapStock < 10 )
+              {
+                PLAY_SOUNDEFFECT( 721 );
+                WAIT( 60 );
+                OPEN_MSG_WIN();
+                var106 = ( 768 + 80 );
+                SET_MSG_VAR( 0, var106, 1 );
+                MSG( JIHAN_GET_JUICE );
+                varTap = ( varTap + ( 10 - tapStock ) );
+                SET_ITEM( var106, varTap );
+                tapStock = 10;
+                SET_CNT( 111, tapStock );
+              }
+      }
+    }
+      else
+      {
+          var106 = -1;
+      }
+
+          }
+          CLOSE_MSG_WIN();
+}

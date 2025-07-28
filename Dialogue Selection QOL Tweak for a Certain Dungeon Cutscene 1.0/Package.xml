@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Dialogue Selection QOL Tweak for a Certain Dungeon Cutscene</name>
+  <id>megacatyu.dialogueselectionqoltweakforacertaindungeoncutscene</id>
+  <author>MegaCatYu</author>
+  <version>1.0</version>
+  <link>https://gamebanana.com/mods/369373</link>
+  <description>Fixes one of the dialogue selection screens to be more accurate about what it does.</description>
+</Metadata>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Signature Skills+ - Cadenza (Orpheus)</name>
+  <id>rudiger__gb.signatureskills-cadenza(orpheus)</id>
+  <author>rudiger__gb</author>
+  <version>1.0</version>
+  <link>https://gamebanana.com/mods/454111</link>
+  <description>Requires and must be placed ABOVE the "Compendium Restoration Pack" in Aemulus Package Manager!
+
+Allows Orpheus to learn the signature skill "Cadenza" at level 37.
+
+Restores 50% HP of party and increases hit/evasion rate.
+
+Cost: 24 SP</description>
+</Metadata>

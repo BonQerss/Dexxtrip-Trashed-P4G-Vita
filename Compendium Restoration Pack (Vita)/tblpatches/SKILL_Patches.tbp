@@ -1,0 +1,33 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Elements, Index: 432",
+      "tbl": "SKILL",
+      "section": 0,
+      "offset": 864,
+      "data": "10 00"
+    },
+    {
+      "comment": "Segment: Elements, Index: 433",
+      "tbl": "SKILL",
+      "section": 0,
+      "offset": 866,
+      "data": "10 00"
+    },
+    {
+      "comment": "Segment: Skills, Index: 432",
+      "tbl": "SKILL",
+      "section": 1,
+      "offset": 19008,
+      "data": "00 00 00 00 02 02 02 00 26 00 00 00 01 01 00 00 00 00 64 01 01 0B 64 00 00 32 00 00 00 00 00 00 00 00 00 00 00 20 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Skills, Index: 433",
+      "tbl": "SKILL",
+      "section": 1,
+      "offset": 19052,
+      "data": "00 00 00 00 02 02 02 00 18 00 00 00 01 01 00 00 00 00 64 01 01 0B 32 00 00 00 00 00 00 32 00 00 00 00 00 00 10 00 00 00 00 00 00 00"
+    }
+  ]
+}

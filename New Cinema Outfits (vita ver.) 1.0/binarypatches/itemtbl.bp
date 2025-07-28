@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 135044,
+      "data": "20 00"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 135112,
+      "data": "40 00"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 135180,
+      "data": "80 00"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 135248,
+      "data": "00 01"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 135316,
+      "data": "00 04"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 135384,
+      "data": "00 08"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 135452,
+      "data": "00 10"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 139130,
+      "data": "03"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 139132,
+      "data": "04 0b"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 139192,
+      "data": "00 00"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 139196,
+      "data": "e8 03"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 221752,
+      "data": "4e 65 77 20 43 69 6e 65 6d 61 20 4f 75 74 66 69 74"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 221776,
+      "data": "4e 65 77 20 43 69 6e 65 6d 61 20 4f 75 74 66 69 74"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 221800,
+      "data": "4e 65 77 20 43 69 6e 65 6d 61 20 4f 75 74 66 69 74"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 221824,
+      "data": "4e 65 77 20 43 69 6e 65 6d 61 20 4f 75 74 66 69 74"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 221848,
+      "data": "4e 65 77 20 43 69 6e 65 6d 61 20 4f 75 74 66 69 74"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 221872,
+      "data": "4e 65 77 20 43 69 6e 65 6d 61 20 4f 75 74 66 69 74"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 221896,
+      "data": "4e 65 77 20 43 69 6e 65 6d 61 20 4f 75 74 66 69 74"
+    },
+    {
+      "file": "init_free\\init\\itemtbl.bin",
+      "offset": 223216,
+      "data": "4e 65 77 20 43 69 6e 65 6d 61 20 53 65 74"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Skill Names, Index: 433",
+      "tbl": "MSG",
+      "section": 1,
+      "offset": 9959,
+      "data": "43 61 64 65 6E 7A 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    }
+  ]
+}
