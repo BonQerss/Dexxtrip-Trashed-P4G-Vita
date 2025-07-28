@@ -1,0 +1,35 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "file": "facility\\cmbroot\\ps_model.bin",
+      "offset": 7360,
+      "data": "F6 FF FC FE 00 00 02 00 33 33 33 3F 00 00 00 00 FF 00 04 00 FF DC DC DC FF 50 28 28 00 00 00 00"
+    },
+	{
+      "file": "facility\\cmbroot\\ps_model.bin",
+      "offset": 15632,
+      "data": "00 00 FC FE 00 00 04 00 33 33 33 3F 00 00 00 00 FF 00 04 00 FF FF E6 F0 FF FF FF FF C8 00 F6 FF"
+    },
+	{
+      "file": "facility\\cmbroot\\ps_model.bin",
+      "offset": 7392,
+      "data": "EC FF 1A FF 00 00 02 00 00 00 80 3F 00 00 00 00 FF 00 04 00 FF DC DC DC FF 50 28 28 00 00 00 00"
+    },
+	{
+      "file": "facility\\cmbroot\\ps_model.bin",
+      "offset": 15664,
+      "data": "EC FF 1A FF 00 00 04 00 00 00 80 3F 00 00 00 00 FF 00 04 00 FF FF E6 F0 FF FF FF FF C8 00 F6 FF"
+    },
+	{
+      "file": "facility\\cmbroot\\ps_model.bin",
+      "offset": 7424,
+      "data": "00 00 38 FF 00 00 02 00 00 00 80 3F 00 00 00 00 FF 00 04 00 FF DC DC DC FF 50 28 28 00 00 00 00"
+    },
+	{
+      "file": "facility\\cmbroot\\ps_model.bin",
+      "offset": 15696,
+      "data": "00 00 38 FF 00 00 04 00 CD CC 8C 3F 00 00 00 00 FF 00 04 00 FF FF E6 F0 FF FF FF FF C8 00 F6 FF"
+    }
+  ]
+}

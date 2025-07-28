@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Treasure Box Random Money or Item</name>
+  <id>treasureboxrandommoneyoritem</id>
+  <author>SCArkadia</author>
+  <version>1.0</version>
+  <link />
+  <description>This mod changes all content in Treasure box to give 2 random item OR Money.
+
+It has 50% Chance to give you money or 2 random item.
+
+If it is money, the formula is:
+
+money = RNG( 2000 );	
+money = ( 4000 + RNG( 2000 ) );
+money = ( 8000 + RNG( 2000 ) );
+money = ( 11000 + RNG( 2000 ) );
+money = ( 14000 + RNG( 2000 ) );
+money = ( 17000 + RNG( 2000 ) );
+money = ( 20000 + RNG( 2000 ) );
+money = ( 22000 + RNG( 2000 ) );
+
+If you happen to get the trap ambushed by shadows while opening treasure box, when you win the battle you will get:
+
+1 Random SkillCard
+
+If you open a Golden Chest, you will get:
+
+1 Random Accessory (No Omnipotent Orb)
+
+Note: 1 known issue is that 2 of the ranged item would be useless and called 0x368 and 0x370. Both of which are using Bug Icon. These items can't be used and are useless at the moment because it's in the vanilla ranged item set.</description>
+  <skippedVersion>all</skippedVersion>
+</Metadata>

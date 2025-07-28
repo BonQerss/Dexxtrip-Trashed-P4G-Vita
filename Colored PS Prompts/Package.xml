@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Colored PS Prompts</name>
+  <id>kris!.coloredpsprompts</id>
+  <author>kris!</author>
+  <version>0.1</version>
+  <link />
+  <description>Overhauls the prompts to be colored in, While also fixing some atlus fuckups</description>
+</Metadata>

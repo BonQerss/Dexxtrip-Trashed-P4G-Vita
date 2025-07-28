@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 229",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 20152,
+      "data": "11 00 01 00 00 00 E8 FE F2 03 FE 01 00 00 9C FF 38 FF 00 00 92 FF BB FE 50 00 21 00 64 00 FF FF 90 01 08 00 24 00 64 00 FF FF 90 01 08 00 21 00 64 00 FF FF 90 01 08 00 24 00 64 00 FF FF 90 01 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 DC 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 230",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 20240,
+      "data": "00 00 0A 00 64 00 00 00 64 00 00 00 00 00 D8 FF A0 00 00 00 E2 FF B4 00 5A 00 14 00 64 00 FF FF 96 00 08 00 33 00 64 00 FF FF 96 00 08 00 14 00 64 00 FF FF 96 00 08 00 33 00 64 00 FF FF 96 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FA 00"
+    },
+    {
+      "comment": "Segment: Persona Visual Variables, Index: 231",
+      "tbl": "MODEL",
+      "section": 2,
+      "offset": 20328,
+      "data": "00 00 00 00 5A 00 00 00 64 00 2D 00 00 00 00 00 28 00 00 00 00 00 28 00 64 00 14 00 64 00 FF FF 64 00 08 00 33 00 64 00 FF FF 64 00 08 00 14 00 64 00 FF FF 64 00 08 00 33 00 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 FF FF 64 00 FF FF 64 00 08 00 C8 00"
+    }
+  ]
+}

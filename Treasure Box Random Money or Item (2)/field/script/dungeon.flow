@@ -1,0 +1,828 @@
+
+// 
+// FlowScript decompiled using Atlus Script Tools by TGE (2017-2021)
+// In the unfortunate case of any bugs, please report them back to me.
+// 
+
+
+// 
+// Imports
+// 
+import( "dungeon.bf" );
+import( "dungeon.msg" );
+
+void trap_encount_hook()
+{
+    int var189;
+    int var190;
+    int var186;
+    int var191;
+    int var187;
+    int var188;
+	int var25;
+	int var26;
+	int rnd1 = RNG( 116 );
+	int item1 = 769 + rnd1;
+	int rnd2 = RNG( 252 );
+	int item2 = 1537 + rnd2;
+    gVar9 = 0;
+    var189 = RNG( 1000 );
+    var190 = RNG( 1000 );
+    
+    if ( ( var190 < 800 ) && ( GET_WEATHER() == 7 ) )
+    {
+        var186 = FLD_FUNCTION_0029( 4 );
+    }
+    else if ( var190 < 200 )
+    {
+        var186 = FLD_FUNCTION_0029( 4 );
+    }
+    else 
+    {
+        var186 = FLD_FUNCTION_0029( 0 );
+    }
+
+    // bit id (((0) + (1024)) + (2048)) + (801) = 3873
+    
+    if ( ( GET_FLOOR_ID() == 125 ) && ( BIT_CHK( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 801 ) ) == 0 ) )
+    {
+        gVar9 = 1;
+    }
+
+    OPEN_MSG_WIN();
+    MSG( TRAPBOX_ENCOUNT );
+    CLOSE_MSG_WIN();
+    WAIT( 10 );
+    var191 = CALL_BATTLE( var186, 0 );
+    
+    if ( ( var191 != 0 ) || ( gVar9 == 1 ) )
+    {
+        
+        if ( var191 == 1 )
+        {
+            gVar9 = 0;
+            dng_decease_2();
+        }
+        else if ( gVar9 == 1 )
+        {
+            encount_trap();
+        }
+
+        return;
+    }
+
+    
+    if ( var189 < 333 )
+    {
+		int random3 = AI_GET_RANDOM_NUMBER_BELOW( 116 );
+        var187 = ( 769 + random3 );
+    }
+    else if ( var189 < 666 )
+    {
+		int random4 = AI_GET_RANDOM_NUMBER_BELOW( 17 );
+        var187 = ( 923 + random4 );
+    }
+    else 
+    {
+		int random5 = AI_GET_RANDOM_NUMBER_BELOW( 23 );
+        var187 = ( 943 + random5 );
+    }
+
+    var188 = ( GET_ITEM( var187 ) );
+	var188 = ( var188 + 3 );
+    SET_ITEM( var187, var188 );
+    SET_MSG_VAR( 0, var187, 1 );
+    SET_MSG_VAR( 1, 1, 0 );
+    OPEN_MSG_WIN();
+    MSG( CUSTOMITEM );
+    CLOSE_MSG_WIN();
+	
+	
+		OPEN_MSG_WIN();
+		var25 = GET_ITEM( ( item1 ) );
+		var25 = ( var25 + 3 );
+		SET_ITEM( item1, var25 );	
+		SET_MSG_VAR( 0, item1, 1 );
+		MSG( CUSTOMITEM2 );
+		CLOSE_MSG_WIN();
+		OPEN_MSG_WIN();
+		var26 = GET_ITEM( ( item2 ) );
+		var26 = ( var26 + 1 );
+		SET_ITEM( item2, var26 );	
+		SET_MSG_VAR( 0, item2, 1 );
+		MSG( CUSTOMITEM3 );
+		CLOSE_MSG_WIN();
+}
+
+
+// Procedure Index: 45
+void rank_box_hook()
+{
+    int var192;
+    int var193;
+    int var195;
+	int var25;
+	int var26;
+	int var27;
+	int rnd1 = RNG( 116 );
+	int item1 = 769 + rnd1;
+	int rnd2 = RNG( 17 );
+	int item2 = 923 + rnd2;
+	int rnd3 = RNG( 94 );
+	int item3 = 512 + rnd3;
+	int rnd4 = RNG( 98 );
+	int item4 = 608 + rnd4;
+	int random = RNG( 100 );
+    
+    if ( GET_ITEM( ( 0x0800 + 55 ) ) > 0 )
+    {
+        var192 = ( 0x0800 + 55 );
+    }
+    else 
+    {
+        var192 = ( 768 + 65 );
+    }
+
+    var193 = GET_ITEM( var192 );
+    OPEN_MSG_WIN();
+    
+    if ( var193 > 0 )
+    {
+        SET_MSG_VAR( 0, var193, 0 );
+		if ( var192 == ( 768 + 65 ) )
+		{
+			MSG( CHEST_KEY );
+		}
+        else
+		{
+			MSG( CRACK_KEY );
+		}
+        SEL_CHK_PAD( 14, 1 );
+        var195 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var195 == 0 )
+        {
+            var193 = ( var193 - 1 );
+            SET_ITEM( var192, var193 );
+            itembox_open_anim();
+            death_check();
+				OPEN_MSG_WIN();
+				var25 = GET_ITEM( ( item1 ) );
+				var25 = ( var25 + 3 );
+				SET_ITEM( item1, var25 );	
+				SET_MSG_VAR( 0, item1, 1 );
+				MSG( CUSTOMITEM );
+				CLOSE_MSG_WIN();
+				OPEN_MSG_WIN();
+				var26 = GET_ITEM( ( item2 ) );
+				var26 = ( var26 + 3 );
+				SET_ITEM( item2, var26 );	
+				SET_MSG_VAR( 0, item2, 1 );
+				MSG( CUSTOMITEM2 );
+				CLOSE_MSG_WIN();
+				OPEN_MSG_WIN();
+				if ( random < 50 )
+				{
+					var27 = GET_ITEM( ( item3 ) );
+					var27 = ( var27 + 1 );
+					SET_ITEM( item3, var27 );	
+					SET_MSG_VAR( 0, item3, 1 );
+				}
+				else
+				{
+					var27 = GET_ITEM( ( item4 ) );
+					var27 = ( var27 + 1 );
+					SET_ITEM( item4, var27 );	
+					SET_MSG_VAR( 0, item4, 1 );
+				}				
+				MSG( CUSTOMITEM3 );
+				CLOSE_MSG_WIN();
+        }
+
+    }
+    else 
+    {
+        MSG( LOCK_BOX );
+    }
+
+    CLOSE_MSG_WIN();
+}
+
+
+// Procedure Index: 46
+void no_rank_box_hook()
+{
+    itembox_open_anim();
+    death_check();
+    int randommoney = RNG( 100 );
+	int money;
+	int var25;
+	int var26;
+	int rnd1 = RNG( 116 );
+	int item1 = 769 + rnd1;
+	int rnd2 = RNG( 17 );
+	int item2 = 923 + rnd2;
+	
+	if ( randommoney < 50 )
+	{
+		if ( CHECK_TIME_SPAN( 4, 16, 5, 17 ) == 1 )
+		{
+			money = RNG( 2000 );		
+		}
+		else if ( CHECK_TIME_SPAN( 5, 18, 6, 24 ) == 1 )
+		{
+			money = ( 4000 + RNG( 2000 ) );
+		}
+		else if ( CHECK_TIME_SPAN( 6, 25, 7, 28 ) == 1 )
+		{
+			money = ( 8000 + RNG( 2000 ) );
+		}
+		else if ( CHECK_TIME_SPAN( 7, 29, 9, 16 ) == 1 )
+		{
+			money = ( 11000 + RNG( 2000 ) );
+		}
+		else if ( CHECK_TIME_SPAN( 9, 17, 11, 5 ) == 1 )
+		{
+			money = ( 14000 + RNG( 2000 ) );
+		}
+		else if ( CHECK_TIME_SPAN( 11, 6, 12, 7 ) == 1 )
+		{
+			money = ( 17000 + RNG( 2000 ) );
+		}
+		else if ( CHECK_TIME_SPAN( 12, 8, 2, 13 ) == 1 )
+		{
+			money = ( 20000 + RNG( 2000 ) );
+		}
+		else
+		{
+			money = ( 22000 + RNG( 2000 ) );
+		}
+		
+		OPEN_MSG_WIN();
+		ADD_YEN( money );
+		SET_MSG_VAR( 0, money, 0 );
+		MSG( GET_MONEY_MES );
+		CLOSE_MSG_WIN();
+		
+	}
+	else
+	{
+		OPEN_MSG_WIN();
+		var25 = GET_ITEM( ( item1 ) );
+		var25 = ( var25 + 1 );
+		SET_ITEM( item1, var25 );	
+		SET_MSG_VAR( 0, item1, 1 );
+		MSG( CUSTOMITEM );
+		CLOSE_MSG_WIN();
+		OPEN_MSG_WIN();
+		var26 = GET_ITEM( ( item2 ) );
+		var26 = ( var26 + 1 );
+		SET_ITEM( item2, var26 );	
+		SET_MSG_VAR( 0, item2, 1 );
+		MSG( CUSTOMITEM2 );
+		CLOSE_MSG_WIN();
+	}
+}
+
+void tomb_enc_box_rank_9_hook()
+{
+    int var204;
+    int var206;
+    int var207;
+    int var205;
+    int var208;
+    int var211;
+    int var212;
+    int var213;
+    int var210;
+    int var209;
+    var204 = GET_FLOOR_ID();
+    var206 = RNG( 1000 );
+    var207 = RNG( 1000 );
+    
+    if ( var204 == 161 )
+    {
+        var205 = 544;
+    }
+    else if ( var204 == 162 )
+    {
+        
+        if ( var206 < 500 )
+        {
+            var205 = 544;
+        }
+        else 
+        {
+            var205 = 545;
+        }
+
+    }
+    else if ( var204 == 163 )
+    {
+        var205 = 549;
+    }
+    else if ( var204 == 164 )
+    {
+        
+        if ( var206 < 500 )
+        {
+            var205 = 549;
+        }
+        else 
+        {
+            var205 = 550;
+        }
+
+    }
+    else if ( var204 == 165 )
+    {
+        
+        if ( var206 < 500 )
+        {
+            var205 = 550;
+        }
+        else 
+        {
+            var205 = 551;
+        }
+
+    }
+    else if ( ( var204 == 166 ) || ( var204 == 167 ) )
+    {
+        var205 = 894;
+    }
+    else if ( ( var204 == 168 ) || ( var204 == 169 ) )
+    {
+        
+        if ( var206 < 500 )
+        {
+            var205 = 894;
+        }
+        else 
+        {
+            var205 = 895;
+        }
+
+    }
+
+    
+    if ( ( var204 >= 161 ) && ( var204 <= 164 ) )
+    {
+        
+        if ( var207 < 200 )
+        {
+            var208 = ( 0x0100 + 165 );
+        }
+        else if ( var207 < 400 )
+        {
+            var208 = ( 0x0100 + 166 );
+        }
+        else if ( var207 < 600 )
+        {
+            var208 = ( 0x0100 + 167 );
+        }
+        else if ( var207 < 800 )
+        {
+            var208 = ( 0x0100 + 168 );
+        }
+        else if ( ( var204 == 161 ) || ( var204 == 162 ) )
+        {
+            var208 = ( 0x0200 + 177 );
+        }
+        else if ( ( var204 == 163 ) || ( var204 == 164 ) )
+        {
+            
+            if ( var207 < 900 )
+            {
+                var208 = ( 0x0200 + 178 );
+            }
+            else 
+            {
+                var208 = ( 0x0200 + 179 );
+            }
+
+        }
+
+    }
+    else if ( ( ( var204 == 165 ) || ( var204 == 166 ) ) || ( var204 == 167 ) )
+    {
+        
+        if ( var207 < 100 )
+        {
+            var208 = ( 0x0200 + 179 );
+        }
+        else if ( var207 < 200 )
+        {
+            var208 = ( 0x0200 + 180 );
+        }
+        else if ( var207 < 400 )
+        {
+            var208 = ( 0x0100 + 169 );
+        }
+        else if ( var207 < 600 )
+        {
+            var208 = ( 0x0100 + 170 );
+        }
+        else if ( var207 < 800 )
+        {
+            var208 = ( 0x0100 + 171 );
+        }
+        else 
+        {
+            var208 = ( 0x0100 + 172 );
+        }
+
+    }
+    else if ( ( var204 == 168 ) || ( var204 == 169 ) )
+    {
+        
+        if ( var207 < 500 )
+        {
+            var208 = ( 0x0200 + 179 );
+        }
+        else if ( var207 < 750 )
+        {
+            var208 = ( 0x0200 + 180 );
+        }
+        else if ( var207 < 900 )
+        {
+            var208 = ( 0x0200 + 181 );
+        }
+        else 
+        {
+            var208 = ( 0x0200 + 182 );
+        }
+
+    }
+
+    var211 = ( 768 + 65 );
+    var212 = GET_ITEM( var211 );
+    OPEN_MSG_WIN();
+    
+    if ( var212 > 0 )
+    {
+        SET_MSG_VAR( 0, var212, 0 );
+        MSG( USE_KEY_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var213 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var213 == 0 )
+        {
+            var212 = ( var212 - 1 );
+            SET_ITEM( var211, var212 );
+            itembox_open_anim();
+            OPEN_MSG_WIN();
+            MSG( TRAPBOX_ENCOUNT );
+            CLOSE_MSG_WIN();
+            WAIT( 10 );
+            var210 = CALL_BATTLE( var205, 0 );
+            
+            if ( var210 != 0 )
+            {
+                
+                if ( var210 == 1 )
+                {
+                    gVar9 = 0;
+                    dng_decease_2();
+                }
+
+                return;
+            }
+
+            var209 = ( GET_ITEM( var208 ) + 3 );
+            SET_ITEM( var208, var209 );
+            SET_MSG_VAR( 0, var208, 1 );
+            SET_MSG_VAR( 1, 3, 0 );
+            OPEN_MSG_WIN();
+            MSG( CUSTOMITEM );
+            CLOSE_MSG_WIN();
+        }
+
+    }
+    else 
+    {
+        MSG( LOCK_BOX );
+    }
+
+    CLOSE_MSG_WIN();
+}
+
+
+// Procedure Index: 51
+void box_open_010_1_hook()
+{
+	int randommoney = RNG( 100 );
+	int money = RNG( 30000 );
+	int var25;
+	int var26;
+	int rnd1 = RNG( 116 );
+	int item1 = 769 + rnd1;
+	int rnd2 = RNG( 17 );
+	int item2 = 923 + rnd2;
+	
+	if ( randommoney < 50 )
+	{
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		ADD_YEN( money );
+		SET_MSG_VAR( 0, money, 0 );
+		MSG( GET_MONEY_MES );
+		CLOSE_MSG_WIN();
+	}
+	else
+	{
+		// bit id (((0) + (1024)) + (2048)) + (619) = 3691
+		BIT_ON( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 619 ) );
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		var25 = GET_ITEM( ( item1 ) );
+		var25 = ( var25 + 3 );
+		SET_ITEM( item1, var25 );	
+		SET_MSG_VAR( 0, item1, 1 );
+		MSG( CUSTOMITEM );
+		CLOSE_MSG_WIN();
+		OPEN_MSG_WIN();
+		var26 = GET_ITEM( ( item2 ) );
+		var26 = ( var26 + 3 );
+		SET_ITEM( item2, var26 );	
+		SET_MSG_VAR( 0, item2, 1 );
+		MSG( CUSTOMITEM2 );
+		CLOSE_MSG_WIN();
+	}
+}
+
+
+// Procedure Index: 52
+void box_open_010_2_hook()
+{
+	int randommoney = RNG( 100 );
+	int money = RNG( 33000 );
+	int var25;
+	int var26;
+	int rnd1 = RNG( 116 );
+	int item1 = 769 + rnd1;
+	int rnd2 = RNG( 17 );
+	int item2 = 923 + rnd2;
+	
+	if ( randommoney < 50 )
+	{
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		ADD_YEN( money );
+		SET_MSG_VAR( 0, money, 0 );
+		MSG( GET_MONEY_MES );
+		CLOSE_MSG_WIN();
+	}
+	else
+	{
+		// bit id (((0) + (1024)) + (2048)) + (620) = 3691
+		BIT_ON( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 620 ) );
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		var25 = GET_ITEM( ( item1 ) );
+		var25 = ( var25 + 3 );
+		SET_ITEM( item1, var25 );	
+		SET_MSG_VAR( 0, item1, 1 );
+		MSG( CUSTOMITEM );
+		CLOSE_MSG_WIN();
+		OPEN_MSG_WIN();
+		var26 = GET_ITEM( ( item2 ) );
+		var26 = ( var26 + 3 );
+		SET_ITEM( item2, var26 );	
+		SET_MSG_VAR( 0, item2, 1 );
+		MSG( CUSTOMITEM2 );
+		CLOSE_MSG_WIN();
+	}
+}
+
+
+// Procedure Index: 53
+void box_open_023_1_hook()
+{
+	int randommoney = RNG( 100 );
+	int money = RNG( 35000 );
+	int var25;
+	int var26;
+	int rnd1 = RNG( 116 );
+	int item1 = 769 + rnd1;
+	int rnd2 = RNG( 17 );
+	int item2 = 923 + rnd2;
+	
+	if ( randommoney < 50 )
+	{
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		ADD_YEN( money );
+		SET_MSG_VAR( 0, money, 0 );
+		MSG( GET_MONEY_MES );
+		CLOSE_MSG_WIN();
+	}
+	else
+	{
+		// bit id (((0) + (1024)) + (2048)) + (619) = 3691
+		BIT_ON( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 644 ) );
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		var25 = GET_ITEM( ( item1 ) );
+		var25 = ( var25 + 3 );
+		SET_ITEM( item1, var25 );	
+		SET_MSG_VAR( 0, item1, 1 );
+		MSG( CUSTOMITEM );
+		CLOSE_MSG_WIN();
+		OPEN_MSG_WIN();
+		var26 = GET_ITEM( ( item2 ) );
+		var26 = ( var26 + 3 );
+		SET_ITEM( item2, var26 );	
+		SET_MSG_VAR( 0, item2, 1 );
+		MSG( CUSTOMITEM2 );
+		CLOSE_MSG_WIN();
+	}
+}
+
+
+// Procedure Index: 54
+void box_open_023_2_hook()
+{
+	int randommoney = RNG( 100 );
+	int money = RNG( 35000 );
+	int var25;
+	int var26;
+	int rnd1 = RNG( 116 );
+	int item1 = 769 + rnd1;
+	int rnd2 = RNG( 17 );
+	int item2 = 923 + rnd2;
+	
+	if ( randommoney < 50 )
+	{
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		ADD_YEN( money );
+		SET_MSG_VAR( 0, money, 0 );
+		MSG( GET_MONEY_MES );
+		CLOSE_MSG_WIN();
+	}
+	else
+	{
+		// bit id (((0) + (1024)) + (2048)) + (619) = 3691
+		BIT_ON( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 645 ) );
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		var25 = GET_ITEM( ( item1 ) );
+		var25 = ( var25 + 3 );
+		SET_ITEM( item1, var25 );	
+		SET_MSG_VAR( 0, item1, 1 );
+		MSG( CUSTOMITEM );
+		CLOSE_MSG_WIN();
+		OPEN_MSG_WIN();
+		var26 = GET_ITEM( ( item2 ) );
+		var26 = ( var26 + 3 );
+		SET_ITEM( item2, var26 );	
+		SET_MSG_VAR( 0, item2, 1 );
+		MSG( CUSTOMITEM2 );
+		CLOSE_MSG_WIN();
+	}
+}
+
+void box_open_161_1_hook()
+{
+	int randommoney = RNG( 100 );
+	int money = RNG( 40000 );
+	int var25;
+	int var26;
+	int rnd1 = RNG( 116 );
+	int item1 = 769 + rnd1;
+	int rnd2 = RNG( 17 );
+	int item2 = 923 + rnd2;
+	
+	if ( randommoney < 50 )
+	{
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		ADD_YEN( money );
+		SET_MSG_VAR( 0, money, 0 );
+		MSG( GET_MONEY_MES );
+		CLOSE_MSG_WIN();
+	}
+	else
+	{
+		// bit id (((0) + (1024)) + (2048)) + (619) = 3691
+		BIT_ON( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 848 ) );
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		var25 = GET_ITEM( ( item1 ) );
+		var25 = ( var25 + 3 );
+		SET_ITEM( item1, var25 );	
+		SET_MSG_VAR( 0, item1, 1 );
+		MSG( CUSTOMITEM );
+		CLOSE_MSG_WIN();
+		OPEN_MSG_WIN();
+		var26 = GET_ITEM( ( item2 ) );
+		var26 = ( var26 + 3 );
+		SET_ITEM( item2, var26 );	
+		SET_MSG_VAR( 0, item2, 1 );
+		MSG( CUSTOMITEM2 );
+		CLOSE_MSG_WIN();
+	}
+}
+
+void box_open_161_3_hook()
+{
+	int randommoney = RNG( 100 );
+	int money = RNG( 45000 );
+	int var25;
+	int var26;
+	int rnd1 = RNG( 116 );
+	int item1 = 769 + rnd1;
+	int rnd2 = RNG( 17 );
+	int item2 = 923 + rnd2;
+	
+	if ( randommoney < 50 )
+	{
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		ADD_YEN( money );
+		SET_MSG_VAR( 0, money, 0 );
+		MSG( GET_MONEY_MES );
+		CLOSE_MSG_WIN();
+	}
+	else
+	{
+		// bit id (((0) + (1024)) + (2048)) + (619) = 3691
+		BIT_ON( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 850 ) );
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		var25 = GET_ITEM( ( item1 ) );
+		var25 = ( var25 + 3 );
+		SET_ITEM( item1, var25 );	
+		SET_MSG_VAR( 0, item1, 1 );
+		MSG( CUSTOMITEM );
+		CLOSE_MSG_WIN();
+		OPEN_MSG_WIN();
+		var26 = GET_ITEM( ( item2 ) );
+		var26 = ( var26 + 3 );
+		SET_ITEM( item2, var26 );	
+		SET_MSG_VAR( 0, item2, 1 );
+		MSG( CUSTOMITEM2 );
+		CLOSE_MSG_WIN();
+	}
+}
+
+
+// Procedure Index: 61
+void box_open_161_4_hook()
+{
+	int randommoney = RNG( 100 );
+	int money = RNG( 50000 );
+	int var25;
+	int var26;
+	int rnd1 = RNG( 116 );
+	int item1 = 769 + rnd1;
+	int rnd2 = RNG( 17 );
+	int item2 = 923 + rnd2;
+	
+	if ( randommoney < 50 )
+	{
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		ADD_YEN( money );
+		SET_MSG_VAR( 0, money, 0 );
+		MSG( GET_MONEY_MES );
+		CLOSE_MSG_WIN();
+	}
+	else
+	{
+		// bit id (((0) + (1024)) + (2048)) + (619) = 3691
+		BIT_ON( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 851 ) );
+		itembox_open_anim();
+		death_check();
+		OPEN_MSG_WIN();
+		var25 = GET_ITEM( ( item1 ) );
+		var25 = ( var25 + 3 );
+		SET_ITEM( item1, var25 );	
+		SET_MSG_VAR( 0, item1, 1 );
+		MSG( CUSTOMITEM );
+		CLOSE_MSG_WIN();
+		OPEN_MSG_WIN();
+		var26 = GET_ITEM( ( item2 ) );
+		var26 = ( var26 + 3 );
+		SET_ITEM( item2, var26 );	
+		SET_MSG_VAR( 0, item2, 1 );
+		MSG( CUSTOMITEM2 );
+		CLOSE_MSG_WIN();
+	}
+}

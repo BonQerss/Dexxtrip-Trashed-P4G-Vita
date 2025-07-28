@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Persona Names, Index: 229",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 4809,
+      "data": "53 61 74 61 6E 61 65 6C 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 230",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 4830,
+      "data": "52 61 6F 75 6C 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "comment": "Segment: Persona Names, Index: 231",
+      "tbl": "MSG",
+      "section": 3,
+      "offset": 4851,
+      "data": "41 72 73 65 6E 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    }
+  ]
+}

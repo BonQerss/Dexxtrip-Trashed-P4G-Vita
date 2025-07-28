@@ -1,0 +1,5059 @@
+
+// 
+// FlowScript decompiled using Atlus Script Tools by TGE (2017-2021)
+// In the unfortunate case of any bugs, please report them back to me.
+// 
+
+
+// 
+// Imports
+// 
+
+import( "dungeon.bf.msg" );
+
+// 
+// Script-level variable definitions
+// 
+
+global( 9 ) int gVar9;
+int sVar4;
+int sVar5;
+int sVar6;
+int sVar7;
+int sVar8;
+int sVar10;
+int sVar3;
+int sVar2;
+int sVar1;
+int sVar0;
+
+// 
+// Procedure declarations
+// 
+
+// Procedure Index: 0
+void dng_go_stair()
+{
+    goto_stair();
+}
+
+
+// Procedure Index: 1
+void dng_back_stair()
+{
+    backto_stair();
+}
+
+
+// Procedure Index: 2
+void dng_tbox()
+{
+    dng_tbox_hook();
+}
+
+
+// Procedure Index: 3
+void dng_door()
+{
+    int var13;
+    int var14;
+    int var15;
+    int var16;
+    var13 = GET_FLOOR_ID();
+    var14 = FLD_FUNCTION_0025();
+    var15 = FLD_FUNCTION_0027();
+    var16 = FLD_FUNCTION_0014();
+    sVar6 = 0;
+    FLD_FUNCTION_002D( 5 );
+    
+    if ( var13 == 10 )
+    {
+        castle_05F_door();
+    }
+    else if ( var13 == 23 )
+    {
+        sauna_03F_door();
+    }
+    else if ( var13 == 27 )
+    {
+        sauna_07F_door();
+    }
+    else if ( var13 == 43 )
+    {
+        playhouse_03F_door();
+    }
+    else if ( var13 == 47 )
+    {
+        playhouse_07F_door();
+    }
+    else if ( var13 == 67 )
+    {
+        gameworld_07F_door();
+    }
+    else if ( var13 == 84 )
+    {
+        base_04F_door();
+    }
+    else if ( var13 == 86 )
+    {
+        base_06F_door();
+    }
+    else if ( var13 == 104 )
+    {
+        heaven_04F_door();
+    }
+    else if ( var13 == 107 )
+    {
+        heaven_07F_door();
+    }
+    else if ( var13 == 122 )
+    {
+        city_02F_door();
+    }
+    else if ( var13 == 125 )
+    {
+        city_05F_door();
+    }
+    else if ( var13 == 0x80 )
+    {
+        city_08F_door();
+    }
+    else if ( var13 == 143 )
+    {
+        last_03F_door();
+    }
+    else if ( var13 == 146 )
+    {
+        last_06F_door();
+    }
+    else if ( var13 == 159 )
+    {
+        first_door();
+    }
+    else if ( var13 == 161 )
+    {
+        tomb_01F_door_enc();
+    }
+    else if ( var13 == 164 )
+    {
+        tomb_04F_door_enc();
+    }
+    else if ( var13 == 167 )
+    {
+        tomb_07F_door_enc();
+    }
+
+    
+    if ( sVar6 == 0 )
+    {
+        
+        if ( ( var13 > 5 ) && ( var13 <= 20 ) )
+        {
+            PLAY_SOUNDEFFECT( 708 );
+            WAIT( 1 );
+        }
+        else if ( ( var13 > 20 ) && ( var13 <= 40 ) )
+        {
+            PLAY_SOUNDEFFECT( 709 );
+            WAIT( 1 );
+        }
+        else if ( ( var13 > 40 ) && ( var13 <= 60 ) )
+        {
+            PLAY_SOUNDEFFECT( 711 );
+            WAIT( 3 );
+        }
+        else if ( ( var13 > 60 ) && ( var13 <= 80 ) )
+        {
+            PLAY_SOUNDEFFECT( 712 );
+            WAIT( 2 );
+        }
+        else if ( ( var13 > 80 ) && ( var13 <= 100 ) )
+        {
+            PLAY_SOUNDEFFECT( 710 );
+            WAIT( 2 );
+        }
+        else if ( ( var13 > 100 ) && ( var13 <= 120 ) )
+        {
+            PLAY_SOUNDEFFECT( 713 );
+        }
+        else if ( ( var13 > 120 ) && ( var13 <= 140 ) )
+        {
+            PLAY_SOUNDEFFECT( 714 );
+            WAIT( 2 );
+        }
+        else if ( ( var13 > 140 ) && ( var13 <= 160 ) )
+        {
+            PLAY_SOUNDEFFECT( 715 );
+            WAIT( 1 );
+        }
+        else if ( var13 > 160 )
+        {
+            PLAY_SOUNDEFFECT( 741 );
+            WAIT( 1 );
+        }
+
+        
+        if ( var13 > 160 )
+        {
+            FLD_FUNCTION_0043( var16 );
+        }
+
+        
+        if ( ( var13 > 60 ) && ( var13 <= 80 ) )
+        {
+            FLD_FUNCTION_0008( var16, var14, 0, 0, 0.90f );
+        }
+        else 
+        {
+            FLD_FUNCTION_0008( var16, var14, 0, 0, 1 );
+        }
+
+        FLD_FUNCTION_0009( var16 );
+        FLD_FUNCTION_0010( var15, 0 );
+        FLD_FUNCTION_0015();
+        find_something();
+    }
+
+}
+
+
+// Procedure Index: 4
+void dng_decease_2()
+{
+}
+
+
+// Procedure Index: 5
+void dng_escape()
+{
+    dng_escape_hook();
+}
+
+
+// Procedure Index: 6
+void dng_afterBattle()
+{
+    int var19;
+    
+    if ( gVar9 == 0 )
+    {
+        encount_trap();
+    }
+
+    
+    if ( ( GET_FLOOR_ID() == 161 ) && ( BIT_CHK( 3906 ) == 0 ) )
+    {
+        BIT_ON( 3906 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( TOMB_ENC_1F_DOOR_INFO );
+        NAVI_BU_CLOSE( var19 );
+        CLOSE_MSG_WIN();
+        WAIT( 10 );
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 33 );
+        OPEN_MSG_WIN();
+        
+        if ( GET_PARTY_MEMBER_ID( 0 ) != 0 )
+        {
+            MSG( SP_ZERO_HELP_ALL );
+        }
+        else 
+        {
+            MSG( SP_ZERO_HELP_PLAYER );
+        }
+
+        MSG( SP_ZERO_HELP_COM );
+        CLOSE_MSG_WIN();
+        NAVI_BU_CLOSE( var19 );
+    }
+    else if ( ( GET_FLOOR_ID() == 161 ) && ( BIT_CHK( 3924 ) == 0 ) )
+    {
+        BIT_ON( 3924 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( TOMB_ENC_1F_END_1 );
+        NAVI_BU_CLOSE( var19 );
+        CLOSE_MSG_WIN();
+    }
+    else if ( ( GET_FLOOR_ID() == 161 ) && ( BIT_CHK( 3925 ) == 0 ) )
+    {
+        BIT_ON( 3925 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( TOMB_ENC_1F_END_2 );
+        NAVI_BU_CLOSE( var19 );
+        CLOSE_MSG_WIN();
+    }
+    else if ( ( GET_FLOOR_ID() == 161 ) && ( BIT_CHK( 3926 ) == 0 ) )
+    {
+        BIT_ON( 3926 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 33 );
+        MSG( TOMB_ENC_1F_END_3_1 );
+        NAVI_BU_CLOSE( var19 );
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( TOMB_ENC_1F_END_3_2 );
+        NAVI_BU_CLOSE( var19 );
+        CLOSE_MSG_WIN();
+    }
+
+}
+
+
+// Procedure Index: 7
+void encount_trap()
+{
+    
+    if ( ( GET_FLOOR_ID() == 125 ) && ( BIT_CHK( 3873 ) == 0 ) )
+    {
+        gVar9 = 0;
+        BIT_ON( 3109 );
+        BIT_ON( 3880 );
+        BIT_ON( 3878 );
+        WAIT( 30 );
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( ENC_GIMMIC_MISS );
+        CLOSE_MSG_WIN();
+        PLAY_SOUNDEFFECT( 705 );
+        FADE( 1, 30 );
+        FUNCTION_0024( 255, 255, 255 );
+        FADE_SYNC();
+        CALL_DUNGEON( 120, 1 );
+    }
+
+}
+
+
+// Procedure Index: 8
+void find_something()
+{
+    int var25;
+    int var24;
+    int var21;
+    int var22;
+    int var26;
+    int var27;
+    int var28;
+    int var29;
+    int var30;
+    int var31;
+    int var20;
+    int var23;
+    var25 = 1000;
+    var24 = RNG( var25 );
+    var21 = 0;
+    var22 = 0;
+    var26 = 0;
+    var27 = 0;
+    var28 = 0;
+    var29 = 0;
+    var30 = 0;
+    var31 = 0;
+    
+    if ( ( ( ( FLD_FUNCTION_0036() == 0 ) && ( FLD_FUNCTION_003A() == 1 ) ) && ( BIT_CHK( 3111 ) == 0 ) ) && ( CHECK_TIME_SPAN( 4, 18, 4, 29 ) == 1 ) )
+    {
+        BIT_ON( 3111 );
+        OPEN_MSG_WIN();
+        var20 = NAVI_BU_OPEN( 280, -40, 8, 30 );
+        MSG( HELP_STAIR_KUMA );
+        NAVI_BU_CLOSE( var20 );
+        CLOSE_MSG_WIN();
+        HELP_MSG( HELP_STAIR_NAVI );
+        return;
+    }
+    else if ( BIT_CHK( 52 ) == 0 )
+    {
+        get_msg_kuma();
+    }
+    else 
+    {
+        get_msg_rise();
+    }
+
+    
+    if ( sVar4 != 0 )
+    {
+        var22 = ( var22 + 1 );
+        var26 = sVar4;
+    }
+
+    _97:
+    
+    if ( var21 < 3 )
+    {
+        var23 = GET_PARTY_MEMBER_ID( var21 );
+        
+        if ( var23 != 0 )
+        {
+            
+            if ( var23 == 2 )
+            {
+                get_msg_yosuke();
+            }
+            else if ( var23 == 3 )
+            {
+                get_msg_chie();
+            }
+            else if ( var23 == 4 )
+            {
+                get_msg_yukiko();
+            }
+            else if ( var23 == 6 )
+            {
+                get_msg_kanji();
+            }
+            else if ( var23 == 8 )
+            {
+                get_msg_kuma();
+            }
+            else if ( var23 == 7 )
+            {
+                get_msg_naoto();
+            }
+
+            
+            if ( sVar4 != 0 )
+            {
+                var22 = ( var22 + 1 );
+                
+                if ( var26 == 0 )
+                {
+                    var26 = sVar4;
+                }
+                else if ( var27 == 0 )
+                {
+                    var27 = sVar4;
+                }
+                else if ( var28 == 0 )
+                {
+                    var28 = sVar4;
+                }
+                else if ( var29 == 0 )
+                {
+                    var29 = sVar4;
+                }
+
+            }
+
+        }
+
+        var21 = ( var21 + 1 );
+        goto _97;
+    }
+
+    
+    if ( var22 > 0 )
+    {
+        
+        if ( var24 <= ( ( var25 * 1 ) / var22 ) )
+        {
+            var30 = var26;
+        }
+        else if ( var24 <= ( ( var25 * 2 ) / var22 ) )
+        {
+            var30 = var27;
+        }
+        else if ( var24 <= ( ( var25 * 3 ) / var22 ) )
+        {
+            var30 = var28;
+        }
+        else 
+        {
+            var30 = var29;
+        }
+
+        
+        if ( ( var30 >= 0x10 ) && ( var30 <= 38 ) )
+        {
+            var31 = 2;
+        }
+        else if ( ( var30 >= 39 ) && ( var30 <= 61 ) )
+        {
+            var31 = 3;
+        }
+        else if ( ( var30 >= 62 ) && ( var30 <= 84 ) )
+        {
+            var31 = 4;
+        }
+        else if ( ( var30 >= 85 ) && ( var30 <= 107 ) )
+        {
+            var31 = 6;
+        }
+        else if ( ( var30 >= 108 ) && ( var30 <= 130 ) )
+        {
+            var31 = 8;
+        }
+        else if ( ( var30 >= 131 ) && ( var30 <= 153 ) )
+        {
+            var31 = 5;
+        }
+        else if ( ( var30 >= 154 ) && ( var30 <= 176 ) )
+        {
+            var31 = 7;
+        }
+
+        FLD_FUNCTION_002A( var31, var30 );
+    }
+
+}
+
+
+// Procedure Index: 9
+void get_npc()
+{
+    int var32;
+    int var33;
+    int var34;
+    sVar5 = 0;
+    var32 = RNG( 900 );
+    var33 = 1;
+    var34 = 0;
+    _131:
+    
+    if ( var33 <= 8 )
+    {
+        
+        if ( GET_FLOOR_ID() == GET_CNT( var33 ) )
+        {
+            var34 = ( var34 + 1 );
+        }
+
+        var33 = ( var33 + 1 );
+        goto _131;
+    }
+
+    
+    if ( var34 == 2 )
+    {
+        
+        if ( GET_FLOOR_ID() == GET_CNT( 8 ) )
+        {
+            
+            if ( var32 <= 300 )
+            {
+                sVar5 = 8;
+            }
+            else if ( var32 <= 600 )
+            {
+                sVar5 = 1;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 7 ) )
+            {
+                sVar5 = 7;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 5 ) )
+            {
+                sVar5 = 5;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 1 ) )
+            {
+                sVar5 = 2;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 2 ) )
+            {
+                sVar5 = 3;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 6 ) )
+            {
+                sVar5 = 6;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 3 ) )
+            {
+                sVar5 = 4;
+            }
+
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 7 ) )
+        {
+            
+            if ( var32 < 300 )
+            {
+                sVar5 = 7;
+            }
+            else if ( var32 < 600 )
+            {
+                sVar5 = 1;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 1 ) )
+            {
+                sVar5 = 2;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 2 ) )
+            {
+                sVar5 = 3;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 3 ) )
+            {
+                sVar5 = 4;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 5 ) )
+            {
+                sVar5 = 5;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 6 ) )
+            {
+                sVar5 = 6;
+            }
+
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 2 ) )
+        {
+            
+            if ( var32 < 300 )
+            {
+                sVar5 = 3;
+            }
+            else if ( var32 <= 600 )
+            {
+                sVar5 = 1;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 3 ) )
+            {
+                sVar5 = 4;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 6 ) )
+            {
+                sVar5 = 6;
+            }
+
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 1 ) )
+        {
+            
+            if ( var32 < 300 )
+            {
+                sVar5 = 2;
+            }
+            else if ( var32 < 600 )
+            {
+                sVar5 = 1;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 3 ) )
+            {
+                sVar5 = 4;
+            }
+            else if ( GET_FLOOR_ID() == GET_CNT( 5 ) )
+            {
+                sVar5 = 5;
+            }
+
+        }
+        else if ( ( GET_FLOOR_ID() == GET_CNT( 5 ) ) && ( GET_FLOOR_ID() == GET_CNT( 6 ) ) )
+        {
+            
+            if ( var32 < 300 )
+            {
+                sVar5 = 5;
+            }
+            else if ( var32 <= 600 )
+            {
+                sVar5 = 6;
+            }
+            else 
+            {
+                sVar5 = 1;
+            }
+
+        }
+
+    }
+
+}
+
+
+// Procedure Index: 10
+void find_player()
+{
+    int var35;
+    var35 = RNG( 1000 );
+    
+    if ( GET_FLOOR_ID() == GET_CNT( 8 ) )
+    {
+        
+        if ( GET_FLOOR_ID() == GET_CNT( 1 ) )
+        {
+            sVar4 = 25;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 2 ) )
+        {
+            sVar4 = 48;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 3 ) )
+        {
+            sVar4 = 71;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 5 ) )
+        {
+            sVar4 = 94;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 6 ) )
+        {
+            sVar4 = 163;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 7 ) )
+        {
+            sVar4 = 117;
+        }
+
+    }
+    else if ( ( GET_FLOOR_ID() == GET_CNT( 5 ) ) && ( GET_FLOOR_ID() == GET_CNT( 6 ) ) )
+    {
+        
+        if ( var35 < 500 )
+        {
+            sVar4 = 94;
+        }
+        else 
+        {
+            sVar4 = 163;
+        }
+
+    }
+    else if ( GET_FLOOR_ID() == GET_CNT( 2 ) )
+    {
+        
+        if ( var35 < 500 )
+        {
+            sVar4 = 48;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 3 ) )
+        {
+            sVar4 = 71;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 6 ) )
+        {
+            sVar4 = 163;
+        }
+
+    }
+    else if ( GET_FLOOR_ID() == GET_CNT( 1 ) )
+    {
+        
+        if ( var35 < 500 )
+        {
+            sVar4 = 25;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 3 ) )
+        {
+            sVar4 = 71;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 5 ) )
+        {
+            sVar4 = 94;
+        }
+
+    }
+    else if ( GET_FLOOR_ID() == GET_CNT( 7 ) )
+    {
+        
+        if ( var35 < 500 )
+        {
+            sVar4 = 117;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 1 ) )
+        {
+            sVar4 = 25;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 2 ) )
+        {
+            sVar4 = 48;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 3 ) )
+        {
+            sVar4 = 71;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 5 ) )
+        {
+            sVar4 = 94;
+        }
+        else if ( GET_FLOOR_ID() == GET_CNT( 6 ) )
+        {
+            sVar4 = 163;
+        }
+
+    }
+
+}
+
+
+// Procedure Index: 11
+void get_msg_yosuke()
+{
+    sVar4 = 0;
+    
+    if ( ( FLD_FUNCTION_0036() == 0 ) && ( FLD_FUNCTION_003A() == 1 ) )
+    {
+        sVar4 = 19;
+    }
+    else if ( FLD_FUNCTION_0038() == 1 )
+    {
+        sVar4 = 22;
+    }
+    else if ( FLD_FUNCTION_0042() == 1 )
+    {
+        get_npc();
+        
+        if ( sVar5 == 1 )
+        {
+            find_player();
+        }
+        else if ( sVar5 == 3 )
+        {
+            sVar4 = 27;
+        }
+        else if ( sVar5 == 4 )
+        {
+            sVar4 = 29;
+        }
+        else if ( sVar5 == 5 )
+        {
+            sVar4 = 31;
+        }
+        else if ( sVar5 == 6 )
+        {
+            sVar4 = 33;
+        }
+        else if ( sVar5 == 7 )
+        {
+            sVar4 = 35;
+        }
+        else if ( sVar5 == 8 )
+        {
+            sVar4 = 37;
+        }
+
+        choice_2_msg();
+        return;
+    }
+    else if ( FLD_FUNCTION_0039() == 1 )
+    {
+        sVar4 = 0x10;
+    }
+
+    choice_3_msg();
+}
+
+
+// Procedure Index: 12
+void get_msg_chie()
+{
+    sVar4 = 0;
+    
+    if ( ( FLD_FUNCTION_0036() == 0 ) && ( FLD_FUNCTION_003A() == 1 ) )
+    {
+        sVar4 = 42;
+    }
+    else if ( FLD_FUNCTION_0038() == 1 )
+    {
+        sVar4 = 45;
+    }
+    else if ( FLD_FUNCTION_0042() == 1 )
+    {
+        get_npc();
+        
+        if ( sVar5 == 1 )
+        {
+            find_player();
+        }
+        else if ( sVar5 == 2 )
+        {
+            sVar4 = 50;
+        }
+        else if ( sVar5 == 4 )
+        {
+            sVar4 = 52;
+        }
+        else if ( sVar5 == 5 )
+        {
+            sVar4 = 54;
+        }
+        else if ( sVar5 == 6 )
+        {
+            sVar4 = 56;
+        }
+        else if ( sVar5 == 7 )
+        {
+            sVar4 = 58;
+        }
+        else if ( sVar5 == 8 )
+        {
+            sVar4 = 60;
+        }
+
+        choice_2_msg();
+        return;
+    }
+    else if ( FLD_FUNCTION_0039() == 1 )
+    {
+        sVar4 = 39;
+    }
+
+    choice_3_msg();
+}
+
+
+// Procedure Index: 13
+void get_msg_yukiko()
+{
+    sVar4 = 0;
+    
+    if ( ( FLD_FUNCTION_0036() == 0 ) && ( FLD_FUNCTION_003A() == 1 ) )
+    {
+        sVar4 = 65;
+    }
+    else if ( FLD_FUNCTION_0038() == 1 )
+    {
+        sVar4 = 68;
+    }
+    else if ( FLD_FUNCTION_0042() == 1 )
+    {
+        get_npc();
+        
+        if ( sVar5 == 1 )
+        {
+            find_player();
+        }
+        else if ( sVar5 == 2 )
+        {
+            sVar4 = 73;
+        }
+        else if ( sVar5 == 3 )
+        {
+            sVar4 = 75;
+        }
+        else if ( sVar5 == 5 )
+        {
+            sVar4 = 77;
+        }
+        else if ( sVar5 == 6 )
+        {
+            sVar4 = 79;
+        }
+        else if ( sVar5 == 7 )
+        {
+            sVar4 = 81;
+        }
+        else if ( sVar5 == 8 )
+        {
+            sVar4 = 83;
+        }
+
+        choice_2_msg();
+        return;
+    }
+    else if ( FLD_FUNCTION_0039() == 1 )
+    {
+        sVar4 = 62;
+    }
+
+    choice_3_msg();
+}
+
+
+// Procedure Index: 14
+void get_msg_kanji()
+{
+    sVar4 = 0;
+    
+    if ( ( FLD_FUNCTION_0036() == 0 ) && ( FLD_FUNCTION_003A() == 1 ) )
+    {
+        sVar4 = 88;
+    }
+    else if ( FLD_FUNCTION_0038() == 1 )
+    {
+        sVar4 = 91;
+    }
+    else if ( FLD_FUNCTION_0042() == 1 )
+    {
+        get_npc();
+        
+        if ( sVar5 == 1 )
+        {
+            find_player();
+        }
+        else if ( sVar5 == 2 )
+        {
+            sVar4 = 96;
+        }
+        else if ( sVar5 == 3 )
+        {
+            sVar4 = 98;
+        }
+        else if ( sVar5 == 4 )
+        {
+            sVar4 = 100;
+        }
+        else if ( sVar5 == 6 )
+        {
+            sVar4 = 102;
+        }
+        else if ( sVar5 == 7 )
+        {
+            sVar4 = 104;
+        }
+        else if ( sVar5 == 8 )
+        {
+            sVar4 = 106;
+        }
+
+        choice_2_msg();
+        return;
+    }
+    else if ( FLD_FUNCTION_0039() == 1 )
+    {
+        sVar4 = 85;
+    }
+
+    choice_3_msg();
+}
+
+
+// Procedure Index: 15
+void get_msg_kuma()
+{
+    sVar4 = 0;
+    
+    if ( ( FLD_FUNCTION_0036() == 0 ) && ( FLD_FUNCTION_003A() == 1 ) )
+    {
+        sVar4 = 111;
+    }
+    else if ( FLD_FUNCTION_0038() == 1 )
+    {
+        sVar4 = 114;
+    }
+    else if ( FLD_FUNCTION_0042() == 1 )
+    {
+        get_npc();
+        
+        if ( sVar5 == 1 )
+        {
+            find_player();
+        }
+        else if ( sVar5 == 2 )
+        {
+            sVar4 = 119;
+        }
+        else if ( sVar5 == 3 )
+        {
+            sVar4 = 121;
+        }
+        else if ( sVar5 == 4 )
+        {
+            sVar4 = 123;
+        }
+        else if ( sVar5 == 5 )
+        {
+            sVar4 = 125;
+        }
+        else if ( sVar5 == 6 )
+        {
+            sVar4 = 127;
+        }
+        else if ( sVar5 == 8 )
+        {
+            sVar4 = 129;
+        }
+
+        choice_2_msg();
+        return;
+    }
+    else if ( FLD_FUNCTION_0039() == 1 )
+    {
+        sVar4 = 108;
+    }
+
+    choice_3_msg();
+}
+
+
+// Procedure Index: 16
+void get_msg_rise()
+{
+    sVar4 = 0;
+    
+    if ( ( FLD_FUNCTION_0036() == 0 ) && ( FLD_FUNCTION_003A() == 1 ) )
+    {
+        sVar4 = 134;
+    }
+    else if ( FLD_FUNCTION_0038() == 1 )
+    {
+        sVar4 = 137;
+    }
+    else if ( FLD_FUNCTION_0042() == 1 )
+    {
+        get_npc();
+        
+        if ( sVar5 == 1 )
+        {
+            find_player();
+        }
+        else if ( sVar5 == 2 )
+        {
+            sVar4 = 140;
+        }
+        else if ( sVar5 == 3 )
+        {
+            sVar4 = 142;
+        }
+        else if ( sVar5 == 4 )
+        {
+            sVar4 = 144;
+        }
+        else if ( sVar5 == 5 )
+        {
+            sVar4 = 146;
+        }
+        else if ( sVar5 == 6 )
+        {
+            sVar4 = 148;
+        }
+        else if ( sVar5 == 7 )
+        {
+            sVar4 = 150;
+        }
+        else if ( sVar5 == 8 )
+        {
+            sVar4 = 152;
+        }
+
+        choice_2_msg();
+        return;
+    }
+    else if ( FLD_FUNCTION_0039() == 1 )
+    {
+        sVar4 = 131;
+    }
+
+    choice_3_msg();
+}
+
+
+// Procedure Index: 17
+void get_msg_naoto()
+{
+    sVar4 = 0;
+    
+    if ( ( FLD_FUNCTION_0036() == 0 ) && ( FLD_FUNCTION_003A() == 1 ) )
+    {
+        sVar4 = 157;
+    }
+    else if ( FLD_FUNCTION_0038() == 1 )
+    {
+        sVar4 = 160;
+    }
+    else if ( FLD_FUNCTION_0042() == 1 )
+    {
+        get_npc();
+        
+        if ( sVar5 == 1 )
+        {
+            find_player();
+        }
+        else if ( sVar5 == 2 )
+        {
+            sVar4 = 165;
+        }
+        else if ( sVar5 == 3 )
+        {
+            sVar4 = 167;
+        }
+        else if ( sVar5 == 4 )
+        {
+            sVar4 = 169;
+        }
+        else if ( sVar5 == 5 )
+        {
+            sVar4 = 171;
+        }
+        else if ( sVar5 == 7 )
+        {
+            sVar4 = 173;
+        }
+        else if ( sVar5 == 8 )
+        {
+            sVar4 = 175;
+        }
+
+        choice_2_msg();
+        return;
+    }
+    else if ( FLD_FUNCTION_0039() == 1 )
+    {
+        sVar4 = 154;
+    }
+
+    choice_3_msg();
+}
+
+
+// Procedure Index: 18
+void choice_2_msg()
+{
+    int var36;
+    var36 = RNG( 1000 );
+    
+    if ( sVar4 != 0 )
+    {
+        
+        if ( var36 < 500 )
+        {
+            sVar4 = ( sVar4 + 1 );
+        }
+
+    }
+
+}
+
+
+// Procedure Index: 19
+void choice_3_msg()
+{
+    int var37;
+    var37 = RNG( 900 );
+    
+    if ( sVar4 != 0 )
+    {
+        
+        if ( var37 < 300 )
+        {
+            sVar4 = ( sVar4 + 1 );
+        }
+        else if ( var37 < 600 )
+        {
+            sVar4 = ( sVar4 + 2 );
+        }
+
+    }
+
+}
+
+
+// Procedure Index: 20
+void castle_05F_door()
+{
+    int var43;
+    int var39;
+    int var38;
+    int var45;
+    int var44;
+    int var40;
+    int var41;
+    int var42;
+    int var9;
+    var43 = FLD_FUNCTION_0025();
+    var39 = FLD_FUNCTION_0027();
+    var38 = FLD_FUNCTION_0014();
+    
+    if ( ( var38 == 10240 ) && ( BIT_CHK( 3685 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        MSG( DOOR_LOCK );
+        
+        if ( BIT_CHK( 3684 ) == 1 )
+        {
+            change_speaker();
+            BIT_ON( 3685 );
+            var45 = ( 0x0400 + 50 );
+            SET_MSG_VAR( 0, var45, 1 );
+            MSG( OPEN_DOOR_LOCK );
+            CLOSE_MSG_WIN();
+        }
+        else 
+        {
+            CLOSE_MSG_WIN();
+            sVar6 = 1;
+            return;
+        }
+
+    }
+    else if ( ( var38 == 10255 ) && ( BIT_CHK( 3686 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        MSG( DOOR_LOCK );
+        
+        if ( BIT_CHK( 3684 ) == 1 )
+        {
+            change_speaker();
+            BIT_ON( 3686 );
+            var45 = ( 0x0400 + 50 );
+            SET_MSG_VAR( 0, var45, 1 );
+            MSG( OPEN_DOOR_LOCK );
+            CLOSE_MSG_WIN();
+        }
+        else 
+        {
+            CLOSE_MSG_WIN();
+            sVar6 = 1;
+            return;
+        }
+
+    }
+    else if ( ( var38 == 10248 ) && ( BIT_CHK( 3684 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        var44 = NAVI_BU_OPEN( 280, -40, 8, 30 );
+        MSG( DOOR_CASTLE );
+        NAVI_BU_CLOSE( var44 );
+        change_speaker();
+        MSG( OPEN_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var40 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var40 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 708 );
+        FLD_FUNCTION_0010( var39, 0 );
+        FLD_FUNCTION_0015();
+        var41 = FLD_FUNCTION_0011( 2, 310 );
+        var42 = FLD_FUNCTION_0012( var41, 0 );
+        FLD_FUNCTION_000A( var42, 2.00f );
+        FLD_FUNCTION_000C( var42, 12 );
+        FLD_FUNCTION_0007( var42, 1 );
+        var41 = FLD_FUNCTION_0011( 5, 5251 );
+        var42 = FLD_FUNCTION_0012( var41, 0 );
+        FLD_FUNCTION_000A( var42, 1.00f );
+        FLD_FUNCTION_000C( var42, 0x10 );
+        FLD_FUNCTION_0007( var42, 1 );
+        sVar7 = 13;
+        sVar8 = 14;
+        var9 = 15;
+        sVar10 = 0;
+        set_pc_pos();
+        OPEN_MSG_WIN();
+        MSG( CASTLE_ENC_1 );
+        change_speaker();
+        var44 = NAVI_BU_OPEN( 280, -40, 8, 33 );
+        MSG( CASTLE_ENC_2 );
+        NAVI_BU_CLOSE( var44 );
+        CLOSE_MSG_WIN();
+        WAIT( 15 );
+        
+        if ( CALL_BATTLE( 811, 1 ) == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        BIT_OFF( 3683 );
+        BIT_ON( 3684 );
+        var45 = ( 0x0400 + 50 );
+        SET_ITEM( var45, 1 );
+        SET_MSG_VAR( 0, var45, 1 );
+        OPEN_MSG_WIN();
+        MSG( GET_KEY );
+        change_speaker();
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        MSG( CASTLE_ENC_WIN_1 );
+        change_speaker();
+        var44 = NAVI_BU_OPEN( 280, -40, 8, 30 );
+        MSG( CASTLE_ENC_WIN_2 );
+        NAVI_BU_CLOSE( var44 );
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+
+}
+
+
+// Procedure Index: 21
+void sauna_03F_door()
+{
+    int var51;
+    int var47;
+    int var46;
+    int var52;
+    int var48;
+    int var53;
+    var51 = FLD_FUNCTION_0025();
+    var47 = FLD_FUNCTION_0027();
+    var46 = FLD_FUNCTION_0014();
+    
+    if ( ( var46 == 10252 ) && ( BIT_CHK( 33 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        var52 = NAVI_BU_OPEN( 280, -40, 8, 30 );
+        MSG( DOOR_SAUNA );
+        NAVI_BU_CLOSE( var52 );
+        change_speaker();
+        MSG( OPEN_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var48 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var48 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 709 );
+        FLD_FUNCTION_0010( var47, 0 );
+        FLD_FUNCTION_0015();
+        eve_sauna_half();
+        sVar6 = 1;
+    }
+    else if ( ( var46 == 10246 ) && ( BIT_CHK( 3714 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        MSG( DOOR_LOCK );
+        
+        if ( BIT_CHK( 3715 ) == 1 )
+        {
+            change_speaker();
+            BIT_ON( 3714 );
+            var53 = ( 0x0400 + 51 );
+            SET_MSG_VAR( 0, var53, 1 );
+            MSG( OPEN_DOOR_LOCK );
+            CLOSE_MSG_WIN();
+        }
+        else 
+        {
+            CLOSE_MSG_WIN();
+            sVar6 = 1;
+            return;
+        }
+
+    }
+
+}
+
+
+// Procedure Index: 22
+void sauna_07F_door()
+{
+    int var59;
+    int var55;
+    int var54;
+    int var56;
+    int var57;
+    int var58;
+    int var60;
+    int var61;
+    var59 = FLD_FUNCTION_0025();
+    var55 = FLD_FUNCTION_0027();
+    var54 = FLD_FUNCTION_0014();
+    
+    if ( ( var54 == 10242 ) && ( BIT_CHK( 3715 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        MSG( SAUNA_ENC_DOOR_27 );
+        MSG( OPEN_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var56 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var56 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 709 );
+        FLD_FUNCTION_0010( var55, 0 );
+        FLD_FUNCTION_0015();
+        var57 = FLD_FUNCTION_0011( 2, 311 );
+        var58 = FLD_FUNCTION_0012( var57, 0 );
+        FLD_FUNCTION_000A( var58, 1.70f );
+        FLD_FUNCTION_000C( var58, 0 );
+        FLD_FUNCTION_0007( var58, 1 );
+        var57 = FLD_FUNCTION_0011( 5, 5351 );
+        var58 = FLD_FUNCTION_0012( var57, 0 );
+        FLD_FUNCTION_000A( var58, 1.00f );
+        FLD_FUNCTION_000C( var58, 5 );
+        FLD_FUNCTION_0007( var58, 1 );
+        sVar7 = 1;
+        sVar8 = 2;
+        var9 = 3;
+        sVar10 = 4;
+        set_pc_pos();
+        OPEN_MSG_WIN();
+        MSG( SAUNA_ENC_1 );
+        change_speaker();
+        var60 = NAVI_BU_OPEN( 280, -40, 8, 30 );
+        MSG( SAUNA_ENC_2 );
+        NAVI_BU_CLOSE( var60 );
+        CLOSE_MSG_WIN();
+        WAIT( 15 );
+        
+        if ( CALL_BATTLE( 812, 1 ) == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        BIT_ON( 3715 );
+        OPEN_MSG_WIN();
+        var60 = NAVI_BU_OPEN( 280, -40, 8, 31 );
+        MSG( SAUNA_ENC_WIN );
+        NAVI_BU_CLOSE( var60 );
+        change_speaker();
+        var61 = ( 0x0400 + 51 );
+        SET_ITEM( var61, 1 );
+        SET_MSG_VAR( 0, var61, 1 );
+        MSG( GET_KEY );
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+
+}
+
+
+// Procedure Index: 23
+void playhouse_03F_door()
+{
+    int var67;
+    int var63;
+    int var62;
+    int var68;
+    int var64;
+    var67 = FLD_FUNCTION_0025();
+    var63 = FLD_FUNCTION_0027();
+    var62 = FLD_FUNCTION_0014();
+    
+    if ( ( var62 == 10245 ) && ( BIT_CHK( 34 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        var68 = NAVI_BU_OPEN( 280, -40, 8, 30 );
+        MSG( DOOR_PLAYHOUSE );
+        NAVI_BU_CLOSE( var68 );
+        change_speaker();
+        MSG( OPEN_DOOR_PH_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var64 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var64 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 711 );
+        FLD_FUNCTION_0010( var63, 0 );
+        FLD_FUNCTION_0015();
+        eve_strip_half();
+        sVar6 = 1;
+    }
+
+}
+
+
+// Procedure Index: 24
+void playhouse_07F_door()
+{
+    int var74;
+    int var70;
+    int var69;
+    int var75;
+    int var71;
+    int var72;
+    int var73;
+    var74 = FLD_FUNCTION_0025();
+    var70 = FLD_FUNCTION_0027();
+    var69 = FLD_FUNCTION_0014();
+    
+    if ( ( var69 == 10307 ) && ( BIT_CHK( 3751 ) == 0 ) )
+    {
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( PLAYHOUSE_DOOR_STOP );
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+    else if ( ( var69 == 10271 ) && ( BIT_CHK( 3751 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        MSG( PLAYHOUSE_ENC_DOOR_1 );
+        change_speaker();
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        MSG( PLAYHOUSE_ENC_DOOR_2 );
+        change_speaker();
+        var75 = NAVI_BU_OPEN( 280, -40, 8, 33 );
+        MSG( PLAYHOUSE_ENC_DOOR_3 );
+        NAVI_BU_CLOSE( var75 );
+        change_speaker();
+        MSG( OPEN_DOOR_PH_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var71 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var71 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 711 );
+        FLD_FUNCTION_0010( var70, 0 );
+        FLD_FUNCTION_0015();
+        var72 = FLD_FUNCTION_0011( 5, 5301 );
+        var73 = FLD_FUNCTION_0012( var72, 0 );
+        FLD_FUNCTION_000A( var73, 1.00f );
+        FLD_FUNCTION_000C( var73, 5 );
+        FLD_FUNCTION_0007( var73, 1 );
+        sVar7 = 1;
+        sVar8 = 2;
+        var9 = 3;
+        sVar10 = 4;
+        set_pc_pos();
+        OPEN_MSG_WIN();
+        MSG( PLAYHOUSE_ENC_1 );
+        CLOSE_MSG_WIN();
+        PLAY_SOUNDEFFECT( 122 );
+        FADE( 1, 5 );
+        FUNCTION_0024( 255, 255, 255 );
+        FADE_SYNC();
+        FLD_FUNCTION_0007( var73, 0 );
+        var72 = FLD_FUNCTION_0011( 2, 312 );
+        var73 = FLD_FUNCTION_0012( var72, 0 );
+        FLD_FUNCTION_000A( var73, 1.70f );
+        FLD_FUNCTION_000C( var73, 0 );
+        FLD_FUNCTION_0007( var73, 1 );
+        FLD_FUNCTION_002F( 10, 0, 20 );
+        FLD_FUNCTION_002E( 10, 0, 20 );
+        FLD_FUNCTION_0030( 1421.30f );
+        FLD_FUNCTION_0031( 3600 );
+        FUNCTION_0015( 5 );
+        FADE_SYNC();
+        OPEN_MSG_WIN();
+        var75 = NAVI_BU_OPEN( 280, -40, 8, 33 );
+        MSG( PLAYHOUSE_ENC_2 );
+        NAVI_BU_CLOSE( var75 );
+        CLOSE_MSG_WIN();
+        BIT_ON( 3751 );
+        WAIT( 15 );
+        
+        if ( CALL_BATTLE( 813, 1 ) == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        OPEN_MSG_WIN();
+        var75 = NAVI_BU_OPEN( 280, -40, 8, 33 );
+        MSG( PLAYHOUSE_ENC_WIN );
+        NAVI_BU_CLOSE( var75 );
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+
+}
+
+
+// Procedure Index: 25
+void gameworld_07F_door()
+{
+    int var82;
+    int var78;
+    int var77;
+    int var83;
+    int var79;
+    int var80;
+    int var81;
+    var82 = FLD_FUNCTION_0025();
+    var78 = FLD_FUNCTION_0027();
+    var77 = FLD_FUNCTION_0014();
+    
+    if ( ( var77 == 10246 ) && ( BIT_CHK( 3779 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        var83 = NAVI_BU_OPEN( 280, -40, 5, 20 );
+        MSG( GAMEWORLD_ENC_DOOR );
+        NAVI_BU_CLOSE( var83 );
+        change_speaker();
+        MSG( OPEN_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var79 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var79 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 712 );
+        FLD_FUNCTION_0010( var78, 0 );
+        FLD_FUNCTION_0015();
+        var80 = FLD_FUNCTION_0011( 2, 313 );
+        var81 = FLD_FUNCTION_0012( var80, 0 );
+        FLD_FUNCTION_000A( var81, 1.40f );
+        FLD_FUNCTION_000C( var81, 0 );
+        FLD_FUNCTION_0007( var81, 1 );
+        sVar7 = 1;
+        sVar8 = 2;
+        var9 = 3;
+        sVar10 = 4;
+        set_pc_pos();
+        OPEN_MSG_WIN();
+        MSG( GAMEWORLD_ENC );
+        CLOSE_MSG_WIN();
+        BIT_ON( 3779 );
+        WAIT( 15 );
+        
+        if ( CALL_BATTLE( 814, 1 ) == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        OPEN_MSG_WIN();
+        var83 = NAVI_BU_OPEN( 280, -40, 5, 21 );
+        MSG( GAMEWORLD_ENC_WIN );
+        NAVI_BU_CLOSE( var83 );
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+
+}
+
+
+// Procedure Index: 26
+void base_04F_door()
+{
+    int var90;
+    int var86;
+    int var85;
+    int var92;
+    int var91;
+    int var87;
+    int var88;
+    int var89;
+    var90 = FLD_FUNCTION_0025();
+    var86 = FLD_FUNCTION_0027();
+    var85 = FLD_FUNCTION_0014();
+    
+    if ( ( var85 == 10251 ) && ( BIT_CHK( 3811 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        MSG( DOOR_LOCK_084 );
+        
+        if ( BIT_CHK( 3809 ) == 1 )
+        {
+            change_speaker();
+            BIT_ON( 3811 );
+            var92 = ( 0x0400 + 52 );
+            SET_MSG_VAR( 0, var92, 1 );
+            MSG( OPEN_DOOR_LOCK );
+            CLOSE_MSG_WIN();
+        }
+        else 
+        {
+            CLOSE_MSG_WIN();
+            sVar6 = 1;
+            return;
+        }
+
+    }
+    else if ( ( var85 == 10253 ) && ( BIT_CHK( 3813 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        var91 = NAVI_BU_OPEN( 280, -40, 5, 20 );
+        MSG( BASE_ENC_DOOR );
+        NAVI_BU_CLOSE( var91 );
+        change_speaker();
+        MSG( OPEN_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var87 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var87 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 710 );
+        FLD_FUNCTION_0010( var86, 0 );
+        FLD_FUNCTION_0015();
+        var88 = FLD_FUNCTION_0011( 2, 314 );
+        var89 = FLD_FUNCTION_0012( var88, 0 );
+        FLD_FUNCTION_000A( var89, 1.70f );
+        FLD_FUNCTION_000C( var89, 0 );
+        FLD_FUNCTION_0007( var89, 1 );
+        sVar7 = 1;
+        sVar8 = 2;
+        var9 = 3;
+        sVar10 = 4;
+        set_pc_pos();
+        PLAY_SOUNDEFFECT( 229 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( BASE_ENC );
+        CLOSE_MSG_WIN();
+        WAIT( 15 );
+        
+        if ( CALL_BATTLE( 815, 1 ) == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        BIT_ON( 3813 );
+        OPEN_MSG_WIN();
+        var91 = NAVI_BU_OPEN( 280, -40, 5, 21 );
+        MSG( BASE_ENC_WIN );
+        NAVI_BU_CLOSE( var91 );
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+
+}
+
+
+// Procedure Index: 27
+void base_06F_door()
+{
+    int var98;
+    int var94;
+    int var93;
+    int var100;
+    var98 = FLD_FUNCTION_0025();
+    var94 = FLD_FUNCTION_0027();
+    var93 = FLD_FUNCTION_0014();
+    
+    if ( ( var93 == 10246 ) && ( BIT_CHK( 3812 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        MSG( DOOR_LOCK_086 );
+        
+        if ( BIT_CHK( 3810 ) == 1 )
+        {
+            change_speaker();
+            BIT_ON( 3812 );
+            var100 = ( 0x0400 + 53 );
+            SET_MSG_VAR( 0, var100, 1 );
+            MSG( OPEN_DOOR_LOCK );
+            CLOSE_MSG_WIN();
+        }
+        else if ( BIT_CHK( 3809 ) == 1 )
+        {
+            change_speaker();
+            var100 = ( 0x0400 + 52 );
+            SET_MSG_VAR( 0, var100, 1 );
+            MSG( NOT_OPEN_DOOR_LOCK );
+        }
+
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+
+}
+
+
+// Procedure Index: 28
+void heaven_04F_door()
+{
+    int var106;
+    int var102;
+    int var101;
+    var106 = FLD_FUNCTION_0025();
+    var102 = FLD_FUNCTION_0027();
+    var101 = FLD_FUNCTION_0014();
+    
+    if ( ( var101 == 10252 ) && ( BIT_CHK( 41 ) == 0 ) )
+    {
+        PLAY_SOUNDEFFECT( 713 );
+        FLD_FUNCTION_0008( var101, var106, 0, 0, 1 );
+        FLD_FUNCTION_0009( var101 );
+        FLD_FUNCTION_0010( var102, 0 );
+        FLD_FUNCTION_0015();
+        FADE( 1, 10 );
+        FADE_SYNC();
+        eve_heaven_half();
+        sVar6 = 1;
+    }
+
+}
+
+
+// Procedure Index: 29
+void heaven_07F_door()
+{
+    int var113;
+    int var109;
+    int var108;
+    int var110;
+    int var111;
+    int var112;
+    int var114;
+    var113 = FLD_FUNCTION_0025();
+    var109 = FLD_FUNCTION_0027();
+    var108 = FLD_FUNCTION_0014();
+    
+    if ( ( var108 == 10262 ) && ( BIT_CHK( 3841 ) == 0 ) )
+    {
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( HEAVEN_ENC_DOOR );
+        change_speaker();
+        MSG( OPEN_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var110 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var110 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 713 );
+        FLD_FUNCTION_0010( var109, 0 );
+        FLD_FUNCTION_0015();
+        var111 = FLD_FUNCTION_0011( 2, 315 );
+        var112 = FLD_FUNCTION_0012( var111, 0 );
+        FLD_FUNCTION_000A( var112, 3.90f );
+        FLD_FUNCTION_000C( var112, 0 );
+        FLD_FUNCTION_0007( var112, 1 );
+        sVar7 = 1;
+        sVar8 = 2;
+        var9 = 3;
+        sVar10 = 4;
+        set_pc_pos();
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( HEAVEN_ENC_1 );
+        CLOSE_MSG_WIN();
+        WAIT( 15 );
+        
+        if ( CALL_BATTLE( 816, 1 ) == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        BIT_ON( 3841 );
+        OPEN_MSG_WIN();
+        var114 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( HEAVEN_ENC_WIN );
+        NAVI_BU_CLOSE( var114 );
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+
+}
+
+
+// Procedure Index: 30
+void city_02F_door()
+{
+    int var120;
+    int var116;
+    int var115;
+    int var121;
+    var120 = FLD_FUNCTION_0025();
+    var116 = FLD_FUNCTION_0027();
+    var115 = FLD_FUNCTION_0014();
+    
+    if ( ( ( var115 == 10241 ) || ( var115 == 10242 ) ) && ( BIT_CHK( 3876 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        
+        if ( BIT_CHK( 3875 ) == 0 )
+        {
+            BIT_ON( 3875 );
+            MSG( CITY_2F_LOCK_DOOR );
+            change_speaker();
+            PLAY_SOUNDEFFECT( 241 );
+            WAIT( 10 );
+            MSG( CITY_2F_LOCK_DOOR_A );
+            change_speaker();
+            var121 = NAVI_BU_OPEN( 280, -40, 5, 0x20 );
+            MSG( CITY_2F_LOCK_NOTOPEN_A );
+            NAVI_BU_CLOSE( var121 );
+            CLOSE_MSG_WIN();
+            sVar6 = 1;
+            return;
+        }
+        else if ( BIT_CHK( 3874 ) != 1 )
+        {
+            MSG( CITY_2F_LOCK_DOOR );
+            change_speaker();
+            var121 = NAVI_BU_OPEN( 280, -40, 5, 0x20 );
+            MSG( CITY_2F_LOCK_NOTOPEN );
+            NAVI_BU_CLOSE( var121 );
+            CLOSE_MSG_WIN();
+            sVar6 = 1;
+            return;
+        }
+        else if ( BIT_CHK( 3874 ) == 1 )
+        {
+            var121 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+            MSG( CITY_2F_LOCK_OPEN_1 );
+            NAVI_BU_CLOSE( var121 );
+            CLOSE_MSG_WIN();
+            PLAY_SOUNDEFFECT( 714 );
+            WAIT( 2 );
+            FLD_FUNCTION_0008( var115, var120, 0, 0, 1 );
+            FLD_FUNCTION_0009( var115 );
+            FLD_FUNCTION_0010( var116, 0 );
+            FLD_FUNCTION_0015();
+            BIT_ON( 3876 );
+            OPEN_MSG_WIN();
+            var121 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+            MSG( CITY_2F_LOCK_OPEN_2 );
+            NAVI_BU_CLOSE( var121 );
+            CLOSE_MSG_WIN();
+            sVar6 = 1;
+            return;
+        }
+
+    }
+
+}
+
+
+// Procedure Index: 31
+void city_05F_door()
+{
+    int var127;
+    int var123;
+    int var122;
+    int var124;
+    int var125;
+    int var126;
+    int var128;
+    var127 = FLD_FUNCTION_0025();
+    var123 = FLD_FUNCTION_0027();
+    var122 = FLD_FUNCTION_0014();
+    
+    if ( ( var122 == 10241 ) && ( BIT_CHK( 3873 ) == 0 ) )
+    {
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( CITY_ENC_5F_DOOR );
+        change_speaker();
+        MSG( OPEN_NOT_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var124 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var124 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 714 );
+        FLD_FUNCTION_0010( var123, 0 );
+        FLD_FUNCTION_0015();
+        var125 = FLD_FUNCTION_0011( 2, 316 );
+        var126 = FLD_FUNCTION_0012( var125, 0 );
+        FLD_FUNCTION_000A( var126, 2.00f );
+        FLD_FUNCTION_000C( var126, 0 );
+        FLD_FUNCTION_0007( var126, 1 );
+        sVar7 = 1;
+        sVar8 = 2;
+        var9 = 3;
+        sVar10 = 4;
+        set_pc_pos();
+        BIT_ON( 3873 );
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( CITY_ENC_5F );
+        CLOSE_MSG_WIN();
+        WAIT( 15 );
+        
+        if ( CALL_BATTLE( 817, 1 ) == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( CITY_ENC_5F_WIN_1 );
+        change_speaker();
+        var128 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( CITY_ENC_5F_WIN_2 );
+        NAVI_BU_CLOSE( var128 );
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+
+}
+
+
+// Procedure Index: 32
+void city_08F_door()
+{
+    int var134;
+    int var130;
+    int var129;
+    int var135;
+    int var131;
+    int var132;
+    int var133;
+    var134 = FLD_FUNCTION_0025();
+    var130 = FLD_FUNCTION_0027();
+    var129 = FLD_FUNCTION_0014();
+    
+    if ( ( var129 == 10242 ) && ( BIT_CHK( 3874 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        var135 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( CITY_ENC_8F_DOOR );
+        NAVI_BU_CLOSE( var135 );
+        change_speaker();
+        MSG( OPEN_NOT_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var131 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var131 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 714 );
+        FLD_FUNCTION_0010( var130, 0 );
+        FLD_FUNCTION_0015();
+        var132 = FLD_FUNCTION_0011( 2, 317 );
+        var133 = FLD_FUNCTION_0012( var132, 0 );
+        FLD_FUNCTION_000A( var133, 1.70f );
+        FLD_FUNCTION_000C( var133, 0 );
+        FLD_FUNCTION_0007( var133, 1 );
+        sVar7 = 1;
+        sVar8 = 2;
+        var9 = 3;
+        sVar10 = 4;
+        set_pc_pos();
+        OPEN_MSG_WIN();
+        var135 = NAVI_BU_OPEN( 280, -40, 5, 0x20 );
+        MSG( CITY_ENC_8F_1 );
+        NAVI_BU_CLOSE( var135 );
+        CLOSE_MSG_WIN();
+        WAIT( 15 );
+        
+        if ( CALL_BATTLE( 818, 1 ) == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        BIT_ON( 3874 );
+        OPEN_MSG_WIN();
+        var135 = NAVI_BU_OPEN( 280, -40, 5, 31 );
+        MSG( CITY_ENC_8F_WIN );
+        NAVI_BU_CLOSE( var135 );
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+
+}
+
+
+// Procedure Index: 33
+void last_03F_door()
+{
+    int var141;
+    int var137;
+    int var136;
+    int var142;
+    int var138;
+    int var139;
+    int var140;
+    var141 = FLD_FUNCTION_0025();
+    var137 = FLD_FUNCTION_0027();
+    var136 = FLD_FUNCTION_0014();
+    
+    if ( ( var136 == 10262 ) && ( BIT_CHK( 3937 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        var142 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( LAST_ENC_3F_DOOR );
+        NAVI_BU_CLOSE( var142 );
+        change_speaker();
+        MSG( OPEN_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var138 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var138 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 715 );
+        FLD_FUNCTION_0010( var137, 0 );
+        FLD_FUNCTION_0015();
+        var139 = FLD_FUNCTION_0011( 2, 318 );
+        var140 = FLD_FUNCTION_0012( var139, 0 );
+        FLD_FUNCTION_000A( var140, 1.70f );
+        FLD_FUNCTION_000C( var140, 0 );
+        FLD_FUNCTION_0007( var140, 1 );
+        sVar7 = 1;
+        sVar8 = 2;
+        var9 = 3;
+        sVar10 = 4;
+        set_pc_pos();
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( LAST_ENC_3F );
+        CLOSE_MSG_WIN();
+        WAIT( 15 );
+        
+        if ( CALL_BATTLE( 819, 1 ) == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        BIT_ON( 3937 );
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( LAST_ENC_3F_WIN );
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+
+}
+
+
+// Procedure Index: 34
+void last_06F_door()
+{
+    int var148;
+    int var144;
+    int var143;
+    int var149;
+    int var145;
+    int var146;
+    int var147;
+    var148 = FLD_FUNCTION_0025();
+    var144 = FLD_FUNCTION_0027();
+    var143 = FLD_FUNCTION_0014();
+    
+    if ( ( var143 == 10254 ) && ( BIT_CHK( 3938 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        var149 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( LAST_ENC_6F_DOOR );
+        NAVI_BU_CLOSE( var149 );
+        change_speaker();
+        MSG( OPEN_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var145 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var145 == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        FADE( 1, 10 );
+        FADE_SYNC();
+        PLAY_SOUNDEFFECT( 715 );
+        FLD_FUNCTION_0010( var144, 0 );
+        FLD_FUNCTION_0015();
+        var146 = FLD_FUNCTION_0011( 2, 319 );
+        var147 = FLD_FUNCTION_0012( var146, 0 );
+        FLD_FUNCTION_000A( var147, 2.00f );
+        FLD_FUNCTION_000C( var147, 0 );
+        FLD_FUNCTION_0007( var147, 1 );
+        sVar7 = 1;
+        sVar8 = 2;
+        var9 = 3;
+        sVar10 = 4;
+        set_pc_pos();
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( LAST_ENC_6F );
+        CLOSE_MSG_WIN();
+        WAIT( 15 );
+        
+        if ( CALL_BATTLE( 820, 1 ) == 1 )
+        {
+            sVar6 = 1;
+            return;
+        }
+
+        BIT_ON( 3938 );
+        OPEN_MSG_WIN();
+        var149 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( LAST_ENC_6F_WIN );
+        NAVI_BU_CLOSE( var149 );
+        CLOSE_MSG_WIN();
+        sVar6 = 1;
+        return;
+    }
+
+}
+
+
+// Procedure Index: 35
+void first_door()
+{
+    int var153;
+    int var151;
+    int var150;
+    int var152;
+    var153 = FLD_FUNCTION_0025();
+    var151 = FLD_FUNCTION_0027();
+    var150 = FLD_FUNCTION_0014();
+    sVar6 = 1;
+    OPEN_MSG_WIN();
+    MSG( FIRST_DOOR );
+    MSG( OPEN_FDOOR_OK );
+    SEL_CHK_PAD( 14, 1 );
+    var152 = SEL( YESNO_SEL );
+    CLOSE_MSG_WIN();
+    
+    if ( var152 == 1 )
+    {
+        return;
+    }
+
+    PLAY_SOUNDEFFECT( 193 );
+    WAIT( 4 );
+    FLD_FUNCTION_0008( var150, var153, 0, 0, 0.10f );
+    WAIT( 100 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 0 );
+    AI_FUNCTION_00DC( 532 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    TV_STUDIO();
+}
+
+
+// Procedure Index: 36
+void tomb_01F_door_enc()
+{
+    int var161;
+    int var157;
+    int var156;
+    int var155;
+    int var158;
+    int var160;
+    int var154;
+    int var159;
+    var161 = RNG( 1000 );
+    var157 = FLD_FUNCTION_0025();
+    var156 = FLD_FUNCTION_0027();
+    var155 = FLD_FUNCTION_0014();
+    sVar6 = 1;
+    var158 = FLD_FUNCTION_0029( 2 );
+    
+    if ( BIT_CHK( 3906 ) == 0 )
+    {
+        OPEN_MSG_WIN();
+        
+        if ( BIT_CHK( 3911 ) == 0 )
+        {
+            BIT_ON( 3911 );
+            var160 = NAVI_BU_OPEN( 280, -40, 5, 33 );
+            MSG( TOMB_ENC_1F_DOOR_1 );
+        }
+        else 
+        {
+            var160 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+            MSG( TOMB_ENC_1F_DOOR_2 );
+        }
+
+        NAVI_BU_CLOSE( var160 );
+        change_speaker();
+        OPEN_MSG_WIN();
+        MSG( OPEN_NOT_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var154 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var154 == 1 )
+        {
+            return;
+        }
+
+    }
+
+    PLAY_SOUNDEFFECT( 741 );
+    WAIT( 1 );
+    FLD_FUNCTION_0043( var155 );
+    FLD_FUNCTION_0008( var155, var157, 0, 0, 1 );
+    FLD_FUNCTION_0009( var155 );
+    FLD_FUNCTION_0010( var156, 0 );
+    FLD_FUNCTION_0015();
+    
+    if ( ( var155 == 10254 ) && ( BIT_CHK( 3916 ) == 0 ) )
+    {
+        BIT_ON( 3916 );
+        WAIT( 10 );
+        var159 = CALL_BATTLE( 880, 0 );
+    }
+    else if ( ( var155 == 10244 ) && ( BIT_CHK( 3917 ) == 0 ) )
+    {
+        BIT_ON( 3917 );
+        WAIT( 10 );
+        var159 = CALL_BATTLE( 883, 0 );
+    }
+    else if ( ( var155 == 10251 ) && ( BIT_CHK( 3918 ) == 0 ) )
+    {
+        BIT_ON( 3918 );
+        WAIT( 10 );
+        var159 = CALL_BATTLE( 887, 0 );
+    }
+    else if ( ( var155 == 10249 ) && ( BIT_CHK( 3919 ) == 0 ) )
+    {
+        BIT_ON( 3919 );
+        WAIT( 10 );
+        var159 = CALL_BATTLE( 941, 0 );
+    }
+    else if ( ( var155 == 10244 ) || ( var155 == 10251 ) )
+    {
+        WAIT( 10 );
+        var159 = CALL_BATTLE( 941, 0 );
+    }
+    else if ( ( var155 != 10241 ) && ( var161 <= 200 ) )
+    {
+        WAIT( 10 );
+        var159 = CALL_BATTLE( var158, 0 );
+    }
+
+    
+    if ( var159 == 1 )
+    {
+        dng_decease_2();
+        return;
+    }
+
+}
+
+
+// Procedure Index: 37
+void tomb_04F_door_enc()
+{
+    int var169;
+    int var165;
+    int var164;
+    int var163;
+    int var166;
+    int var168;
+    int var162;
+    int var167;
+    var169 = RNG( 1000 );
+    var165 = FLD_FUNCTION_0025();
+    var164 = FLD_FUNCTION_0027();
+    var163 = FLD_FUNCTION_0014();
+    sVar6 = 1;
+    var166 = FLD_FUNCTION_0029( 2 );
+    
+    if ( BIT_CHK( 3907 ) == 0 )
+    {
+        OPEN_MSG_WIN();
+        var168 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( TOMB_ENC_5F_DOOR );
+        NAVI_BU_CLOSE( var168 );
+        change_speaker();
+        OPEN_MSG_WIN();
+        MSG( OPEN_NOT_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var162 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var162 == 1 )
+        {
+            return;
+        }
+
+        BIT_ON( 3907 );
+    }
+
+    PLAY_SOUNDEFFECT( 741 );
+    WAIT( 1 );
+    FLD_FUNCTION_0043( var163 );
+    FLD_FUNCTION_0008( var163, var165, 0, 0, 1 );
+    FLD_FUNCTION_0009( var163 );
+    FLD_FUNCTION_0010( var164, 0 );
+    FLD_FUNCTION_0015();
+    
+    if ( ( var163 == 10257 ) && ( BIT_CHK( 3912 ) == 0 ) )
+    {
+        BIT_ON( 3912 );
+        WAIT( 10 );
+        var167 = CALL_BATTLE( 938, 0 );
+    }
+    else if ( ( ( ( ( ( ( ( var163 == 10257 ) || ( var163 == 10269 ) ) || ( var163 == 10272 ) ) || ( var163 == 10281 ) ) || ( var163 == 10299 ) ) || ( var163 == 10311 ) ) || ( var163 == 10320 ) ) || ( var163 == 10329 ) )
+    {
+        WAIT( 10 );
+        var167 = CALL_BATTLE( var166, 0 );
+    }
+    else if ( var169 <= 200 )
+    {
+        WAIT( 10 );
+        var167 = CALL_BATTLE( var166, 0 );
+    }
+
+    
+    if ( var167 == 1 )
+    {
+        dng_decease_2();
+        return;
+    }
+
+}
+
+
+// Procedure Index: 38
+void tomb_07F_door_enc()
+{
+    int var177;
+    int var173;
+    int var172;
+    int var171;
+    int var174;
+    int var176;
+    int var170;
+    int var175;
+    var177 = RNG( 1000 );
+    var173 = FLD_FUNCTION_0025();
+    var172 = FLD_FUNCTION_0027();
+    var171 = FLD_FUNCTION_0014();
+    sVar6 = 1;
+    var174 = FLD_FUNCTION_0029( 2 );
+    
+    if ( BIT_CHK( 3908 ) == 0 )
+    {
+        OPEN_MSG_WIN();
+        var176 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( TOMB_ENC_7F_DOOR_1 );
+        NAVI_BU_CLOSE( var176 );
+        var176 = NAVI_BU_OPEN( 280, -40, 5, 0x20 );
+        MSG( TOMB_ENC_7F_DOOR_2 );
+        NAVI_BU_CLOSE( var176 );
+        change_speaker();
+        MSG( OPEN_NOT_DOOR_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var170 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var170 == 1 )
+        {
+            return;
+        }
+
+        BIT_ON( 3908 );
+    }
+
+    PLAY_SOUNDEFFECT( 741 );
+    WAIT( 1 );
+    FLD_FUNCTION_0043( var171 );
+    FLD_FUNCTION_0008( var171, var173, 0, 0, 1 );
+    FLD_FUNCTION_0009( var171 );
+    FLD_FUNCTION_0010( var172, 0 );
+    FLD_FUNCTION_0015();
+    
+    if ( ( var171 == 10290 ) && ( BIT_CHK( 3913 ) == 0 ) )
+    {
+        BIT_ON( 3913 );
+        WAIT( 10 );
+        var175 = CALL_BATTLE( 939, 0 );
+    }
+    else if ( ( ( ( ( ( ( var171 == 10245 ) || ( var171 == 10249 ) ) || ( var171 == 10255 ) ) || ( var171 == 10259 ) ) || ( var171 == 10268 ) ) || ( var171 == 10300 ) ) || ( var171 == 10290 ) )
+    {
+        WAIT( 10 );
+        var175 = CALL_BATTLE( var174, 0 );
+    }
+    else if ( var177 <= 200 )
+    {
+        WAIT( 10 );
+        var175 = CALL_BATTLE( var174, 0 );
+    }
+
+    
+    if ( var175 == 1 )
+    {
+        dng_decease_2();
+        return;
+    }
+
+}
+
+
+// Procedure Index: 39
+void get_box_item_id()
+{
+    sVar3 = FLD_FUNCTION_0019();
+    
+    if ( FLD_FUNCTION_001A() == 4 )
+    {
+        sVar0 = FLD_FUNCTION_001C();
+        sVar0 = ( sVar0 - ( ( sVar0 * RNG( 3000 ) ) / 10000 ) );
+    }
+    else 
+    {
+        sVar1 = FLD_FUNCTION_001D();
+        sVar2 = FLD_FUNCTION_001E();
+    }
+
+}
+
+
+// Procedure Index: 40
+void itembox_open_anim()
+{
+    FLD_FUNCTION_0008( sVar3, 1, 0, 0, 1.00f );
+    WAIT( 10 );
+    FUNCTION_0023( 3, 1 );
+    WAIT( 15 );
+    FLD_FUNCTION_001F();
+}
+
+
+// Procedure Index: 41
+void death_check()
+{
+    death_check_hook();
+}
+
+
+// Procedure Index: 42
+void death_box()
+{
+    death_box_hook();
+}
+
+
+// Procedure Index: 43
+void encount_box()
+{
+    itembox_open_anim();
+    death_check();
+    trap_encount();
+}
+
+
+// Procedure Index: 44
+void trap_encount()
+{
+    trap_encount_hook();
+}
+
+
+// Procedure Index: 45
+void rank_box()
+{
+    rank_box_hook();
+}
+
+
+// Procedure Index: 46
+void no_rank_box()
+{
+    no_rank_box_hook();
+}
+
+
+// Procedure Index: 47
+void itembox_open()
+{
+    int var196;
+    var196 = ( GET_ITEM( sVar1 ) + sVar2 );
+    OPEN_MSG_WIN();
+    
+    if ( sVar0 > 0 )
+    {
+        ADD_YEN( sVar0 );
+        SET_MSG_VAR( 0, sVar0, 0 );
+        MSG( GET_MONEY_MES );
+    }
+    else 
+    {
+        SET_ITEM( sVar1, var196 );
+        SET_MSG_VAR( 0, sVar1, 1 );
+        SET_MSG_VAR( 1, sVar2, 0 );
+        MSG( GET_ITEM_MES );
+    }
+
+    CLOSE_MSG_WIN();
+}
+
+
+// Procedure Index: 48
+void tomb_enc_box()
+{
+    
+    if ( FLD_FUNCTION_0026() == 8 )
+    {
+        itembox_open_anim();
+        tomb_enc_box_rank_8();
+    }
+    else if ( FLD_FUNCTION_0026() == 9 )
+    {
+        tomb_enc_box_rank_9();
+    }
+
+}
+
+
+// Procedure Index: 49
+void tomb_enc_box_rank_8()
+{
+    int var197;
+    int var199;
+    int var200;
+    int var198;
+    int var201;
+    int var203;
+    int var202;
+    var197 = GET_FLOOR_ID();
+    var199 = RNG( 1000 );
+    var200 = RNG( 1000 );
+    
+    if ( ( var197 == 163 ) || ( var197 == 164 ) )
+    {
+        
+        if ( var199 < 500 )
+        {
+            var198 = 545;
+        }
+        else 
+        {
+            var198 = 546;
+        }
+
+    }
+    else if ( var197 == 165 )
+    {
+        
+        if ( var199 < 500 )
+        {
+            var198 = 547;
+        }
+        else 
+        {
+            var198 = 548;
+        }
+
+    }
+    else if ( var197 == 166 )
+    {
+        
+        if ( var199 < 500 )
+        {
+            var198 = 553;
+        }
+        else 
+        {
+            var198 = 554;
+        }
+
+    }
+    else if ( var197 == 167 )
+    {
+        
+        if ( var199 < 500 )
+        {
+            var198 = 555;
+        }
+        else 
+        {
+            var198 = 556;
+        }
+
+    }
+    else if ( ( var197 == 168 ) || ( var197 == 169 ) )
+    {
+        
+        if ( var199 < 500 )
+        {
+            var198 = 557;
+        }
+        else 
+        {
+            var198 = 558;
+        }
+
+    }
+
+    
+    if ( ( var197 == 163 ) || ( var197 == 164 ) )
+    {
+        
+        if ( var200 < 250 )
+        {
+            var201 = ( 0x0200 + 176 );
+        }
+        else if ( var200 < 500 )
+        {
+            var201 = ( 0x0200 + 177 );
+        }
+        else 
+        {
+            var201 = ( 768 + 163 );
+        }
+
+    }
+    else if ( ( ( var197 == 165 ) || ( var197 == 166 ) ) || ( var197 == 167 ) )
+    {
+        
+        if ( var200 < 250 )
+        {
+            var201 = ( 768 + 161 );
+        }
+        else if ( var200 < 400 )
+        {
+            var201 = ( 0x0200 + 178 );
+        }
+        else if ( var200 < 550 )
+        {
+            var201 = ( 0x0100 + 165 );
+        }
+        else if ( var200 < 700 )
+        {
+            var201 = ( 0x0100 + 166 );
+        }
+        else if ( var200 < 850 )
+        {
+            var201 = ( 0x0100 + 167 );
+        }
+        else 
+        {
+            var201 = ( 0x0100 + 168 );
+        }
+
+    }
+    else if ( ( var197 == 168 ) || ( var197 == 169 ) )
+    {
+        
+        if ( var200 < 150 )
+        {
+            var201 = ( 768 + 113 );
+        }
+        else if ( var200 < 300 )
+        {
+            var201 = ( 768 + 114 );
+        }
+        else if ( var200 < 450 )
+        {
+            var201 = ( 768 + 115 );
+        }
+        else if ( var200 < 600 )
+        {
+            var201 = ( 768 + 116 );
+        }
+        else if ( var200 < 700 )
+        {
+            var201 = ( 0x0100 + 169 );
+        }
+        else if ( var200 < 800 )
+        {
+            var201 = ( 0x0100 + 170 );
+        }
+        else if ( var200 < 900 )
+        {
+            var201 = ( 0x0100 + 171 );
+        }
+        else 
+        {
+            var201 = ( 0x0100 + 172 );
+        }
+
+    }
+
+    OPEN_MSG_WIN();
+    MSG( TRAPBOX_ENCOUNT );
+    CLOSE_MSG_WIN();
+    WAIT( 10 );
+    var203 = CALL_BATTLE( var198, 0 );
+    
+    if ( var203 != 0 )
+    {
+        
+        if ( var203 == 1 )
+        {
+            gVar9 = 0;
+            dng_decease_2();
+        }
+
+        return;
+    }
+
+    var202 = ( GET_ITEM( var201 ) + 1 );
+    SET_ITEM( var201, var202 );
+    SET_MSG_VAR( 0, var201, 1 );
+    SET_MSG_VAR( 1, 1, 0 );
+    OPEN_MSG_WIN();
+    MSG( GET_ITEM_MES );
+    CLOSE_MSG_WIN();
+}
+
+
+// Procedure Index: 50
+void tomb_enc_box_rank_9()
+{
+    tomb_enc_box_rank_9_hook();
+}
+
+
+// Procedure Index: 51
+void box_open_010_1()
+{
+    box_open_010_1_hook();
+}
+
+
+// Procedure Index: 52
+void box_open_010_2()
+{
+    box_open_010_2_hook();
+}
+
+
+// Procedure Index: 53
+void box_open_023_1()
+{
+    box_open_023_1_hook();
+}
+
+
+// Procedure Index: 54
+void box_open_023_2()
+{
+    box_open_023_2_hook();
+}
+
+
+// Procedure Index: 55
+void box_open_067()
+{
+    int var218;
+    sVar0 = 0;
+    sVar1 = ( 0x0400 + 54 );
+    sVar2 = 1;
+    var218 = ( GET_ITEM( sVar1 ) + sVar2 );
+    BIT_ON( 3780 );
+    itembox_open_anim();
+    death_check();
+    itembox_open();
+}
+
+
+// Procedure Index: 56
+void box_open_084()
+{
+    int var219;
+    sVar0 = 0;
+    sVar1 = ( 0x0400 + 53 );
+    sVar2 = 1;
+    var219 = ( GET_ITEM( sVar1 ) + sVar2 );
+    BIT_ON( 3810 );
+    itembox_open_anim();
+    death_check();
+    itembox_open();
+}
+
+
+// Procedure Index: 57
+void box_open_086()
+{
+    int var220;
+    sVar0 = 0;
+    sVar1 = ( 0x0400 + 52 );
+    sVar2 = 1;
+    var220 = ( GET_ITEM( sVar1 ) + sVar2 );
+    BIT_ON( 3809 );
+    itembox_open_anim();
+    death_check();
+    itembox_open();
+}
+
+
+// Procedure Index: 58
+void box_open_161_1()
+{
+    box_open_161_1_hook();
+}
+
+
+// Procedure Index: 59
+void box_open_161_2()
+{
+    int var222;
+    sVar0 = 0;
+    sVar1 = ( 0x0200 + 176 );
+    sVar2 = 1;
+    var222 = ( GET_ITEM( sVar1 ) + sVar2 );
+    BIT_ON( 3921 );
+    itembox_open_anim();
+    death_check();
+    itembox_open();
+}
+
+
+// Procedure Index: 60
+void box_open_161_3()
+{
+    box_open_161_3_hook();
+}
+
+
+// Procedure Index: 61
+void box_open_161_4()
+{
+    box_open_161_4_hook();
+}
+
+
+// Procedure Index: 62
+void set_pc_pos()
+{
+    FLD_FUNCTION_000C( FLD_FUNCTION_0004( 0 ), sVar7 );
+    
+    if ( GET_PARTY_MEMBER_ID( 0 ) != 0 )
+    {
+        FLD_FUNCTION_000C( FLD_FUNCTION_0004( 1 ), sVar8 );
+    }
+
+    
+    if ( GET_PARTY_MEMBER_ID( 1 ) != 0 )
+    {
+        FLD_FUNCTION_000C( FLD_FUNCTION_0004( 2 ), var9 );
+    }
+
+    
+    if ( GET_PARTY_MEMBER_ID( 2 ) != 0 )
+    {
+        FLD_FUNCTION_000C( FLD_FUNCTION_0004( 3 ), sVar10 );
+    }
+
+    FLD_FUNCTION_0017( 0, 1 );
+    WAIT( 30 );
+    FUNCTION_0015( 30 );
+    FADE_SYNC();
+}
+
+
+// Procedure Index: 63
+void change_speaker()
+{
+    CLOSE_MSG_WIN();
+    OPEN_MSG_WIN();
+}
+
+
+// Procedure Index: 64
+void eve_dressroom_chie()
+{
+    FUNCTION_0077();
+    CALL_EVENT( 172, 1, 0 );
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 513 );
+    AI_FUNCTION_00DC( 513 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    CALL_EVENT( 173, 1, 0 );
+    CALL_EVENT( 174, 1, 0 );
+    BIT_ON( 49 );
+    EVT_FUNCTION_0001( 1 );
+}
+
+
+// Procedure Index: 65
+void eve_dressroom_yukiko()
+{
+    BIT_ON( 0x20 );
+    CALL_EVENT( 177, 1, 0 );
+    CALL_DUNGEON( 7, 2 );
+}
+
+
+// Procedure Index: 66
+void eve_danceroom_yukiko()
+{
+    BIT_ON( 17 );
+    BIT_OFF( 190 );
+    FUNCTION_0077();
+    CALL_EVENT( 178, 1, 0 );
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 514 );
+    AI_FUNCTION_00DC( 514 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    CALL_EVENT( 179, 1, 0 );
+    CALL_EVENT( 180, 1, 0 );
+    FUNCTION_0096( 1, 0 );
+}
+
+
+// Procedure Index: 67
+void eve_sauna_entrance()
+{
+    BIT_ON( 2 );
+    CALL_EVENT( 211, 1, 0 );
+    CALL_DUNGEON( 20, 0 );
+}
+
+
+// Procedure Index: 68
+void eve_sauna_half()
+{
+    BIT_ON( 33 );
+    CALL_EVENT( 212, 1, 0 );
+    CALL_DUNGEON( 23, 0 );
+}
+
+
+// Procedure Index: 69
+void eve_sauna_bossroom()
+{
+    BIT_ON( 18 );
+    BIT_OFF( 188 );
+    FUNCTION_0077();
+    CALL_EVENT( 213, 1, 0 );
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 515 );
+    AI_FUNCTION_00DC( 515 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    CALL_EVENT( 214, 1, 0 );
+    CALL_EVENT( 215, 1, 0 );
+    FUNCTION_0096( 2, 0 );
+}
+
+
+// Procedure Index: 70
+void eve_strip_entrance()
+{
+    BIT_ON( 3 );
+    CALL_EVENT( 247, 1, 0 );
+    CALL_DUNGEON( 40, 0 );
+}
+
+
+// Procedure Index: 71
+void eve_strip_half()
+{
+    BIT_ON( 34 );
+    CALL_EVENT( 248, 1, 0 );
+    CALL_DUNGEON( 43, 0 );
+}
+
+
+// Procedure Index: 72
+void eve_strip_bossroom()
+{
+    BIT_ON( 19 );
+    BIT_OFF( 186 );
+    FUNCTION_0077();
+    CALL_EVENT( 249, 1, 0 );
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 516 );
+    AI_FUNCTION_00DC( 516 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    CALL_EVENT( 250, 1, 0 );
+    CALL_EVENT( 251, 1, 0 );
+    BIT_ON( 56 );
+    FUNCTION_003A();
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 517 );
+    AI_FUNCTION_00DC( 517 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    CALL_EVENT( 252, 1, 0 );
+    CALL_EVENT( 253, 1, 0 );
+    FUNCTION_0096( 3, 0 );
+    INCREASE_SL( 24 );
+}
+
+
+// Procedure Index: 73
+void eve_gameworld_bossroom()
+{
+    BIT_ON( 20 );
+    BIT_OFF( 184 );
+    FUNCTION_0077();
+    CALL_EVENT( 277, 1, 0 );
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 518 );
+    AI_FUNCTION_00DC( 518 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    CALL_EVENT( 278, 1, 0 );
+    CALL_EVENT( 279, 1, 0 );
+    FUNCTION_0096( 4, 0 );
+    CALL_EVENT( 280, 1, 0 );
+    CALL_EVENT( 281, 1, 0 );
+}
+
+
+// Procedure Index: 74
+void eve_secretbase_entrance()
+{
+    BIT_ON( 5 );
+    CALL_EVENT( 305, 1, 0 );
+    CALL_DUNGEON( 80, 0 );
+}
+
+
+// Procedure Index: 75
+void eve_secretbase_bossroom()
+{
+    BIT_ON( 21 );
+    BIT_OFF( 182 );
+    FUNCTION_0077();
+    CALL_EVENT( 306, 1, 0 );
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 519 );
+    AI_FUNCTION_00DC( 519 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    CALL_EVENT( 307, 1, 0 );
+    CALL_EVENT( 308, 1, 0 );
+    FUNCTION_0096( 5, 0 );
+}
+
+
+// Procedure Index: 76
+void eve_heaven_first()
+{
+    CALL_EVENT( 353, 1, 0 );
+}
+
+
+// Procedure Index: 77
+void eve_heaven_entrance()
+{
+    BIT_ON( 6 );
+    CALL_EVENT( 354, 1, 0 );
+}
+
+
+// Procedure Index: 78
+void eve_heaven_half()
+{
+    BIT_ON( 41 );
+    CALL_EVENT( 355, 1, 0 );
+    CALL_DUNGEON( 104, 0 );
+}
+
+
+// Procedure Index: 79
+void eve_heaven_bossroom()
+{
+    BIT_ON( 22 );
+    BIT_OFF( 180 );
+    CALL_EVENT( 356, 1, 0 );
+    PLAY_CUTSCENE( 11 );
+    FUNCTION_0065();
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 520 );
+    AI_FUNCTION_00DC( 520 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    CALL_EVENT( 357, 1, 0 );
+    FUNCTION_0096( 6, 0 );
+}
+
+
+// Procedure Index: 80
+void eve_last_bossroom()
+{
+    BIT_ON( 23 );
+    FUNCTION_0077();
+    CALL_EVENT( 418, 1, 0 );
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 521 );
+    AI_FUNCTION_00DC( 521 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    CALL_EVENT( 419, 1, 0 );
+    PLAY_CUTSCENE( 14 );
+    FUNCTION_0065();
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 522 );
+    AI_FUNCTION_00DC( 522 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    
+    if ( BIT_CHK( 2069 ) == 1 )
+    {
+        EVT_FUNCTION_004B();
+        INCREASE_SL( 0x20 );
+    }
+
+    CALL_EVENT( 420, 1, 0 );
+    INCREASE_SL( 30 );
+    FUNCTION_006B( 0 );
+    CALL_EVENT( 421, 1, 0 );
+    FUNCTION_0096( 7, 0 );
+    BIT_ON( 1598 );
+    BIT_OFF( 2391 );
+    
+    if ( DATE_CHK( 12, 23 ) || DATE_CHK( 12, 24 ) )
+    {
+        BIT_OFF( 2391 );
+    }
+    else if ( ( ( ( ( ( ( BIT_CHK( 1058 ) || BIT_CHK( 1060 ) ) || BIT_CHK( 1066 ) ) || BIT_CHK( 1069 ) ) || BIT_CHK( 1080 ) ) || BIT_CHK( 1082 ) ) || BIT_CHK( 1558 ) ) || ( BIT_CHK( 1062 ) && BIT_CHK( 1065 ) ) )
+    {
+        BIT_ON( 2391 );
+    }
+
+    
+    if ( ( ( DATE_CHK( 12, 22 ) && BIT_CHK( 2391 ) ) || ( DATE_CHK( 12, 23 ) && BIT_CHK( 2391 ) ) ) || DATE_CHK( 12, 24 ) )
+    {
+        BIT_OFF( 1598 );
+    }
+
+    BIT_OFF( 138 );
+    CALL_EVENT( 422, 1, 0 );
+    INCREASE_SL( 30 );
+    BIT_ON( 693 );
+    FUNCTION_006B( -1 );
+}
+
+
+// Procedure Index: 81
+void eve_extra_velvetroom()
+{
+    SHOW_DATE( 0 );
+    CALL_EVENT( 432, 1, 0 );
+    SHOW_DATE( 1 );
+}
+
+
+// Procedure Index: 82
+void eve_extra_bossroom()
+{
+    int var225;
+    CALL_EVENT( 433, 1, 0 );
+    PLAY_CUTSCENE( 15 );
+    FUNCTION_0065();
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 523 );
+    AI_FUNCTION_00DC( 523 );
+    AI_FUNCTION_00DD();
+    CALL_EVENT( 440, 1, 0 );
+    var225 = 2;
+    _604:
+    
+    if ( var225 < 9 )
+    {
+        RM_PARTY( var225 );
+        var225 = ( var225 + 1 );
+        goto _604;
+    }
+
+    FUNCTION_003A();
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 533 );
+    AI_FUNCTION_00DC( 533 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    CALL_EVENT( 434, 1, 0 );
+    SHOW_DATE( 0 );
+    CALL_EVENT( 435, 1, 0 );
+    SHOW_DATE( 1 );
+    PLAY_CUTSCENE( 0x10 );
+    FUNCTION_0065();
+    BIT_ON( 47 );
+    SHOW_DATE( 0 );
+    CALL_EVENT( 465, 4, 0 );
+    FADE_SYNC();
+    SHOW_DATE( 1 );
+    FUNCTION_0096( 9, 0 );
+}
+
+
+// Procedure Index: 83
+void eve_marie_entrance()
+{
+    BIT_ON( 5664 );
+}
+
+
+// Procedure Index: 84
+void eve_marie_half()
+{
+    BIT_ON( 5666 );
+    CALL_EVENT( 455, 505, 0 );
+}
+
+
+// Procedure Index: 85
+void eve_marie_bossroom()
+{
+    int var228;
+    int var227;
+    int var226;
+    CALL_EVENT( 455, 506, 0 );
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 535 );
+    AI_FUNCTION_00DC( 535 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    CALL_EVENT( 455, 507, 0 );
+    var228 = GET_TOT_HP( 1 );
+    SET_HP( 1, var228 );
+    var227 = 0;
+    _606:
+    
+    if ( var227 < 3 )
+    {
+        var226 = GET_PARTY_MEMBER_ID( var227 );
+        
+        if ( var226 != 0 )
+        {
+            
+            if ( var226 == 2 )
+            {
+                var228 = GET_TOT_HP( 2 );
+            }
+            else if ( var226 == 3 )
+            {
+                var228 = GET_TOT_HP( 3 );
+            }
+            else if ( var226 == 4 )
+            {
+                var228 = GET_TOT_HP( 4 );
+            }
+            else if ( var226 == 6 )
+            {
+                var228 = GET_TOT_HP( 6 );
+            }
+            else if ( var226 == 7 )
+            {
+                var228 = GET_TOT_HP( 7 );
+            }
+            else if ( var226 == 8 )
+            {
+                var228 = GET_TOT_HP( 8 );
+            }
+
+            SET_HP( var226, var228 );
+        }
+
+        var227 = ( var227 + 1 );
+        goto _606;
+    }
+
+    SHOW_DATE( 0 );
+    FUNCTION_0023( 3, 0 );
+    AI_FUNCTION_00DE();
+    AI_FUNCTION_00DF();
+    SET_CNT( 34, 534 );
+    AI_FUNCTION_00DC( 534 );
+    AI_FUNCTION_00DD();
+    SHOW_DATE( 1 );
+    BIT_ON( 5665 );
+    CALL_EVENT( 455, 501, 0 );
+    FUNCTION_006B( 0 );
+    CALL_EVENT( 455, 502, 0 );
+    FUNCTION_0096( 8, 0 );
+    BIT_ON( 3236 );
+    CALL_EVENT( 455, 503, 0 );
+    FUNCTION_006B( -1 );
+    BIT_OFF( 3236 );
+}
+
+
+// Procedure Index: 86
+void get_reach_level()
+{
+    int var231;
+    int var232;
+    int var233;
+    int var234;
+    int var229;
+    int var230;
+    var231 = GET_FLOOR_ID();
+    var232 = ( var231 + 1 );
+    
+    if ( ( var231 >= 160 ) && ( var231 <= 179 ) )
+    {
+        var233 = 35;
+        var234 = 36;
+    }
+    else 
+    {
+        var233 = 9;
+        var234 = 10;
+    }
+
+    var229 = GET_CNT( var233 );
+    var230 = GET_CNT( var234 );
+    
+    if ( var231 >= var229 )
+    {
+        SET_CNT( var233, var232 );
+    }
+
+    
+    if ( var231 >= var230 )
+    {
+        SET_CNT( var234, var232 );
+    }
+
+}
+
+
+// Procedure Index: 87
+void common_floor_change()
+{
+    common_floor_change_hook();
+}
+
+
+// Procedure Index: 88
+void goto_stair()
+{
+    int var235;
+    int var236;
+    var235 = GET_FLOOR_ID();
+    common_floor_change();
+    get_reach_level();
+    
+    if ( ( var235 >= 20 ) && ( var235 < 40 ) )
+    {
+        var236 = 27;
+    }
+    else if ( ( ( var235 >= 40 ) && ( var235 < 60 ) ) || ( ( ( var235 >= 100 ) && ( var235 < 120 ) ) && ( BIT_CHK( 3167 ) == 0 ) ) )
+    {
+        var236 = 25;
+    }
+    else if ( ( var235 >= 80 ) && ( var235 < 100 ) )
+    {
+        var236 = 26;
+    }
+    else if ( ( ( var235 >= 120 ) && ( var235 < 140 ) ) && ( BIT_CHK( 3167 ) == 0 ) )
+    {
+        var236 = 0;
+        PLAY_SOUNDEFFECT( 705 );
+    }
+    else 
+    {
+        var236 = 24;
+    }
+
+    BIT_OFF( 3167 );
+    
+    if ( var236 != 0 )
+    {
+        FUNCTION_0023( 1, var236 );
+    }
+
+    FADE( 1, 10 );
+    FADE_SYNC();
+    
+    if ( ( ( ( ( ( ( ( ( ( var235 == 6 ) || ( var235 == 12 ) ) || ( var235 == 30 ) ) || ( var235 == 50 ) ) || ( var235 == 69 ) ) || ( var235 == 88 ) ) || ( var235 == 109 ) ) || ( var235 == 121 ) ) || ( var235 == 148 ) ) || ( var235 == 169 ) )
+    {
+        CALL_DUNGEON( ( var235 + 1 ), 0 );
+    }
+    else if ( var235 == 122 )
+    {
+        CALL_DUNGEON( 129, 0 );
+    }
+    else 
+    {
+        GOTO_REL_FLOOR( 1 );
+    }
+
+}
+
+
+// Procedure Index: 89
+void backto_stair()
+{
+    backto_stair_hook();
+}
+
+
+// Procedure Index: 90
+void dng_tbox_hook()
+{
+    int var240;
+    int var241;
+    var240 = GET_FLOOR_ID();
+    var241 = FLD_FUNCTION_0026();
+    
+    if ( ( ( BIT_CHK( 3118 ) == 1 ) && ( var241 != 1 ) ) && BIT_CHK( 6328 ) )
+    {
+        var241 = 10;
+    }
+
+    get_box_item_id();
+    
+    if ( ( ( var240 == 10 ) && ( sVar3 == 11262 ) ) && ( BIT_CHK( 3691 ) == 0 ) )
+    {
+        box_open_010_1();
+    }
+    else if ( ( ( var240 == 10 ) && ( sVar3 == 11261 ) ) && ( BIT_CHK( 3692 ) == 0 ) )
+    {
+        box_open_010_2();
+    }
+    else if ( ( ( var240 == 23 ) && ( sVar3 == 11262 ) ) && ( BIT_CHK( 3716 ) == 0 ) )
+    {
+        box_open_023_1();
+    }
+    else if ( ( ( var240 == 23 ) && ( sVar3 == 11260 ) ) && ( BIT_CHK( 3717 ) == 0 ) )
+    {
+        box_open_023_2();
+    }
+    else if ( ( ( var240 == 67 ) && ( sVar3 == 11261 ) ) && ( BIT_CHK( 3780 ) == 0 ) )
+    {
+        box_open_067();
+    }
+    else if ( ( ( var240 == 84 ) && ( sVar3 == 11261 ) ) && ( BIT_CHK( 3810 ) == 0 ) )
+    {
+        box_open_084();
+    }
+    else if ( ( ( var240 == 86 ) && ( sVar3 == 11261 ) ) && ( BIT_CHK( 3809 ) == 0 ) )
+    {
+        box_open_086();
+    }
+    else if ( ( ( var240 == 161 ) && ( sVar3 == 11262 ) ) && ( BIT_CHK( 3920 ) == 0 ) )
+    {
+        box_open_161_1();
+    }
+    else if ( ( ( var240 == 161 ) && ( sVar3 == 11261 ) ) && ( BIT_CHK( 3921 ) == 0 ) )
+    {
+        box_open_161_2();
+    }
+    else if ( ( ( var240 == 161 ) && ( sVar3 == 11260 ) ) && ( BIT_CHK( 3922 ) == 0 ) )
+    {
+        box_open_161_3();
+    }
+    else if ( ( ( var240 == 161 ) && ( sVar3 == 11259 ) ) && ( BIT_CHK( 3923 ) == 0 ) )
+    {
+        box_open_161_4();
+    }
+    else if ( ( ( var240 > 160 ) && ( var241 == 8 ) ) || ( var241 == 9 ) )
+    {
+        tomb_enc_box();
+    }
+    else if ( var241 == 10 )
+    {
+        
+        if ( ( BIT_CHK( 3080 ) == 0 ) && ( BIT_CHK( 3118 ) == 1 ) )
+        {
+            death_box();
+        }
+        else 
+        {
+            encount_box();
+        }
+
+    }
+    else if ( var241 == 1 )
+    {
+        rank_box();
+    }
+    else 
+    {
+        no_rank_box();
+    }
+
+}
+
+
+// Procedure Index: 91
+void death_check_hook()
+{
+    int var242;
+    var242 = GET_CNT( 38 );
+    
+    if ( ( GET_FLOOR_ID() < 160 ) && ( BIT_CHK( 3080 ) == 0 ) )
+    {
+        
+        if ( var242 >= 21 )
+        {
+            var242 = 0;
+        }
+        else if ( BIT_CHK( 3118 ) == 0 )
+        {
+            var242 = ( var242 + 1 );
+        }
+
+        SET_CNT( 38, var242 );
+        
+        if ( ( var242 == 13 ) && ( BIT_CHK( 3118 ) == 0 ) )
+        {
+            
+            if ( BIT_CHK( 6328 ) )
+            {
+                SET_CNT( 38, 14 );
+                
+                if ( !BIT_CHK( 6335 ) )
+                {
+                    HELP_MSG( HELP_REAPER );
+                    BIT_ON( 6335 );
+                }
+
+            }
+
+            BIT_ON( 3118 );
+        }
+        else if ( !BIT_CHK( 6328 ) )
+        {
+            BIT_OFF( 3118 );
+        }
+
+    }
+
+}
+
+
+// Procedure Index: 92
+void death_box_hook()
+{
+    int var243;
+    int var244;
+    int var245;
+    int var246;
+    int var247;
+    int var248;
+    int var249;
+    var243 = RNG( 1000 );
+    var244 = 0;
+    BIT_OFF( 3118 );
+    BIT_ON( 3119 );
+    OPEN_MSG_WIN();
+    MSG( DEATH_WAIT );
+    MSG( DEATH_BOX );
+    SEL_CHK_PAD( 14, 1 );
+    var245 = SEL( YESNO_SEL );
+    CLOSE_MSG_WIN();
+    var246 = 0;
+    var247 = 0;
+    var248 = 0;
+    var249 = 0;
+    
+    if ( var245 == 0 )
+    {
+        OPEN_MSG_WIN();
+        
+        if ( BIT_CHK( 52 ) == 1 )
+        {
+            var246 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+            MSG( DEATH_RISE );
+        }
+        else 
+        {
+            var246 = NAVI_BU_OPEN( 280, -40, 8, 30 );
+            MSG( DEATH_KUMA );
+        }
+
+        NAVI_BU_CLOSE( var246 );
+        change_speaker();
+        MSG( DEATH_BOX_OPEN_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var245 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var245 == 0 )
+        {
+            itembox_open_anim();
+            OPEN_MSG_WIN();
+            MSG( DEATH_ENCOUNT );
+            CLOSE_MSG_WIN();
+            BIT_OFF( 3119 );
+            WAIT( 10 );
+            var247 = CALL_BATTLE( 801, 0 );
+            
+            if ( ( var247 != 0 ) || ( gVar9 == 1 ) )
+            {
+                
+                if ( var247 == 1 )
+                {
+                    gVar9 = 0;
+                    dng_decease_2();
+                }
+                else if ( gVar9 == 1 )
+                {
+                    encount_trap();
+                }
+
+                return;
+            }
+
+            
+            if ( ( ( var243 >= 100 ) && ( GET_ITEM( ( 0 + 36 ) ) == 0 ) ) && ( GET_EQUIPMENT_ID( PartyUnit.Protagonist, 0 ) != ( 0 + 36 ) ) )
+            {
+                var248 = ( 0 + 36 );
+            }
+            else if ( ( ( ( var243 >= 100 ) && ( ( ( GET_PARTY_MEMBER_ID( 0 ) == 2 ) || ( GET_PARTY_MEMBER_ID( 1 ) == 2 ) ) || ( GET_PARTY_MEMBER_ID( 2 ) == 2 ) ) ) && ( GET_EQUIPMENT_ID( PartyUnit.Yosuke, 0 ) != ( 0 + 70 ) ) ) && ( GET_ITEM( ( 0 + 70 ) ) == 0 ) )
+            {
+                var248 = ( 0 + 70 );
+            }
+            else if ( ( ( ( var243 >= 100 ) && ( ( ( GET_PARTY_MEMBER_ID( 0 ) == 3 ) || ( GET_PARTY_MEMBER_ID( 1 ) == 3 ) ) || ( GET_PARTY_MEMBER_ID( 2 ) == 3 ) ) ) && ( GET_EQUIPMENT_ID( PartyUnit.Chie, 0 ) != ( 0 + 142 ) ) ) && ( GET_ITEM( ( 0 + 142 ) ) == 0 ) )
+            {
+                var248 = ( 0 + 142 );
+            }
+            else if ( ( ( ( var243 >= 100 ) && ( ( ( GET_PARTY_MEMBER_ID( 0 ) == 4 ) || ( GET_PARTY_MEMBER_ID( 1 ) == 4 ) ) || ( GET_PARTY_MEMBER_ID( 2 ) == 4 ) ) ) && ( GET_EQUIPMENT_ID( PartyUnit.Yukiko, 0 ) != ( 0 + 104 ) ) ) && ( GET_ITEM( ( 0 + 104 ) ) == 0 ) )
+            {
+                var248 = ( 0 + 104 );
+            }
+            else if ( ( ( ( var243 >= 100 ) && ( ( ( GET_PARTY_MEMBER_ID( 0 ) == 6 ) || ( GET_PARTY_MEMBER_ID( 1 ) == 6 ) ) || ( GET_PARTY_MEMBER_ID( 2 ) == 6 ) ) ) && ( GET_EQUIPMENT_ID( PartyUnit.Kanji, 0 ) != ( 0 + 175 ) ) ) && ( GET_ITEM( ( 0 + 175 ) ) == 0 ) )
+            {
+                var248 = ( 0 + 175 );
+            }
+            else if ( ( ( ( var243 >= 100 ) && ( ( ( GET_PARTY_MEMBER_ID( 0 ) == 8 ) || ( GET_PARTY_MEMBER_ID( 1 ) == 8 ) ) || ( GET_PARTY_MEMBER_ID( 2 ) == 8 ) ) ) && ( GET_EQUIPMENT_ID( PartyUnit.Teddie, 0 ) != ( 0 + 238 ) ) ) && ( GET_ITEM( ( 0 + 238 ) ) == 0 ) )
+            {
+                var248 = ( 0 + 238 );
+            }
+            else if ( ( ( ( var243 >= 100 ) && ( ( ( GET_PARTY_MEMBER_ID( 0 ) == 7 ) || ( GET_PARTY_MEMBER_ID( 1 ) == 7 ) ) || ( GET_PARTY_MEMBER_ID( 2 ) == 7 ) ) ) && ( GET_EQUIPMENT_ID( PartyUnit.Naoto, 0 ) != ( 0 + 197 ) ) ) && ( GET_ITEM( ( 0 + 197 ) ) == 0 ) )
+            {
+                var248 = ( 0 + 197 );
+            }
+            else if ( var243 <= 900 )
+            {
+                var248 = ( 0x0100 + 162 );
+            }
+            else 
+            {
+                var248 = ( 0x0200 + 95 );
+            }
+
+            var249 = ( GET_ITEM( var248 ) + 1 );
+            SET_ITEM( var248, var249 );
+            SET_MSG_VAR( 0, var248, 1 );
+            SET_MSG_VAR( 1, 1, 0 );
+            OPEN_MSG_WIN();
+            MSG( GET_ITEM_MES );
+            CLOSE_MSG_WIN();
+        }
+        else if ( var245 == 1 )
+        {
+            var244 = 1;
+        }
+
+    }
+    else if ( var245 == 1 )
+    {
+        var244 = 1;
+    }
+
+    
+    if ( var244 == 1 )
+    {
+        
+        if ( BIT_CHK( 6328 ) )
+        {
+            OPEN_MSG_WIN();
+            MSG( New_Death_Msg );
+            CLOSE_MSG_WIN();
+            SET_CNT( 999, 1 );
+        }
+
+        BIT_ON( 3118 );
+        BIT_OFF( 3119 );
+    }
+
+}
+
+
+// Procedure Index: 93
+void common_floor_change_hook()
+{
+    RESET_FLOOR();
+    
+    if ( BIT_CHK( 6328 ) )
+    {
+        
+        if ( ( BIT_CHK( 3118 ) == 1 ) && ( GET_CNT( 999 ) == 1 ) )
+        {
+            SET_CNT( 999, 0 );
+            BIT_OFF( 3118 );
+            BIT_OFF( 3119 );
+        }
+
+    }
+    else if ( GET_CNT( 38 ) == 13 )
+    {
+        SET_CNT( 38, 14 );
+        BIT_OFF( 3118 );
+        BIT_OFF( 3119 );
+    }
+
+}
+
+
+// Procedure Index: 94
+void backto_stair_hook()
+{
+    int var250;
+    int var251;
+    int var252;
+    var250 = GET_FLOOR_ID();
+    common_floor_change();
+    var251 = 0;
+    
+    if ( ( var250 >= 20 ) && ( var250 < 40 ) )
+    {
+        var251 = 27;
+    }
+    else if ( ( ( var250 >= 40 ) && ( var250 < 60 ) ) || ( ( ( var250 >= 100 ) && ( var250 < 120 ) ) && ( BIT_CHK( 3167 ) == 0 ) ) )
+    {
+        var251 = 25;
+    }
+    else if ( ( var250 >= 80 ) && ( var250 < 100 ) )
+    {
+        var251 = 26;
+    }
+    else if ( ( ( var250 >= 120 ) && ( var250 < 140 ) ) && ( BIT_CHK( 3167 ) == 0 ) )
+    {
+        var251 = 0;
+        PLAY_SOUNDEFFECT( 705 );
+    }
+    else 
+    {
+        var251 = 24;
+    }
+
+    BIT_OFF( 3167 );
+    
+    if ( var251 != 0 )
+    {
+        FUNCTION_0023( 1, var251 );
+    }
+
+    FADE( 1, 10 );
+    FADE_SYNC();
+    
+    if ( ( ( ( ( ( ( ( ( ( var250 == 6 ) || ( var250 == 8 ) ) || ( var250 == 21 ) ) || ( var250 == 41 ) ) || ( var250 == 61 ) ) || ( var250 == 81 ) ) || ( var250 == 101 ) ) || ( var250 == 121 ) ) || ( var250 == 141 ) ) || ( var250 == 161 ) )
+    {
+        
+        if ( BIT_CHK( 6328 ) )
+        {
+            var252 = ( var250 - 1 );
+            
+            if ( ( BIT_CHK( 3118 ) == 1 ) && ( ( ( ( ( ( ( ( ( ( ( GET_CNT( 999 ) == 1 ) || ( var252 == 1 ) ) || ( var252 == 5 ) ) || ( var252 == 20 ) ) || ( var252 == 40 ) ) || ( var252 == 60 ) ) || ( var252 == 80 ) ) || ( var252 == 100 ) ) || ( var252 == 120 ) ) || ( var252 == 140 ) ) || ( var252 == 160 ) ) )
+            {
+                SET_CNT( 999, 0 );
+                BIT_OFF( 3118 );
+                BIT_OFF( 3119 );
+            }
+
+        }
+
+        CALL_DUNGEON( ( var250 - 1 ), 1 );
+    }
+    else if ( var250 == 123 )
+    {
+        
+        if ( GET_CNT( 29 ) <= var250 )
+        {
+            SET_CNT( 29, var250 );
+        }
+
+        CALL_DUNGEON( 120, 1 );
+    }
+    else 
+    {
+        GOTO_REL_FLOOR( -1 );
+    }
+
+}
+
+
+// Procedure Index: 95
+void dng_escape_hook()
+{
+    int var253;
+    int var254;
+    var253 = GET_FLOOR_ID();
+    var254 = GET_FLOOR_ID();
+    
+    if ( ( BIT_CHK( 3164 ) == 1 ) && ( BIT_CHK( 3165 ) == 0 ) )
+    {
+        WAIT( 10 );
+        PLAY_SOUNDEFFECT( 241 );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        MSG( ESCAPE_BAN );
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if ( BIT_CHK( 6328 ) )
+    {
+        
+        if ( BIT_CHK( 3118 ) == 1 )
+        {
+            BIT_OFF( 3118 );
+            BIT_OFF( 3119 );
+        }
+
+    }
+    else if ( GET_CNT( 38 ) == 13 )
+    {
+        SET_CNT( 38, 14 );
+        BIT_OFF( 3118 );
+        BIT_OFF( 3119 );
+    }
+
+    
+    if ( ( FLD_FUNCTION_0036() == 1 ) && ( FLD_FUNCTION_0037() == 0 ) )
+    {
+        var254 = ( var254 + 1 );
+    }
+
+    
+    if ( ( var253 >= 5 ) && ( var253 < 20 ) )
+    {
+        SET_CNT( 23, var254 );
+    }
+    else if ( ( var253 >= 20 ) && ( var253 < 40 ) )
+    {
+        SET_CNT( 24, var254 );
+    }
+    else if ( ( var253 >= 40 ) && ( var253 < 60 ) )
+    {
+        SET_CNT( 25, var254 );
+    }
+    else if ( ( var253 >= 60 ) && ( var253 < 80 ) )
+    {
+        SET_CNT( 26, var254 );
+    }
+    else if ( ( var253 >= 80 ) && ( var253 < 100 ) )
+    {
+        SET_CNT( 27, var254 );
+    }
+    else if ( ( var253 >= 100 ) && ( var253 < 120 ) )
+    {
+        SET_CNT( 28, var254 );
+    }
+    else if ( ( var253 >= 120 ) && ( var253 < 140 ) )
+    {
+        
+        if ( ( ( var253 != 121 ) && ( var253 != 122 ) ) && ( var253 != 129 ) )
+        {
+            SET_CNT( 29, var254 );
+        }
+
+    }
+    else if ( ( var253 >= 140 ) && ( var253 < 160 ) )
+    {
+        SET_CNT( 30, var254 );
+    }
+    else if ( ( var253 >= 160 ) && ( var253 < 180 ) )
+    {
+        SET_CNT( 37, var253 );
+    }
+
+    TRAESTO_VISUAL();
+    
+    if ( ( var253 > 5 ) && ( var253 < 20 ) )
+    {
+        CALL_DUNGEON( 5, 1 );
+    }
+    else if ( ( var253 > 20 ) && ( var253 < 40 ) )
+    {
+        CALL_DUNGEON( 20, 1 );
+    }
+    else if ( ( var253 > 40 ) && ( var253 < 60 ) )
+    {
+        CALL_DUNGEON( 40, 1 );
+    }
+    else if ( ( var253 > 60 ) && ( var253 < 80 ) )
+    {
+        CALL_DUNGEON( 60, 1 );
+    }
+    else if ( ( var253 > 80 ) && ( var253 < 100 ) )
+    {
+        CALL_DUNGEON( 80, 1 );
+    }
+    else if ( ( var253 > 100 ) && ( var253 < 120 ) )
+    {
+        CALL_DUNGEON( 100, 1 );
+    }
+    else if ( ( var253 > 120 ) && ( var253 < 140 ) )
+    {
+        CALL_DUNGEON( 120, 1 );
+    }
+    else if ( ( var253 > 140 ) && ( var253 < 160 ) )
+    {
+        CALL_DUNGEON( 140, 1 );
+    }
+    else if ( ( var253 > 160 ) && ( var253 < 180 ) )
+    {
+        CALL_DUNGEON( 160, 1 );
+    }
+
+}
+
+
+// Procedure Index: 96
+void trap_encount_hook()
+{
+    int var263;
+    int var264;
+    int var265;
+    int var266;
+    int var255;
+    int var256;
+    int var257;
+    int var258;
+    int var267;
+    int var259;
+    int var268;
+    int var269;
+    int var260;
+    int var261;
+    int var262;
+    var263 = RNG( 116 );
+    var264 = ( 769 + var263 );
+    var265 = RNG( 252 );
+    var266 = ( 1537 + var265 );
+    gVar9 = 0;
+    var255 = RNG( 1000 );
+    var256 = RNG( 1000 );
+    
+    if ( ( var256 < 800 ) && ( GET_WEATHER() == 7 ) )
+    {
+        var257 = FLD_FUNCTION_0029( 4 );
+    }
+    else if ( var256 < 200 )
+    {
+        var257 = FLD_FUNCTION_0029( 4 );
+    }
+    else 
+    {
+        var257 = FLD_FUNCTION_0029( 0 );
+    }
+
+    
+    if ( ( GET_FLOOR_ID() == 125 ) && ( BIT_CHK( 3873 ) == 0 ) )
+    {
+        gVar9 = 1;
+    }
+
+    OPEN_MSG_WIN();
+    MSG( TRAPBOX_ENCOUNT );
+    CLOSE_MSG_WIN();
+    WAIT( 10 );
+    var258 = CALL_BATTLE( var257, 0 );
+    
+    if ( ( var258 != 0 ) || ( gVar9 == 1 ) )
+    {
+        
+        if ( var258 == 1 )
+        {
+            gVar9 = 0;
+            dng_decease_2();
+        }
+        else if ( gVar9 == 1 )
+        {
+            encount_trap();
+        }
+
+        return;
+    }
+
+    
+    if ( var255 < 333 )
+    {
+        var267 = AI_GET_RANDOM_NUMBER_BELOW( 116 );
+        var259 = ( 769 + var267 );
+    }
+    else if ( var255 < 666 )
+    {
+        var268 = AI_GET_RANDOM_NUMBER_BELOW( 17 );
+        var259 = ( 923 + var268 );
+    }
+    else 
+    {
+        var269 = AI_GET_RANDOM_NUMBER_BELOW( 23 );
+        var259 = ( 943 + var269 );
+    }
+
+    var260 = GET_ITEM( var259 );
+    var260 = ( var260 + 3 );
+    SET_ITEM( var259, var260 );
+    SET_MSG_VAR( 0, var259, 1 );
+    SET_MSG_VAR( 1, 1, 0 );
+    OPEN_MSG_WIN();
+    MSG( CUSTOMITEM );
+    CLOSE_MSG_WIN();
+    OPEN_MSG_WIN();
+    var261 = GET_ITEM( var264 );
+    var261 = ( var261 + 3 );
+    SET_ITEM( var264, var261 );
+    SET_MSG_VAR( 0, var264, 1 );
+    MSG( CUSTOMITEM2 );
+    CLOSE_MSG_WIN();
+    OPEN_MSG_WIN();
+    var262 = GET_ITEM( var266 );
+    var262 = ( var262 + 1 );
+    SET_ITEM( var266, var262 );
+    SET_MSG_VAR( 0, var266, 1 );
+    MSG( CUSTOMITEM3 );
+    CLOSE_MSG_WIN();
+}
+
+
+// Procedure Index: 97
+void rank_box_hook()
+{
+    int var276;
+    int var277;
+    int var278;
+    int var279;
+    int var280;
+    int var281;
+    int var282;
+    int var283;
+    int var284;
+    int var270;
+    int var271;
+    int var272;
+    int var273;
+    int var274;
+    int var275;
+    var276 = RNG( 116 );
+    var277 = ( 769 + var276 );
+    var278 = RNG( 17 );
+    var279 = ( 923 + var278 );
+    var280 = RNG( 94 );
+    var281 = ( 0x0200 + var280 );
+    var282 = RNG( 98 );
+    var283 = ( 608 + var282 );
+    var284 = RNG( 100 );
+    
+    if ( GET_ITEM( ( 0x0800 + 55 ) ) > 0 )
+    {
+        var270 = ( 0x0800 + 55 );
+    }
+    else 
+    {
+        var270 = ( 768 + 65 );
+    }
+
+    var271 = GET_ITEM( var270 );
+    OPEN_MSG_WIN();
+    
+    if ( var271 > 0 )
+    {
+        SET_MSG_VAR( 0, var271, 0 );
+        
+        if ( var270 == ( 768 + 65 ) )
+        {
+            MSG( CHEST_KEY );
+        }
+        else 
+        {
+            MSG( CRACK_KEY );
+        }
+
+        SEL_CHK_PAD( 14, 1 );
+        var272 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var272 == 0 )
+        {
+            var271 = ( var271 - 1 );
+            SET_ITEM( var270, var271 );
+            itembox_open_anim();
+            death_check();
+            OPEN_MSG_WIN();
+            var273 = GET_ITEM( var277 );
+            var273 = ( var273 + 3 );
+            SET_ITEM( var277, var273 );
+            SET_MSG_VAR( 0, var277, 1 );
+            MSG( CUSTOMITEM );
+            CLOSE_MSG_WIN();
+            OPEN_MSG_WIN();
+            var274 = GET_ITEM( var279 );
+            var274 = ( var274 + 3 );
+            SET_ITEM( var279, var274 );
+            SET_MSG_VAR( 0, var279, 1 );
+            MSG( CUSTOMITEM2 );
+            CLOSE_MSG_WIN();
+            OPEN_MSG_WIN();
+            
+            if ( var284 < 50 )
+            {
+                var275 = GET_ITEM( var281 );
+                var275 = ( var275 + 1 );
+                SET_ITEM( var281, var275 );
+                SET_MSG_VAR( 0, var281, 1 );
+            }
+            else 
+            {
+                var275 = GET_ITEM( var283 );
+                var275 = ( var275 + 1 );
+                SET_ITEM( var283, var275 );
+                SET_MSG_VAR( 0, var283, 1 );
+            }
+
+            MSG( CUSTOMITEM3 );
+            CLOSE_MSG_WIN();
+        }
+
+    }
+    else 
+    {
+        MSG( LOCK_BOX );
+    }
+
+    CLOSE_MSG_WIN();
+}
+
+
+// Procedure Index: 98
+void no_rank_box_hook()
+{
+    int var285;
+    int var289;
+    int var290;
+    int var291;
+    int var292;
+    int var286;
+    int var287;
+    int var288;
+    itembox_open_anim();
+    death_check();
+    var285 = RNG( 100 );
+    var289 = RNG( 116 );
+    var290 = ( 769 + var289 );
+    var291 = RNG( 17 );
+    var292 = ( 923 + var291 );
+    
+    if ( var285 < 50 )
+    {
+        
+        if ( CHECK_TIME_SPAN( 4, 0x10, 5, 17 ) == 1 )
+        {
+            var286 = RNG( 2000 );
+        }
+        else if ( CHECK_TIME_SPAN( 5, 18, 6, 24 ) == 1 )
+        {
+            var286 = ( 4000 + RNG( 2000 ) );
+        }
+        else if ( CHECK_TIME_SPAN( 6, 25, 7, 28 ) == 1 )
+        {
+            var286 = ( 8000 + RNG( 2000 ) );
+        }
+        else if ( CHECK_TIME_SPAN( 7, 29, 9, 0x10 ) == 1 )
+        {
+            var286 = ( 11000 + RNG( 2000 ) );
+        }
+        else if ( CHECK_TIME_SPAN( 9, 17, 11, 5 ) == 1 )
+        {
+            var286 = ( 14000 + RNG( 2000 ) );
+        }
+        else if ( CHECK_TIME_SPAN( 11, 6, 12, 7 ) == 1 )
+        {
+            var286 = ( 17000 + RNG( 2000 ) );
+        }
+        else if ( CHECK_TIME_SPAN( 12, 8, 2, 13 ) == 1 )
+        {
+            var286 = ( 20000 + RNG( 2000 ) );
+        }
+        else 
+        {
+            var286 = ( 22000 + RNG( 2000 ) );
+        }
+
+        OPEN_MSG_WIN();
+        ADD_YEN( var286 );
+        SET_MSG_VAR( 0, var286, 0 );
+        MSG( GET_MONEY_MES );
+        CLOSE_MSG_WIN();
+    }
+    else 
+    {
+        OPEN_MSG_WIN();
+        var287 = GET_ITEM( var290 );
+        var287 = ( var287 + 1 );
+        SET_ITEM( var290, var287 );
+        SET_MSG_VAR( 0, var290, 1 );
+        MSG( CUSTOMITEM );
+        CLOSE_MSG_WIN();
+        OPEN_MSG_WIN();
+        var288 = GET_ITEM( var292 );
+        var288 = ( var288 + 1 );
+        SET_ITEM( var292, var288 );
+        SET_MSG_VAR( 0, var292, 1 );
+        MSG( CUSTOMITEM2 );
+        CLOSE_MSG_WIN();
+    }
+
+}
+
+
+// Procedure Index: 99
+void tomb_enc_box_rank_9_hook()
+{
+    int var293;
+    int var294;
+    int var295;
+    int var296;
+    int var297;
+    int var298;
+    int var299;
+    int var300;
+    int var301;
+    int var302;
+    var293 = GET_FLOOR_ID();
+    var294 = RNG( 1000 );
+    var295 = RNG( 1000 );
+    
+    if ( var293 == 161 )
+    {
+        var296 = 544;
+    }
+    else if ( var293 == 162 )
+    {
+        
+        if ( var294 < 500 )
+        {
+            var296 = 544;
+        }
+        else 
+        {
+            var296 = 545;
+        }
+
+    }
+    else if ( var293 == 163 )
+    {
+        var296 = 549;
+    }
+    else if ( var293 == 164 )
+    {
+        
+        if ( var294 < 500 )
+        {
+            var296 = 549;
+        }
+        else 
+        {
+            var296 = 550;
+        }
+
+    }
+    else if ( var293 == 165 )
+    {
+        
+        if ( var294 < 500 )
+        {
+            var296 = 550;
+        }
+        else 
+        {
+            var296 = 551;
+        }
+
+    }
+    else if ( ( var293 == 166 ) || ( var293 == 167 ) )
+    {
+        var296 = 894;
+    }
+    else if ( ( var293 == 168 ) || ( var293 == 169 ) )
+    {
+        
+        if ( var294 < 500 )
+        {
+            var296 = 894;
+        }
+        else 
+        {
+            var296 = 895;
+        }
+
+    }
+
+    
+    if ( ( var293 >= 161 ) && ( var293 <= 164 ) )
+    {
+        
+        if ( var295 < 200 )
+        {
+            var297 = ( 0x0100 + 165 );
+        }
+        else if ( var295 < 400 )
+        {
+            var297 = ( 0x0100 + 166 );
+        }
+        else if ( var295 < 600 )
+        {
+            var297 = ( 0x0100 + 167 );
+        }
+        else if ( var295 < 800 )
+        {
+            var297 = ( 0x0100 + 168 );
+        }
+        else if ( ( var293 == 161 ) || ( var293 == 162 ) )
+        {
+            var297 = ( 0x0200 + 177 );
+        }
+        else if ( ( var293 == 163 ) || ( var293 == 164 ) )
+        {
+            
+            if ( var295 < 900 )
+            {
+                var297 = ( 0x0200 + 178 );
+            }
+            else 
+            {
+                var297 = ( 0x0200 + 179 );
+            }
+
+        }
+
+    }
+    else if ( ( ( var293 == 165 ) || ( var293 == 166 ) ) || ( var293 == 167 ) )
+    {
+        
+        if ( var295 < 100 )
+        {
+            var297 = ( 0x0200 + 179 );
+        }
+        else if ( var295 < 200 )
+        {
+            var297 = ( 0x0200 + 180 );
+        }
+        else if ( var295 < 400 )
+        {
+            var297 = ( 0x0100 + 169 );
+        }
+        else if ( var295 < 600 )
+        {
+            var297 = ( 0x0100 + 170 );
+        }
+        else if ( var295 < 800 )
+        {
+            var297 = ( 0x0100 + 171 );
+        }
+        else 
+        {
+            var297 = ( 0x0100 + 172 );
+        }
+
+    }
+    else if ( ( var293 == 168 ) || ( var293 == 169 ) )
+    {
+        
+        if ( var295 < 500 )
+        {
+            var297 = ( 0x0200 + 179 );
+        }
+        else if ( var295 < 750 )
+        {
+            var297 = ( 0x0200 + 180 );
+        }
+        else if ( var295 < 900 )
+        {
+            var297 = ( 0x0200 + 181 );
+        }
+        else 
+        {
+            var297 = ( 0x0200 + 182 );
+        }
+
+    }
+
+    var298 = ( 768 + 65 );
+    var299 = GET_ITEM( var298 );
+    OPEN_MSG_WIN();
+    
+    if ( var299 > 0 )
+    {
+        SET_MSG_VAR( 0, var299, 0 );
+        MSG( USE_KEY_OK );
+        SEL_CHK_PAD( 14, 1 );
+        var300 = SEL( YESNO_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( var300 == 0 )
+        {
+            var299 = ( var299 - 1 );
+            SET_ITEM( var298, var299 );
+            itembox_open_anim();
+            OPEN_MSG_WIN();
+            MSG( TRAPBOX_ENCOUNT );
+            CLOSE_MSG_WIN();
+            WAIT( 10 );
+            var301 = CALL_BATTLE( var296, 0 );
+            
+            if ( var301 != 0 )
+            {
+                
+                if ( var301 == 1 )
+                {
+                    gVar9 = 0;
+                    dng_decease_2();
+                }
+
+                return;
+            }
+
+            var302 = ( GET_ITEM( var297 ) + 3 );
+            SET_ITEM( var297, var302 );
+            SET_MSG_VAR( 0, var297, 1 );
+            SET_MSG_VAR( 1, 3, 0 );
+            OPEN_MSG_WIN();
+            MSG( CUSTOMITEM );
+            CLOSE_MSG_WIN();
+        }
+
+    }
+    else 
+    {
+        MSG( LOCK_BOX );
+    }
+
+    CLOSE_MSG_WIN();
+}
+
+
+// Procedure Index: 100
+void box_open_010_1_hook()
+{
+    int var303;
+    int var304;
+    int var307;
+    int var308;
+    int var309;
+    int var310;
+    int var305;
+    int var306;
+    var303 = RNG( 100 );
+    var304 = RNG( 30000 );
+    var307 = RNG( 116 );
+    var308 = ( 769 + var307 );
+    var309 = RNG( 17 );
+    var310 = ( 923 + var309 );
+    
+    if ( var303 < 50 )
+    {
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        ADD_YEN( var304 );
+        SET_MSG_VAR( 0, var304, 0 );
+        MSG( GET_MONEY_MES );
+        CLOSE_MSG_WIN();
+    }
+    else 
+    {
+        BIT_ON( 3691 );
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        var305 = GET_ITEM( var308 );
+        var305 = ( var305 + 3 );
+        SET_ITEM( var308, var305 );
+        SET_MSG_VAR( 0, var308, 1 );
+        MSG( CUSTOMITEM );
+        CLOSE_MSG_WIN();
+        OPEN_MSG_WIN();
+        var306 = GET_ITEM( var310 );
+        var306 = ( var306 + 3 );
+        SET_ITEM( var310, var306 );
+        SET_MSG_VAR( 0, var310, 1 );
+        MSG( CUSTOMITEM2 );
+        CLOSE_MSG_WIN();
+    }
+
+}
+
+
+// Procedure Index: 101
+void box_open_010_2_hook()
+{
+    int var311;
+    int var312;
+    int var315;
+    int var316;
+    int var317;
+    int var318;
+    int var313;
+    int var314;
+    var311 = RNG( 100 );
+    var312 = RNG( 33000 );
+    var315 = RNG( 116 );
+    var316 = ( 769 + var315 );
+    var317 = RNG( 17 );
+    var318 = ( 923 + var317 );
+    
+    if ( var311 < 50 )
+    {
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        ADD_YEN( var312 );
+        SET_MSG_VAR( 0, var312, 0 );
+        MSG( GET_MONEY_MES );
+        CLOSE_MSG_WIN();
+    }
+    else 
+    {
+        BIT_ON( 3692 );
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        var313 = GET_ITEM( var316 );
+        var313 = ( var313 + 3 );
+        SET_ITEM( var316, var313 );
+        SET_MSG_VAR( 0, var316, 1 );
+        MSG( CUSTOMITEM );
+        CLOSE_MSG_WIN();
+        OPEN_MSG_WIN();
+        var314 = GET_ITEM( var318 );
+        var314 = ( var314 + 3 );
+        SET_ITEM( var318, var314 );
+        SET_MSG_VAR( 0, var318, 1 );
+        MSG( CUSTOMITEM2 );
+        CLOSE_MSG_WIN();
+    }
+
+}
+
+
+// Procedure Index: 102
+void box_open_023_1_hook()
+{
+    int var319;
+    int var320;
+    int var323;
+    int var324;
+    int var325;
+    int var326;
+    int var321;
+    int var322;
+    var319 = RNG( 100 );
+    var320 = RNG( 35000 );
+    var323 = RNG( 116 );
+    var324 = ( 769 + var323 );
+    var325 = RNG( 17 );
+    var326 = ( 923 + var325 );
+    
+    if ( var319 < 50 )
+    {
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        ADD_YEN( var320 );
+        SET_MSG_VAR( 0, var320, 0 );
+        MSG( GET_MONEY_MES );
+        CLOSE_MSG_WIN();
+    }
+    else 
+    {
+        BIT_ON( 3716 );
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        var321 = GET_ITEM( var324 );
+        var321 = ( var321 + 3 );
+        SET_ITEM( var324, var321 );
+        SET_MSG_VAR( 0, var324, 1 );
+        MSG( CUSTOMITEM );
+        CLOSE_MSG_WIN();
+        OPEN_MSG_WIN();
+        var322 = GET_ITEM( var326 );
+        var322 = ( var322 + 3 );
+        SET_ITEM( var326, var322 );
+        SET_MSG_VAR( 0, var326, 1 );
+        MSG( CUSTOMITEM2 );
+        CLOSE_MSG_WIN();
+    }
+
+}
+
+
+// Procedure Index: 103
+void box_open_023_2_hook()
+{
+    int var327;
+    int var328;
+    int var331;
+    int var332;
+    int var333;
+    int var334;
+    int var329;
+    int var330;
+    var327 = RNG( 100 );
+    var328 = RNG( 35000 );
+    var331 = RNG( 116 );
+    var332 = ( 769 + var331 );
+    var333 = RNG( 17 );
+    var334 = ( 923 + var333 );
+    
+    if ( var327 < 50 )
+    {
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        ADD_YEN( var328 );
+        SET_MSG_VAR( 0, var328, 0 );
+        MSG( GET_MONEY_MES );
+        CLOSE_MSG_WIN();
+    }
+    else 
+    {
+        BIT_ON( 3717 );
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        var329 = GET_ITEM( var332 );
+        var329 = ( var329 + 3 );
+        SET_ITEM( var332, var329 );
+        SET_MSG_VAR( 0, var332, 1 );
+        MSG( CUSTOMITEM );
+        CLOSE_MSG_WIN();
+        OPEN_MSG_WIN();
+        var330 = GET_ITEM( var334 );
+        var330 = ( var330 + 3 );
+        SET_ITEM( var334, var330 );
+        SET_MSG_VAR( 0, var334, 1 );
+        MSG( CUSTOMITEM2 );
+        CLOSE_MSG_WIN();
+    }
+
+}
+
+
+// Procedure Index: 104
+void box_open_161_1_hook()
+{
+    int var335;
+    int var336;
+    int var339;
+    int var340;
+    int var341;
+    int var342;
+    int var337;
+    int var338;
+    var335 = RNG( 100 );
+    var336 = RNG( 40000 );
+    var339 = RNG( 116 );
+    var340 = ( 769 + var339 );
+    var341 = RNG( 17 );
+    var342 = ( 923 + var341 );
+    
+    if ( var335 < 50 )
+    {
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        ADD_YEN( var336 );
+        SET_MSG_VAR( 0, var336, 0 );
+        MSG( GET_MONEY_MES );
+        CLOSE_MSG_WIN();
+    }
+    else 
+    {
+        BIT_ON( 3920 );
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        var337 = GET_ITEM( var340 );
+        var337 = ( var337 + 3 );
+        SET_ITEM( var340, var337 );
+        SET_MSG_VAR( 0, var340, 1 );
+        MSG( CUSTOMITEM );
+        CLOSE_MSG_WIN();
+        OPEN_MSG_WIN();
+        var338 = GET_ITEM( var342 );
+        var338 = ( var338 + 3 );
+        SET_ITEM( var342, var338 );
+        SET_MSG_VAR( 0, var342, 1 );
+        MSG( CUSTOMITEM2 );
+        CLOSE_MSG_WIN();
+    }
+
+}
+
+
+// Procedure Index: 105
+void box_open_161_3_hook()
+{
+    int var343;
+    int var344;
+    int var347;
+    int var348;
+    int var349;
+    int var350;
+    int var345;
+    int var346;
+    var343 = RNG( 100 );
+    var344 = RNG( 45000 );
+    var347 = RNG( 116 );
+    var348 = ( 769 + var347 );
+    var349 = RNG( 17 );
+    var350 = ( 923 + var349 );
+    
+    if ( var343 < 50 )
+    {
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        ADD_YEN( var344 );
+        SET_MSG_VAR( 0, var344, 0 );
+        MSG( GET_MONEY_MES );
+        CLOSE_MSG_WIN();
+    }
+    else 
+    {
+        BIT_ON( 3922 );
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        var345 = GET_ITEM( var348 );
+        var345 = ( var345 + 3 );
+        SET_ITEM( var348, var345 );
+        SET_MSG_VAR( 0, var348, 1 );
+        MSG( CUSTOMITEM );
+        CLOSE_MSG_WIN();
+        OPEN_MSG_WIN();
+        var346 = GET_ITEM( var350 );
+        var346 = ( var346 + 3 );
+        SET_ITEM( var350, var346 );
+        SET_MSG_VAR( 0, var350, 1 );
+        MSG( CUSTOMITEM2 );
+        CLOSE_MSG_WIN();
+    }
+
+}
+
+
+// Procedure Index: 106
+void box_open_161_4_hook()
+{
+    int var351;
+    int var352;
+    int var355;
+    int var356;
+    int var357;
+    int var358;
+    int var353;
+    int var354;
+    var351 = RNG( 100 );
+    var352 = RNG( 50000 );
+    var355 = RNG( 116 );
+    var356 = ( 769 + var355 );
+    var357 = RNG( 17 );
+    var358 = ( 923 + var357 );
+    
+    if ( var351 < 50 )
+    {
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        ADD_YEN( var352 );
+        SET_MSG_VAR( 0, var352, 0 );
+        MSG( GET_MONEY_MES );
+        CLOSE_MSG_WIN();
+    }
+    else 
+    {
+        BIT_ON( 3923 );
+        itembox_open_anim();
+        death_check();
+        OPEN_MSG_WIN();
+        var353 = GET_ITEM( var356 );
+        var353 = ( var353 + 3 );
+        SET_ITEM( var356, var353 );
+        SET_MSG_VAR( 0, var356, 1 );
+        MSG( CUSTOMITEM );
+        CLOSE_MSG_WIN();
+        OPEN_MSG_WIN();
+        var354 = GET_ITEM( var358 );
+        var354 = ( var354 + 3 );
+        SET_ITEM( var358, var354 );
+        SET_MSG_VAR( 0, var358, 1 );
+        MSG( CUSTOMITEM2 );
+        CLOSE_MSG_WIN();
+    }
+
+}
+

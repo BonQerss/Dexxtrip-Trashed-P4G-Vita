@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Auto Heal</name>
+  <id>autoheal</id>
+  <author>SCArkadia</author>
+  <version>1.0</version>
+  <link />
+  <description>You don't want to keep pressing main menu and use healing skills? You don't have healing skills to heal HP? 
+
+This mod is for you. This is a Quality of Life mod that will auto heal your HP to full as long as you have enough SP.
+
+SP Formula if you are interested:
+
+HPtoHeal = ((TotalHP-CurrentHP)/ 2 * 0.35) + 6 
+SPlost= CurrentSP-HPtoHeal
+
+In case if SP is not enough to full heal:
+
+SPlost = CurrentHP + ( CurrentSP * 4 );
+
+Just for Yukiko's Dungeon (Since it is very early game and may not have enough SP item to get), the following formula is:
+
+HPtoHeal = (TotalHP-CurrentHP)/ 2 * 0.25 
+SPlost= CurrentSP-HPtoHeal
+
+In case if SP is not enough to full heal:
+
+SPlost = CurrentHP + ( CurrentSP * 4 );
+
+Note: This mod also blocks the Half SP Cut in Hollow Forest, making the penalty every after battle not punishing.</description>
+  <skippedVersion>all</skippedVersion>
+</Metadata>

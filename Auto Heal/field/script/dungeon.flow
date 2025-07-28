@@ -1,0 +1,362 @@
+
+// 
+// FlowScript decompiled using Atlus Script Tools by TGE (2017-2021)
+// In the unfortunate case of any bugs, please report them back to me.
+// 
+
+
+// 
+// Imports
+// 
+import( "dungeon.bf" );
+
+
+// Procedure Index: 6
+void dng_afterBattle_hook()
+{
+    int var19;
+    int yu;
+	int yosuke;
+	int chie;
+	int yukiko;
+	int kanji;
+	int teddie;
+	int naoto;
+	int var32;
+	int var33;
+	int math;
+	int temp;
+	
+	if ( CHECK_TIME_SPAN( 4, 17, 4, 29 ) == 1 )
+	{
+		if ( GET_TOT_HP( 1 ) - GET_CUR_HP( 1 ) == 0 )
+		{
+			var32 = GET_CUR_SP( 1 );
+			SET_SP( 1, var32 );
+			var33 = GET_CUR_HP( 1 );
+			SET_HP( 1, var33 );
+		}
+		else
+		{
+			var32 = ( GET_TOT_HP( 1 ) - GET_CUR_HP( 1 ) ) / 2 * 0.25 ;
+			math = ( GET_CUR_SP( 1 ) - var32 );
+			if ( math < 0 )
+			{	
+				temp = GET_CUR_SP( 1 );
+				var32 = GET_CUR_SP( 1 ) - GET_CUR_SP( 1 );
+				SET_SP( 1, var32 );
+				var33 = GET_CUR_HP( 1 ) + ( temp * 4 );
+				SET_HP( 1, var33 );
+			}
+			else
+			{
+				SET_SP( 1, math );
+				var33 = GET_TOT_HP( 1 );
+				SET_HP( 1, var33 );
+			}
+			
+		}
+		
+		int checkparty;
+		int partyid = 0;
+		_307:
+		if ( partyid < 3 )
+		{
+			checkparty = GET_PARTY_MEMBER_ID( partyid );
+			
+			if ( checkparty != 0 )
+			{		
+				if ( GET_TOT_HP( checkparty ) - GET_CUR_HP( checkparty ) == 0 )
+				{
+					var32 = GET_CUR_SP( checkparty );
+					SET_SP( checkparty, var32 );
+					var33 = GET_CUR_HP( checkparty );
+					SET_HP( checkparty, var33 );
+				}
+				else
+				{
+					var32 = ( GET_TOT_HP( checkparty ) - GET_CUR_HP( checkparty ) ) / 2 * 0.25;
+					math = ( GET_CUR_SP( checkparty ) - var32 );
+					if ( math < 0 )
+					{	
+						temp = GET_CUR_SP( checkparty );
+						var32 = GET_CUR_SP( checkparty ) - GET_CUR_SP( checkparty );
+						SET_SP( checkparty, var32 );
+						var33 = GET_CUR_HP( checkparty ) + ( temp * 4 );
+						SET_HP( checkparty, var33 );
+					}
+					else
+					{
+						SET_SP( checkparty, math );
+						var33 = GET_TOT_HP( checkparty );
+						SET_HP( checkparty, var33 );
+					}
+				}
+			}
+
+			partyid = ( partyid + 1 );
+			goto _307;
+		}
+	}
+	
+	if ( CHECK_TIME_SPAN( 2, 11, 2, 13 ) == 1 )
+	{
+		if ( GET_TOT_HP( 1 ) - GET_CUR_HP( 1 ) == 0 )
+		{
+			var32 = GET_CUR_SP( 1 ) * 2;
+			SET_SP( 1, var32 );
+			var33 = GET_CUR_HP( 1 );
+			SET_HP( 1, var33 );
+		}
+		else
+		{
+			var32 = ( GET_TOT_HP( 1 ) - GET_CUR_HP( 1 ) ) / 2 * 0.25 ;
+			math = ( GET_CUR_SP( 1 ) - var32 );
+			if ( math < 0 )
+			{	
+				temp = GET_CUR_SP( 1 );
+				var32 = GET_CUR_SP( 1 ) - GET_CUR_SP( 1 );
+				SET_SP( 1, var32 );
+				var33 = GET_CUR_HP( 1 ) + ( temp * 4 );
+				SET_HP( 1, var33 );
+			}
+			else
+			{
+				math = ( GET_CUR_SP( 1 ) * 2 ) - var32;
+				SET_SP( 1, math );
+				var33 = GET_TOT_HP( 1 );
+				SET_HP( 1, var33 );
+			}
+			
+		}
+		
+		int checkparty;
+		int partyid = 0;
+		_309:
+		if ( partyid < 3 )
+		{
+			checkparty = GET_PARTY_MEMBER_ID( partyid );
+			
+			if ( checkparty != 0 )
+			{		
+				if ( GET_TOT_HP( checkparty ) - GET_CUR_HP( checkparty ) == 0 )
+				{
+					var32 = GET_CUR_SP( checkparty ) * 2;
+					SET_SP( checkparty, var32 );
+					var33 = GET_CUR_HP( checkparty );
+					SET_HP( checkparty, var33 );
+				}
+				else
+				{
+					var32 = ( GET_TOT_HP( checkparty ) - GET_CUR_HP( checkparty ) ) / 2 * 0.25;
+					math = ( GET_CUR_SP( checkparty ) - var32 );
+					if ( math < 0 )
+					{	
+						temp = GET_CUR_SP( checkparty );
+						var32 = GET_CUR_SP( checkparty ) - GET_CUR_SP( checkparty );
+						SET_SP( checkparty, var32 );
+						var33 = GET_CUR_HP( checkparty ) + ( temp * 4 );
+						SET_HP( checkparty, var33 );
+					}
+					else
+					{
+						math = ( GET_CUR_SP( checkparty ) * 2 ) - var32;
+						SET_SP( checkparty, math );
+						var33 = GET_TOT_HP( checkparty );
+						SET_HP( checkparty, var33 );
+					}
+				}
+			}
+
+			partyid = ( partyid + 1 );
+			goto _309;
+		}
+	}
+	
+	if ( GET_TOT_HP( 1 ) - GET_CUR_HP( 1 ) == 0 )
+	{
+		var32 = GET_CUR_SP( 1 );
+		SET_SP( 1, var32 );
+		var33 = GET_CUR_HP( 1 );
+		SET_HP( 1, var33 );
+	}
+	else
+	{
+		var32 = ( ( ( GET_TOT_HP( 1 ) - GET_CUR_HP( 1 ) ) / 2 * 0.35 ) + 6 );
+		math = ( GET_CUR_SP( 1 ) - var32 );
+		if ( math < 0 )
+		{	
+			temp = GET_CUR_SP( 1 );
+			var32 = GET_CUR_SP( 1 ) - GET_CUR_SP( 1 );
+			SET_SP( 1, var32 );
+			var33 = GET_CUR_HP( 1 ) + ( temp * 4 );
+			SET_HP( 1, var33 );
+		}
+		else
+		{
+			SET_SP( 1, math );
+			var33 = GET_TOT_HP( 1 );
+			SET_HP( 1, var33 );
+		}
+		
+	}
+	
+	int checkparty;
+	int partyid = 0;
+	_308:
+	if ( partyid < 3 )
+	{
+		checkparty = GET_PARTY_MEMBER_ID( partyid );
+		
+		if ( checkparty != 0 )
+		{		
+			if ( GET_TOT_HP( checkparty ) - GET_CUR_HP( checkparty ) == 0 )
+			{
+				var32 = GET_CUR_SP( checkparty );
+				SET_SP( checkparty, var32 );
+				var33 = GET_CUR_HP( checkparty );
+				SET_HP( checkparty, var33 );
+			}
+			else
+			{
+				var32 = ( ( ( GET_TOT_HP( checkparty ) - GET_CUR_HP( checkparty ) ) / 2 * 0.35 ) + 6 );
+				math = ( GET_CUR_SP( checkparty ) - var32 );
+				if ( math < 0 )
+				{	
+					temp = GET_CUR_SP( checkparty );
+					var32 = GET_CUR_SP( checkparty ) - GET_CUR_SP( checkparty );
+					SET_SP( checkparty, var32 );
+					var33 = GET_CUR_HP( checkparty ) + ( temp * 4 );
+					SET_HP( checkparty, var33 );
+				}
+				else
+				{
+					SET_SP( checkparty, math );
+					var33 = GET_TOT_HP( checkparty );
+					SET_HP( checkparty, var33 );
+				}
+			}
+		}
+
+		partyid = ( partyid + 1 );
+		goto _308;
+	}
+	//SP
+	/* yu = ( GET_CUR_SP( 1 ) * 0.75 );
+    SET_SP( 1, yu );
+	
+	yosuke = ( GET_CUR_SP( 2 ) * 0.75 );
+    SET_SP( 2, yosuke );
+	
+	chie = ( GET_CUR_SP( 3 ) * 0.75 );
+    SET_SP( 3, chie );
+	
+	yukiko = ( GET_CUR_SP( 4 ) * 0.75 );
+    SET_SP( 4, yukiko );
+	
+	kanji = ( GET_CUR_SP( 6 ) * 0.75 );
+    SET_SP( 6, kanji );
+	
+	naoto = ( GET_CUR_SP( 7 ) * 0.75 );
+    SET_SP( 7, naoto );
+	
+	teddie = ( GET_CUR_SP( 8 ) * 0.75 );
+    SET_SP( 8, teddie );
+	
+	//HP
+	yu = ( GET_CUR_HP( 1 ) * 0.75 );
+    SET_HP( 1, yu );
+	
+	yosuke = ( GET_CUR_HP( 2 ) * 0.75 );
+    SET_HP( 2, yosuke );
+	
+	chie = ( GET_CUR_HP( 3 ) * 0.75 );
+    SET_HP( 3, chie );
+	
+	yukiko = ( GET_CUR_HP( 4 ) * 0.75 );
+    SET_HP( 4, yukiko );
+	
+	kanji = ( GET_CUR_HP( 6 ) * 0.75 );
+    SET_HP( 6, kanji );
+	
+	naoto = ( GET_CUR_HP( 7 ) * 0.75 );
+    SET_HP( 7, naoto );
+	
+	teddie = ( GET_CUR_HP( 8 ) * 0.75 );
+    SET_HP( 8, teddie ); */
+	
+    if ( gVar9 == 0 )
+    {
+        encount_trap();
+    }
+
+    // bit id (((0) + (1024)) + (2048)) + (834) = 3906
+    // bit id (((0) + (1024)) + (2048)) + (834) = 3906
+    // bit id (((0) + (1024)) + (2048)) + (852) = 3924
+    // bit id (((0) + (1024)) + (2048)) + (852) = 3924
+    // bit id (((0) + (1024)) + (2048)) + (853) = 3925
+    // bit id (((0) + (1024)) + (2048)) + (853) = 3925
+    // bit id (((0) + (1024)) + (2048)) + (854) = 3926
+    // bit id (((0) + (1024)) + (2048)) + (854) = 3926
+    
+    if ( ( GET_FLOOR_ID() == 161 ) && ( BIT_CHK( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 834 ) ) == 0 ) )
+    {
+        BIT_ON( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 834 ) );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( TOMB_ENC_1F_DOOR_INFO );
+        NAVI_BU_CLOSE( var19 );
+        CLOSE_MSG_WIN();
+        WAIT( 10 );
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 33 );
+        OPEN_MSG_WIN();
+        
+        if ( GET_PARTY_MEMBER_ID( 0 ) != 0 )
+        {
+            MSG( SP_ZERO_HELP_ALL );
+        }
+        else 
+        {
+            MSG( SP_ZERO_HELP_PLAYER );
+        }
+
+        MSG( SP_ZERO_HELP_COM );
+        CLOSE_MSG_WIN();
+        NAVI_BU_CLOSE( var19 );
+    }
+    else if ( ( GET_FLOOR_ID() == 161 ) && ( BIT_CHK( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 852 ) ) == 0 ) )
+    {
+        BIT_ON( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 852 ) );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( TOMB_ENC_1F_END_1 );
+        NAVI_BU_CLOSE( var19 );
+        CLOSE_MSG_WIN();
+    }
+    else if ( ( GET_FLOOR_ID() == 161 ) && ( BIT_CHK( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 853 ) ) == 0 ) )
+    {
+        BIT_ON( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 853 ) );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( TOMB_ENC_1F_END_2 );
+        NAVI_BU_CLOSE( var19 );
+        CLOSE_MSG_WIN();
+    }
+    else if ( ( GET_FLOOR_ID() == 161 ) && ( BIT_CHK( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 854 ) ) == 0 ) )
+    {
+        BIT_ON( ( ( ( 0 + 0x0400 ) + 0x0800 ) + 854 ) );
+        WAIT( 10 );
+        OPEN_MSG_WIN();
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 33 );
+        MSG( TOMB_ENC_1F_END_3_1 );
+        NAVI_BU_CLOSE( var19 );
+        var19 = NAVI_BU_OPEN( 280, -40, 5, 30 );
+        MSG( TOMB_ENC_1F_END_3_2 );
+        NAVI_BU_CLOSE( var19 );
+        CLOSE_MSG_WIN();
+    }
+
+}

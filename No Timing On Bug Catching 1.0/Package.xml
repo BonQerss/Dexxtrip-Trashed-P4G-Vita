@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>No Timing On Bug Catching</name>
+  <id>meovvcat.notimingonbugcatching</id>
+  <author>MeovvCAT</author>
+  <version>1.0</version>
+  <link />
+  <description>Accessibility mod. Gives the same reward for bug catching regardless of timing, while keeping the minigame intact.</description>
+  <skippedVersion>all</skippedVersion>
+</Metadata>

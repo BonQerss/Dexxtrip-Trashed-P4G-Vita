@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Persona Affinities, Index: 229",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 7328,
+      "data": "00 10 00 10 00 10 00 10 00 10 00 10 00 10 00 10 00 10 00 10 00 10 00 10 00 10 00 10 00 10 00 10"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 230",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 7360,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 00 08 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Persona Affinities, Index: 231",
+      "tbl": "UNIT",
+      "section": 2,
+      "offset": 7392,
+      "data": "14 00 14 00 00 08 14 00 14 00 14 00 00 08 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    }
+  ]
+}

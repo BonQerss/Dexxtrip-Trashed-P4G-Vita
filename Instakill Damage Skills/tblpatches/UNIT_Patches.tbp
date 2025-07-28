@@ -1,0 +1,915 @@
+{
+  "Version": 1,
+  "Patches": [
+    {
+      "comment": "Segment: Enemy Affinities, Index: 2",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 64,
+      "data": "14 00 00 08 00 08 00 08 00 08 00 10 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 12",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 384,
+      "data": "00 01 00 08 14 00 00 01 14 00 14 00 00 02 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 13",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 416,
+      "data": "14 00 00 01 1E 00 1E 00 00 10 14 00 00 08 14 00 FF 00 14 00 FF 00 FF 00 14 00 FF 00 FF 00 FF 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 15",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 480,
+      "data": "28 00 00 10 28 00 00 10 14 00 14 00 00 08 1E 00 19 00 14 00 19 00 19 00 14 00 19 00 19 00 19 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 16",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 512,
+      "data": "1E 00 14 00 14 00 14 00 14 00 14 00 00 01 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 28 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 27",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 864,
+      "data": "00 04 00 08 14 00 14 00 00 01 14 00 00 08 00 02 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 31",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 992,
+      "data": "00 10 14 00 14 00 14 00 14 00 14 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 33",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1056,
+      "data": "14 00 12 00 12 00 12 00 12 00 14 00 14 00 1B 08 14 00 14 00 14 00 FF 00 14 00 14 00 14 00 FF 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 34",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1088,
+      "data": "14 00 00 08 14 00 14 00 14 00 14 00 1B 08 00 02 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 36",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1152,
+      "data": "14 00 14 00 00 02 14 00 00 10 14 00 00 02 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 3C 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 37",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1184,
+      "data": "3C 00 00 10 00 01 00 04 00 02 14 00 00 01 00 08 1E 00 14 00 14 00 28 00 14 00 14 00 14 00 28 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 39",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1248,
+      "data": "14 00 14 00 00 02 14 00 14 00 14 00 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 41",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1312,
+      "data": "14 00 14 00 00 04 00 08 14 00 14 00 00 02 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 47",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1504,
+      "data": "14 00 00 08 14 00 14 00 00 01 14 00 00 08 00 01 3C 00 14 00 14 00 19 00 14 00 14 00 14 00 19 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 49",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1568,
+      "data": "14 00 00 10 0F 10 0F 10 00 10 14 00 00 02 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 51",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1632,
+      "data": "00 10 14 00 14 00 14 00 14 00 14 00 14 00 00 08 14 00 14 00 14 00 50 00 14 00 14 00 14 00 50 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 52",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1664,
+      "data": "00 10 00 08 14 00 00 10 14 00 14 00 1E 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 3C 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 53",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1696,
+      "data": "00 02 14 00 14 00 00 08 14 00 14 00 00 02 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 55",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 1760,
+      "data": "14 00 00 04 14 00 14 08 14 00 14 00 00 08 14 00 19 00 14 00 19 00 19 00 14 00 19 00 19 00 19 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 66",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 2112,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 00 08 00 10 14 00 14 00 14 00 FF 00 14 00 14 00 14 00 FF 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 68",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 2176,
+      "data": "14 00 00 02 00 02 00 02 00 02 14 00 00 02 00 08 1E 00 14 00 14 00 50 00 14 00 14 00 14 00 50 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 69",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 2208,
+      "data": "00 10 14 00 14 00 14 00 14 00 14 00 00 01 00 08 00 20 14 00 14 00 28 00 14 00 14 00 14 00 28 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 70",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 2240,
+      "data": "00 10 14 00 00 08 14 00 14 00 14 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 79",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 2528,
+      "data": "14 00 14 00 14 00 14 00 14 00 3C 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 81",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 2592,
+      "data": "00 10 14 00 14 00 14 00 14 00 14 00 00 08 00 02 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 84",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 2688,
+      "data": "14 00 00 10 00 10 00 10 00 10 14 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 93",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 2976,
+      "data": "14 00 14 00 14 00 00 04 14 08 14 00 14 00 00 08 14 00 14 00 14 00 3C 00 14 00 14 00 14 00 3C 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 98",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 3136,
+      "data": "14 00 28 00 28 00 00 04 00 04 14 00 1E 00 1E 00 19 00 14 00 19 00 19 00 14 00 19 00 19 00 19 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 99",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 3168,
+      "data": "14 00 00 10 00 10 00 10 00 10 14 00 1E 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 100",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 3200,
+      "data": "14 00 00 08 14 00 14 00 14 00 14 00 14 00 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 105",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 3360,
+      "data": "00 10 14 00 00 10 00 08 00 10 14 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 114",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 3648,
+      "data": "14 00 00 10 00 10 00 10 00 10 14 00 00 08 14 00 14 00 50 00 50 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 115",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 3680,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 00 01 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 120",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 3840,
+      "data": "14 00 14 00 00 08 00 10 00 10 14 00 00 02 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 121",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 3872,
+      "data": "14 00 00 08 00 10 00 04 00 10 14 00 00 01 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 123",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 3936,
+      "data": "14 00 00 10 00 08 14 00 14 00 14 00 1E 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 125",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 4000,
+      "data": "14 00 00 01 00 08 00 10 14 00 14 00 00 08 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 132",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 4224,
+      "data": "14 00 00 10 00 08 14 00 00 04 14 00 14 00 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 19 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 133",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 4256,
+      "data": "14 00 14 00 00 08 00 10 14 00 14 00 00 01 00 08 14 00 3C 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 135",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 4320,
+      "data": "14 00 14 08 14 00 00 01 14 00 14 00 1E 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 140",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 4480,
+      "data": "00 10 14 00 14 00 00 08 00 01 14 00 00 08 00 01 50 00 50 00 50 00 50 00 14 00 50 00 50 00 50 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 141",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 4512,
+      "data": "00 02 14 00 14 08 14 00 00 10 0A 00 00 08 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 145",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 4640,
+      "data": "00 10 14 00 14 00 00 08 14 00 14 00 1E 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 153",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 4896,
+      "data": "12 00 00 02 00 02 00 02 00 02 0F 00 1E 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 155",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 4960,
+      "data": "12 00 00 02 00 04 00 02 00 04 14 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 156",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 4992,
+      "data": "00 10 1E 00 1E 00 1E 00 1E 00 1E 00 00 08 00 08 FF 00 14 00 FF 00 FF 00 14 00 FF 00 FF 00 FF 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 159",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5088,
+      "data": "14 00 28 00 00 10 28 00 00 10 14 00 1E 00 00 08 19 00 14 00 14 00 19 00 14 00 14 00 14 00 19 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 160",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5120,
+      "data": "00 10 19 00 19 00 19 00 19 00 14 00 1E 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 163",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5216,
+      "data": "14 00 14 00 00 08 00 10 00 10 14 00 00 08 00 02 50 00 14 00 14 00 14 00 50 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 164",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5248,
+      "data": "14 00 00 02 00 02 14 00 14 00 14 00 00 01 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 168",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5376,
+      "data": "00 02 00 10 14 00 00 08 14 00 14 00 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 178",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5696,
+      "data": "00 10 19 00 19 00 00 08 19 00 14 00 00 08 00 10 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 179",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5728,
+      "data": "14 00 14 00 14 00 14 00 00 08 14 00 00 08 00 01 14 00 14 00 14 00 FF 00 14 00 14 00 14 00 FF 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 180",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5760,
+      "data": "14 00 14 00 00 10 00 10 14 00 14 00 00 08 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 181",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5792,
+      "data": "00 10 14 00 14 00 00 08 00 10 14 00 00 08 00 01 14 00 14 00 14 00 14 00 14 00 3C 00 14 00 3C 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 182",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5824,
+      "data": "14 00 00 08 00 10 00 10 00 10 14 00 00 08 00 01 14 00 14 00 14 00 14 00 28 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 183",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5856,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 00 08 00 01 64 00 14 00 14 00 64 00 64 00 14 00 14 00 64 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 185",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5920,
+      "data": "00 02 14 00 14 00 14 00 14 00 14 00 1E 00 1E 00 3C 00 3C 00 3C 00 3C 00 3C 00 3C 00 3C 00 3C 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 186",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 5952,
+      "data": "14 00 00 08 00 04 00 04 00 04 14 00 00 08 14 00 28 00 14 00 14 00 28 00 14 00 14 00 14 00 28 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 188",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 6016,
+      "data": "00 10 14 00 14 00 00 08 00 01 14 00 00 01 00 08 14 00 14 00 14 00 14 00 19 00 14 00 14 00 19 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 199",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 6368,
+      "data": "00 01 14 00 14 00 14 00 14 00 14 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 200",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 6400,
+      "data": "14 00 00 01 00 01 00 01 00 01 14 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 204",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 6528,
+      "data": "14 00 00 10 14 00 00 08 14 00 14 00 1E 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 218",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 6976,
+      "data": "14 00 00 10 00 08 00 02 14 00 14 00 00 01 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 221",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 7072,
+      "data": "00 10 00 10 00 10 00 10 00 10 14 00 00 08 00 08 14 00 50 00 50 00 14 00 14 00 50 00 50 00 50 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 223",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 7136,
+      "data": "00 10 00 01 14 00 00 08 00 01 14 00 00 08 00 01 14 00 50 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 224",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 7168,
+      "data": "00 10 00 10 00 10 00 01 00 08 14 00 1E 00 00 02 14 00 14 00 14 00 14 00 14 00 14 00 14 00 19 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 241",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 7712,
+      "data": "14 00 00 10 00 10 14 00 14 00 14 00 1E 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 242",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 7744,
+      "data": "00 08 1E 00 00 02 00 02 00 01 14 00 1E 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 243",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 7776,
+      "data": "14 00 00 02 14 00 00 10 00 08 14 00 00 08 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 247",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 7904,
+      "data": "14 00 00 08 14 00 14 00 14 00 14 00 00 02 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 248",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 7936,
+      "data": "14 00 00 02 00 08 00 02 00 02 14 00 1E 00 1E 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 249",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 7968,
+      "data": "00 01 05 10 0A 08 00 10 00 10 1E 00 00 08 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 252",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8064,
+      "data": "1E 00 14 00 14 00 14 00 14 00 14 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 3C 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 256",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8192,
+      "data": "14 00 14 00 14 00 14 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 257",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8224,
+      "data": "00 10 14 00 14 00 14 00 00 08 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 258",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8256,
+      "data": "14 00 00 04 00 08 14 00 14 00 19 00 14 00 14 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 259",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8288,
+      "data": "14 00 14 00 14 00 00 04 19 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 260",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8320,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 261",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8352,
+      "data": "14 00 14 00 00 04 14 00 14 00 0F 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 262",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8384,
+      "data": "0F 00 14 00 14 00 14 00 14 00 0F 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 263",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8416,
+      "data": "14 00 00 10 14 00 19 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 01 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 264",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8448,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 265",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8480,
+      "data": "0A 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 266",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8512,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 267",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8544,
+      "data": "0A 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 269",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8608,
+      "data": "14 00 14 00 14 00 00 08 00 10 14 00 14 00 14 00 00 20 00 20 00 20 00 20 14 00 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 270",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8640,
+      "data": "0A 00 14 00 14 00 00 04 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 271",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8672,
+      "data": "0F 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 272",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8704,
+      "data": "14 00 00 01 00 08 14 00 0F 10 14 00 14 00 14 00 00 20 14 00 00 20 00 20 00 20 00 20 00 20 0A 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 273",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8736,
+      "data": "1E 00 00 08 00 01 14 00 0F 10 14 00 14 00 14 00 00 20 14 00 00 20 00 20 0A 00 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 274",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8768,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 275",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8800,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 277",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 8864,
+      "data": "14 10 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 287",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9184,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 288",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9216,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 289",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9248,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 290",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9280,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 291",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9312,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 292",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9344,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 293",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9376,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 294",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9408,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 295",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9440,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 296",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9472,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 297",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9504,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 303",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9696,
+      "data": "19 00 00 02 00 02 00 02 00 02 46 00 00 02 00 02 00 20 00 20 0A 00 0A 00 05 00 00 20 05 00 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 304",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9728,
+      "data": "0A 00 00 04 1E 00 1E 00 00 01 0A 00 14 00 14 00 00 20 00 20 00 20 00 20 0A 00 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 305",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9760,
+      "data": "14 00 14 00 19 00 0F 08 19 00 0A 00 19 00 19 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 306",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9792,
+      "data": "0F 00 19 00 00 08 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 307",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9824,
+      "data": "14 10 14 00 19 00 14 00 19 00 0F 00 19 00 19 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 308",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9856,
+      "data": "0F 00 19 00 19 00 19 00 0F 08 0F 00 19 00 19 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 309",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9888,
+      "data": "00 01 19 00 00 04 19 00 19 00 19 00 19 00 19 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 310",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9920,
+      "data": "14 00 00 08 19 00 19 00 19 00 19 00 19 00 19 00 FF 00 14 00 FF 00 FF 00 14 00 FF 00 FF 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 311",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9952,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 312",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 9984,
+      "data": "14 00 14 08 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 313",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10016,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 314",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10048,
+      "data": "0F 00 12 00 16 00 12 00 13 00 0F 00 12 00 12 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 315",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10080,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 316",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10112,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 317",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10144,
+      "data": "28 00 00 10 00 10 00 04 00 10 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 318",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10176,
+      "data": "28 00 5A 00 5A 00 5A 00 5A 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 319",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10208,
+      "data": "14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 320",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10240,
+      "data": "14 00 00 04 14 00 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 321",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10272,
+      "data": "14 00 14 00 00 04 14 00 14 00 14 00 14 00 14 00 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 338",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10816,
+      "data": "0A 00 0A 08 0A 08 0A 08 0A 08 32 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 339",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10848,
+      "data": "05 00 07 00 07 08 07 08 07 00 32 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 342",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10944,
+      "data": "00 02 14 00 14 00 14 00 14 00 19 00 00 08 00 01 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 343",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 10976,
+      "data": "00 04 0A 08 0A 08 0A 08 0A 08 32 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 346",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 11072,
+      "data": "14 00 0C 00 0C 00 0F 08 0F 08 32 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    },
+    {
+      "comment": "Segment: Enemy Affinities, Index: 347",
+      "tbl": "UNIT",
+      "section": 1,
+      "offset": 11104,
+      "data": "0A 00 0C 08 0C 00 0C 00 0C 08 32 00 00 08 00 08 14 00 14 00 14 00 14 00 14 00 14 00 14 00 14 00"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Instakill Damage Skills</name>
+  <id>flasuban.instakilldamageskills</id>
+  <author>flasuban</author>
+  <version>1.0</version>
+  <link />
+  <description>Changes Hama and Mudo skills to deal damage instead of instantly killing. Enemy and boss affinities have been appropriately edited to fix problems with damage scaling.</description>
+</Metadata>
